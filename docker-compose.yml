@@ -1,0 +1,23 @@
+version: "3.2"
+
+services:
+
+  tfjupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    #user: "1000:1000"
+
+    ports:
+      - "8888:8888"
+
+    volumes:
+      - type: bind
+        source: ./notebooks
+        target: /tf/notebooks
+      - type: bind
+        #password: ciao
+        source: ./jupyter_notebook_config.json
+        target: /home/jupuser/.jupyter/jupyter_notebook_config.json
+      
