@@ -1,0 +1,11 @@
+pandas
+scipy
+scikit-learn
+geopandas
+descartes
+statsmodels
+git+https://github.com/njchiang/tikhonov.git
+Theano
+pymc3
+arviz
+openpyxl
