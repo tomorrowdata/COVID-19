@@ -17,6 +17,13 @@ services:
         source: ./notebooks
         target: /tf/notebooks
       - type: bind
+        source: ./data
+        target: /tf/data
+      - type: bind
+        source: ./images
+        target: /tf/images
+        
+      - type: bind
         #password: ciao
         source: ./jupyter_notebook_config.json
         target: /home/jupuser/.jupyter/jupyter_notebook_config.json
