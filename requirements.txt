@@ -9,3 +9,4 @@ Theano
 pymc3
 arviz
 openpyxl
+pillow
