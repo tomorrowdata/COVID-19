@@ -1,4 +1,5 @@
 ID,report_time_range_descr,computation_time_range_descr,computation_time_range_start,computation_time_range_end,Rt,Rt_95_min,Rt_95_max,notes,source,source_detail,url
+5216,30 novembre – 6 dicembre,18 novembre – 1 dicembre,2020-11-18,2020-12-01,0.82,0.76,0.91,,,,http://www.salute.gov.it/imgs/C_17_notizie_5216_0_file.pdf
 5209,23 - 29 novembre,11 – 24 novembre,2020-11-11,2020-11-24,0.91,0.79,1.08,,attachement,,http://www.salute.gov.it/imgs/C_17_notizie_5209_1_file.pdf
 5196,16-22 novembre,04 – 17 novembre,2020-11-04,2020-11-17,1.08,0.91,1.25,,attachement,,http://www.salute.gov.it/imgs/C_17_notizie_5182_1_file.pdf
 5182,9 - 15 novembre,28 ottobre– 10 novembre,2020-10-28,2020-11-10,1.18,0.94,1.49,,attachement,,http://www.salute.gov.it/imgs/C_17_notizie_5182_1_file.pdf
