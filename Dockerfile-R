@@ -1,0 +1,12 @@
+# credits https://github.com/ondata/iss-epicentro-rt-nazionale/blob/main/Dockerfile
+
+FROM r-base
+
+RUN R -e 'install.packages(c("EpiEstim"))'
+
+RUN mkdir /R-scripts
+
+WORKDIR /R-scripts
+
+CMD tail -f /dev/null
+

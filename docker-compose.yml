@@ -27,4 +27,22 @@ services:
         #password: ciao
         source: ./jupyter_notebook_config.json
         target: /home/jupuser/.jupyter/jupyter_notebook_config.json
+
+  repiestim:
+    # run the following to compute Rt based on ISS script:
+    # docker-compose exec -u 1000 repiestim Rscript run_ISS_script.R
+    # the result is saved in `/data/computed/ISS_Epiestim_Rt.csv`
+    
+    build:
+      context: .
+      dockerfile: Dockerfile-R
+
+    volumes:
+      - type: bind
+        source: ./data
+        target: /data
+      - type: bind
+        source: ./R-scripts
+        target: /R-scripts
+
       
