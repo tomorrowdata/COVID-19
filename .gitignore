@@ -6,3 +6,5 @@
 
 **/.DS_Store
 **/Rplots.pdf
+
+__pycache__/

@@ -14,6 +14,9 @@ services:
 
     volumes:
       - type: bind
+        source: ./covid19_pytoolbox
+        target: /tf/covid19_pytoolbox
+      - type: bind
         source: ./notebooks
         target: /tf/notebooks
       - type: bind
