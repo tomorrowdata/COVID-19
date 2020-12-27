@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
 
-def load_from_github():
+def load_daily_cases_from_github():
     def parse_date(date):
         return datetime.strptime(date[:10], '%Y-%m-%d')
 
@@ -32,6 +32,12 @@ def preprocess(df):
     df['nuovi_casi_da_screening'] = (
         df.casi_da_screening -
         df.casi_da_screening.shift(1)
-    ).fillna(0)    
+    ).fillna(0)
+
+
+    df['tamponi_giornalieri'] = (df.tamponi - df.tamponi.shift(1)).fillna(0)
+    df['dimessi_guariti_giornalieri'] = (df.dimessi_guariti - df.dimessi_guariti.shift(1)).fillna(0)
+    df['deceduti_giornalieri'] = (df.deceduti - df.deceduti.shift(1)).fillna(0)
+
 
     return TIMESTEPS, FIRST_CASI_SOSP_DIAGNOSTICO
