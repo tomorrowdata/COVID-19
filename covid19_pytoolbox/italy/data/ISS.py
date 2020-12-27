@@ -14,7 +14,7 @@ def read_weekly_Rt_from_local(path='sources/Rt_from_ISS.csv'):
     return ISS_Rt
 
 
-def clean_weekly_Rt(df):
+def preprocess(df):
     ISS_Rt_clean = df.loc[:,[
         'computation_time_range_start','computation_time_range_end','Rt','Rt_95_min','Rt_95_max'
     ]].dropna()
