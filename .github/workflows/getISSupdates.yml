@@ -30,7 +30,7 @@ jobs:
           wget -P /tmp https://www.epicentro.iss.it/coronavirus/open-data/covid_19-iss.xlsx
           CURDATE=$(date --iso-8601)
           ISSFILENAME=covid_19-iss_$CURDATE.xlsx"
-          mkdir -p "$GITHUB_WORKSPACE/data/sources/ISS/
+          mkdir -p "$GITHUB_WORKSPACE/data/sources/ISS/"
           mv /tmp/covid_19-iss.xlsx "$GITHUB_WORKSPACE/data/sources/ISS/$ISSFILENAME"
           git config user.name "TDBot"
           git config user.email "actions@users.noreply.github.com"
