@@ -1,0 +1,38 @@
+# This is a basic workflow to help you get started with Actions
+
+name: GET_COVID-19_ISS_open_data
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+  schedule:
+  - cron: "0 2 * * 0-6"
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  get_data:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          wget -P /tmp https://www.epicentro.iss.it/coronavirus/open-data/covid_19-iss.xlsx
+          CURDATE=$(date --iso-8601)
+          ISSFILENAME=covid_19-iss_$CURDATE.xlsx"
+          mv /tmp/covid_19-iss.xlsx "$GITHUB_WORKSPACE/data/sources/ISS/$ISSFILENAME"
+          git config user.name "TDBot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -C "$GITHUB_WORKSPACE" "data/sources/ISS/$ISSFILENAME"
+          git commit -C "$GITHUB_WORKSPACE" -m "ISS open data update $CURDATE" || exit 0
+          git -C "$GITHUB_WORKSPACE" push
