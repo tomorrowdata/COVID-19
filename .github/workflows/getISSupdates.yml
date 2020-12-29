@@ -34,6 +34,6 @@ jobs:
           mv /tmp/covid_19-iss.xlsx "$GITHUB_WORKSPACE/data/sources/ISS/$ISSFILENAME"
           git config user.name "TDBot"
           git config user.email "actions@users.noreply.github.com"
-          git -C "$GITHUB_WORKSPACE" add "data/sources/ISS/$ISSFILENAME"
-          git -C "$GITHUB_WORKSPACE" commit -m "ISS open data update $CURDATE" || exit 0
-          git -C "$GITHUB_WORKSPACE" push
+          git add "data/sources/ISS/$ISSFILENAME"
+          git commit -m "ISS open data update $CURDATE" || exit 0
+          git push
