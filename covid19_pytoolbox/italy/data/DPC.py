@@ -4,6 +4,8 @@ import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
 
+from covid19_pytoolbox.modeling import Rt
+
 prettyprint = pprint.PrettyPrinter(indent=4)
 
 def load_daily_cases_from_github():
@@ -81,3 +83,26 @@ def tikhonov_smooth_data(df, regularizer):
         smoothcol = col+'_smoothed'
         print(smoothcol, end=' - ')
         df[smoothcol] = regularizer.stat_smooth_data(df[col])
+
+def compute_residuals(df):
+
+    df['nuovi_positivi_residuals'] = (
+        df.nuovi_positivi - df.nuovi_positivi_smoothed
+    )
+    df['nuovi_positivi_relative_residuals'] = (
+        df.nuovi_positivi_residuals / df.nuovi_positivi_smoothed
+    )
+    df.loc[0,'nuovi_positivi_relative_residuals'] = 0
+
+def bulk_compute_naive_Rt(df, alpha, beta):
+
+    rt_on_fields = [
+        'nuovi_positivi',
+        'nuovi_casi_da_sospetto_diagnostico',
+        'nuovi_casi_da_screening'
+    ]
+
+    prettyprint.pprint(rt_on_fields)
+
+    for c in rt_on_fields + ['{}_smoothed'.format(c) for c in rt_on_fields]:
+        df['{}_Rt'.format(c)] = Rt.compute_naive_Rt(df[c], alpha=alpha, beta=beta).fillna(0)
