@@ -1,4 +1,5 @@
 import os
+import pprint
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
@@ -24,20 +25,24 @@ def preprocess(df):
     df.casi_da_sospetto_diagnostico.fillna(0, inplace=True)
     df.casi_da_screening.fillna(0, inplace=True)
 
-    df['nuovi_casi_da_sospetto_diagnostico'] = (
-        df.casi_da_sospetto_diagnostico -
-        df.casi_da_sospetto_diagnostico.shift(1)
-    ).fillna(0)
-
-    df['nuovi_casi_da_screening'] = (
-        df.casi_da_screening -
-        df.casi_da_screening.shift(1)
-    ).fillna(0)
-
-
-    df['tamponi_giornalieri'] = (df.tamponi - df.tamponi.shift(1)).fillna(0)
-    df['dimessi_guariti_giornalieri'] = (df.dimessi_guariti - df.dimessi_guariti.shift(1)).fillna(0)
-    df['deceduti_giornalieri'] = (df.deceduti - df.deceduti.shift(1)).fillna(0)
-
-
     return TIMESTEPS, FIRST_CASI_SOSP_DIAGNOSTICO
+
+def compute_first_diffs(df):
+
+    def first_diff(df, col):
+        return (df[col] - df[col].shift(1)).fillna(0)
+
+    cols = {
+        'nuovi_casi_da_sospetto_diagnostico': 'casi_da_sospetto_diagnostico',
+        'nuovi_casi_da_screening': 'casi_da_screening',
+        'tamponi_giornalieri': 'tamponi',
+        'dimessi_guariti_giornalieri': 'dimessi_guariti',
+        'deceduti_giornalieri': 'deceduti'
+    }
+
+    pp = pprint.PrettyPrinter(indent=4)
+    pp.pprint(cols)
+
+
+    for diffcol, col in cols.items():
+        df[diffcol] = first_diff(df, col)
