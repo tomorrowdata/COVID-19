@@ -20,8 +20,8 @@ def preprocess(df):
     ]].dropna()
 
     ISS_Rt_clean['Rt_95_err_max'] = ISS_Rt_clean.Rt_95_max - ISS_Rt_clean.Rt
-    ISS_Rt_clean['Rt_95_err_min'] = np.abs(ISS_Rt_clean.Rt_95_max - ISS_Rt_clean.Rt)
-
+    ISS_Rt_clean['Rt_95_err_min'] = ISS_Rt_clean.Rt - ISS_Rt_clean.Rt_95_min
+    
     ISS_Rt_clean['Rt_reference_date'] = (
         (
             ISS_Rt_clean.computation_time_range_start + 
