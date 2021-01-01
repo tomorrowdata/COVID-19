@@ -29,7 +29,7 @@ class TikhonovRegularization(object):
         self._exact_tikhonov_matrix = self._get_exact_tikhonov_matrix()
 
 
-    def stat_smooth_data(self, y, alpha, verbose=True):
+    def stat_smooth_data(self, y, verbose=True):
         tic = Tikhonov(alpha=self.alpha)
         tic.fit(y=y, X=self._integral_matrix, L=self._gamma_matrix)
         if verbose:
