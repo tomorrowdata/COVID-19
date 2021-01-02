@@ -108,17 +108,46 @@ def plot_series(ax, df=None, yfields=None, data=None, xfield='data'):
     for d in data:
         df = d['df']
         yfields = d['yfields']
+
+        if 'xfield' in d:
+            x = df.loc[:,[d['xfield']]]
+        else:
+            x = df.loc[:,[xfield]]
+
+        if 'bars' in d:
+            plotfunc = ax.errorbar
+            bars = d['bars']
+        else:
+            plotfunc = ax.plot
+            bars=None
+
         if 'labels' in d:
             labels = d['labels']
         else:
             labels = yfields
-            
+
+        if 'colors' in d:
+            colors = d['colors']
+        else:
+            colors = None
+
         for f in yfields:
-            ax.plot(
-                df.loc[:,[xfield]], 
-                df.loc[:,[f]], 
-                label=labels[yfields.index(f)], 
-                linestyle=':', marker='o'
+            findex = yfields.index(f)
+            args = (x.to_numpy(), df.loc[:,[f]].to_numpy())
+
+            kwargs={
+                'label': labels[findex],
+                'linestyle': ':', 'marker': 'o'
+            }
+            if colors:
+                kwargs.update({'color':colors[findex]})
+                
+            if bars:
+                yerr = df.loc[:,bars[findex]].to_numpy().T
+                kwargs.update({'yerr': yerr, 'uplims':True, 'lolims':True})
+            plotfunc(
+                *args,
+                **kwargs
             )
 
 
