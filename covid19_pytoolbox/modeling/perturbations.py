@@ -1,6 +1,7 @@
 import pandas as pd
 from numbers import Number
 
+from covid19_pytoolbox.modeling.Rt import compute_naive_Rt
 
 def growth(p0,rate, zerosteps, steps):
     assert(zerosteps < steps)
@@ -20,7 +21,19 @@ def growth(p0,rate, zerosteps, steps):
             yield v
 
 
-def compute_perturbed_cumulative(cumulatives, p0, rate, zerosteps, steps):
+def apply_perturbations(cumulatives, p0, rate, zerosteps, steps, regularizer, Rt_alpha, Rt_beta):
     perturbation = pd.Series(growth(p0, rate, zerosteps, steps))
 
-    return cumulatives + perturbation
+    cum_low, cum_high = cumulatives - perturbation, cumulatives + perturbation
+
+    new_cases_low, new_cases_high = (
+        regularizer.stat_smooth_differentiate(cum_low),
+        regularizer.stat_smooth_differentiate(cum_high)
+    )
+
+    Rt_low, Rt_high = (
+        compute_naive_Rt(new_cases_low, alpha=Rt_alpha, beta=Rt_beta),
+        compute_naive_Rt(new_cases_high, alpha=Rt_alpha, beta=Rt_beta)
+    )
+
+    return new_cases_low, new_cases_high, Rt_low, Rt_high
