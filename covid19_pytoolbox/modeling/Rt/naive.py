@@ -19,7 +19,7 @@ def infectious_charge(series, alpha, beta):
     
     return np.asarray(infectious_charge_)
 
-def compute_naive_Rt(series, alpha, beta):
+def compute_Rt(series, alpha, beta):
     infectious_charge_ = infectious_charge(series, alpha, beta)
     
     return series / infectious_charge_

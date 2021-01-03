@@ -1,7 +1,7 @@
 import pandas as pd
 from numbers import Number
 
-from covid19_pytoolbox.modeling.Rt import compute_naive_Rt
+from covid19_pytoolbox.modeling.Rt import naive
 
 def growth(p0,rate, zerosteps, steps):
     assert(zerosteps < steps)
@@ -32,8 +32,8 @@ def apply_perturbations(cumulatives, p0, rate, zerosteps, steps, regularizer, Rt
     )
 
     Rt_low, Rt_high = (
-        compute_naive_Rt(new_cases_low, alpha=Rt_alpha, beta=Rt_beta),
-        compute_naive_Rt(new_cases_high, alpha=Rt_alpha, beta=Rt_beta)
+        naive.compute_Rt(new_cases_low, alpha=Rt_alpha, beta=Rt_beta),
+        naive.compute_Rt(new_cases_high, alpha=Rt_alpha, beta=Rt_beta)
     )
 
     return new_cases_low, new_cases_high, Rt_low, Rt_high

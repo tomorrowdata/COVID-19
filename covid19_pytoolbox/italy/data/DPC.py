@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
 
-from covid19_pytoolbox.modeling import Rt
+from covid19_pytoolbox.modeling.Rt import naive
 
 prettyprint = pprint.PrettyPrinter(indent=4)
 
@@ -105,4 +105,4 @@ def bulk_compute_naive_Rt(df, alpha, beta):
     prettyprint.pprint(rt_on_fields)
 
     for c in rt_on_fields + ['{}_smoothed'.format(c) for c in rt_on_fields]:
-        df['{}_Rt'.format(c)] = Rt.compute_naive_Rt(df[c], alpha=alpha, beta=beta).fillna(0)
+        df['{}_Rt'.format(c)] = naive.compute_Rt(df[c], alpha=alpha, beta=beta).fillna(0)
