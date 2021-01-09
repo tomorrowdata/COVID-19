@@ -8,3 +8,6 @@
 **/Rplots.pdf
 
 __pycache__/
+
+**/.RData
+**/.Rhistory

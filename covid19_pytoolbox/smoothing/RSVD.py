@@ -4,6 +4,9 @@ import pandas as pd
 
 class RSVDSeasonalRegularizer(object):
 
+    def _log(self, *args):
+        print(*args)
+
     def __init__(self, signal, season_period, num_r):
         
         self.season_period = season_period
@@ -17,11 +20,27 @@ class RSVDSeasonalRegularizer(object):
 
         self.periods, _ = self.X.shape
 
-        self.D = np.eye(self.periods-2,self.periods)-(np.tri(self.periods-2,self.periods,-1)-np.tri(self.periods-2,self.periods,-2))
+        """
+        roughness penalty operator:
+
+        mat_D <- matrix(0, nrow=num_period-2,ncol=num_period)
+        for (i in 1:nrow(mat_D))  mat_D[i, i:(i+2)] <- c(1,-2,1)
+        mat_Omega <- t(mat_D)%*% mat_D
+        """
+        self.D = np.eye(N=self.periods-2,M=self.periods)+np.eye(N=self.periods-2,M=self.periods, k=2)-2*np.eye(N=self.periods-2,M=self.periods, k=1)
         self.Omega = np.dot(self.D.T, self.D)
 
+        """
+        demeaning operator:
 
-    def RSVD(self):
+        mat_Q_n <- diag(1,num_period) - matrix(1/num_period,nrow = num_period,ncol=num_period)
+        mat_Y_remain <- mat_Q_n%*%mat_Y
+        """
+        self.Q = np.eye(N=self.periods)-np.full(shape=(self.periods,self.periods), fill_value=1/self.periods)
+
+        self.X_remain = np.dot(self.Q, self.X)
+
+    def RSVD(self, X):
 
         """
 
@@ -51,26 +70,26 @@ class RSVDSeasonalRegularizer(object):
         }
         """
 
-        rows_X, cols_X = self.X.shape
+        rows_X, cols_X = X.shape
 
         I = np.eye(rows_X)
 
         criter = 999
         iter = 0
-        u_ini,_,_ = linalg.svd(self.X, full_matrices=False)
+        u_ini,_,_ = linalg.svd(X, full_matrices=False)
 
         while criter > 10.**(-3) and iter < 100:
-            v = np.dot(self.X.T, u_ini)
+            v = np.dot(X.T, u_ini)
             v = v / np.sum(v**2)
 
             def gcv(nu):
                 M_nu = linalg.inv(I + (10.**nu) * self.Omega)
-                return (1/rows_X) * np.sum(np.dot(np.dot((I - M_nu), self.X), v) ** 2) / (1 - np.trace(M_nu)/rows_X) ** 2
+                return (1/rows_X) * np.sum(np.dot(np.dot((I - M_nu), X), v) ** 2) / (1 - np.trace(M_nu)/rows_X) ** 2
 
             re_gcv = optimize.minimize_scalar(gcv, bounds=(-6,6), method='brent')
 
             alpha_star = 10^(re_gcv.x)
-            u = np.dot(np.dot(np.inv(I + alpha_star * self.Omega), self.X), v)
+            u = np.dot(np.dot(np.inv(I + alpha_star * self.Omega), X), v)
             criter = np.mean((u-u_ini)^2)
             iter = iter + 1
             u_ini = u
