@@ -141,7 +141,7 @@ class RSVDSeasonalRegularizer(object):
 
         Z = np.hstack((
             np.kron(np.ones((self.periods, 1)), I_seas),
-            np.kron(u_hat, I_seas).T
+            np.kron(u_hat, I_seas)
         ))
         Z_D_2_inv = linalg.pinv(Z.T @ self.Delta2 @ Z)
         beta_hat = Z_D_2_inv @ Z.T @ self.Delta2 @ self.signal
@@ -172,29 +172,22 @@ class RSVDSeasonalRegularizer(object):
 
 
     def fit(self):
-        
-        X_D_remain = np.dot(self.Q, self.X_D)
-
         u_hat1 = []
-
-
         info_cri_old = np.Inf
         er_last = None
         er_final = None
 
-        for num_r in range(1, self.max_r):
+        X_D_remain = np.dot(self.Q, self.X_D)
 
-            self._log("################################################")
-            self._log("num_r: ", num_r)
+        for num_r in range(1, self.max_r):
 
             self._X_D_remain = X_D_remain
             fr = self._fit(X_D_remain)
             self._fr = fr
     
-            self._log("alpha_star: ", fr.alpha_star)
+            u_hat1.append(fr.u_hat.reshape(fr.u_hat.shape[0],1))
 
-            u_hat1.append(fr.u_hat)
-
+            self._u_hat1 = np.hstack(u_hat1)
             er_cur = self._eval(np.hstack(u_hat1), num_r)
 
             if er_cur.info_cri > info_cri_old:
@@ -204,7 +197,7 @@ class RSVDSeasonalRegularizer(object):
             else:
                 if num_r < self.max_r:
                     info_cri_old = er_cur.info_cri
-                    u_hat1 = [er_cur.u_hat]
+                    u_hat1 = [er_cur.u_hat.reshape(fr.u_hat.shape[0],1)]
                     X_D_remain = X_D_remain - fr.u_hat.reshape((self.periods, 1)) @ fr.v_hat.reshape((1, fr.v_hat.shape[0]))
                     er_last = er_cur
                 else:
