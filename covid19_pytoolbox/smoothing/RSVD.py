@@ -147,20 +147,25 @@ class RSVDSeasonalRegularizer(object):
         beta_hat = Z_D_2_inv @ Z.T @ self.Delta2 @ self.signal
 
         R = np.kron(np.eye(num_r + 1), np.ones((1, self.season_period)))
-        q = np.zeros((num_r+1, 1))
 
-        beta_tilde = (beta_hat - (Z_D_2_inv @ R.T @ linalg.pinv(R @ Z_D_2_inv @ R.T) @ (R @ beta_hat - q.T).T).T).T
+        # why do we need to subtract zeroes?
+        q = np.zeros((num_r+1,))
 
-        v_fixed = beta_tilde[1:self.season_period].T
+        beta_tilde = beta_hat - Z_D_2_inv @ R.T @ linalg.pinv(R @ Z_D_2_inv @ R.T) @ (R @ beta_hat - q)
+        
+        v_fixed = beta_tilde[:self.season_period]
         fixed_hat = np.kron(np.ones((self.periods, 1)), v_fixed.T)
+        self._fixed_hat = fixed_hat
 
         v_hat2 = beta_tilde[self.season_period:].reshape((self.season_period, -1))
+        self._v_hat2 = v_hat2
 
-        season_hat = fixed_hat + np.dot(u_hat, v_hat2.T)
+        season_hat = fixed_hat + u_hat.reshape((self.periods,-1)) @ v_hat2.T
+        self._season_hat = season_hat
 
-        season_svd = season_hat.T.reshape(1,-1).squeeze()
+        season_svd = season_hat.reshape(1,-1).squeeze()
     
-        info_cri = np.log(np.mean((self.signal-season_svd)**2)) + num_r * np.log(self.periods)/self.periods
+        info_cri = np.log(np.mean(np.diff(self.signal-season_svd)**2)) + num_r * np.log(self.periods)/self.periods
             
         return info_cri, u_hat, v_fixed, v_hat2, season_svd
 
