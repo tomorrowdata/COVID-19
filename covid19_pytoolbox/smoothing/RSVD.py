@@ -7,10 +7,10 @@ class RSVDSeasonalRegularizer(object):
     def _log(self, *args):
         print(*args)
 
-    def __init__(self, signal, season_period, num_r):
+    def __init__(self, signal, season_period, max_r):
         
         self.season_period = season_period
-        self.num_r = num_r
+        self.max_r = max_r
 
         if type(signal) == pd.Series:
             signal = signal.to_numpy()
@@ -111,7 +111,7 @@ class RSVDSeasonalRegularizer(object):
         return u, v, alpha_star
 
 
-    def eval(self, u_hat):
+    def eval(self, u_hat, num_r):
         """
         func_EVAL <- function(mat_u_hat1){
             
@@ -138,28 +138,18 @@ class RSVDSeasonalRegularizer(object):
 
         """
         I_seas = np.eye(self.season_period)
-        Z = np.hstack(
-            np.kron(np.ones((self.periods, self.periods)), I_seas),
-            np.kron(u_hat, I_seas)
-        )
-        
-        Z_2_inv = linalg.pinv(np.dot(Z.T, Z))
-        beta_hat = np.dot(Z_2_inv, np.dot(Z.T, self.signal))
 
-        R = np.kron(np.eye(self.num_r + 1), np.ones(1, self.season_period))
+        Z = np.hstack((
+            np.kron(np.ones((self.periods, 1)), I_seas),
+            np.kron(u_hat, I_seas).T
+        ))
+        Z_D_2_inv = linalg.pinv(Z.T @ self.Delta2 @ Z)
+        beta_hat = Z_D_2_inv @ Z.T @ self.Delta2 @ self.signal
 
-        q = np.zeros((self.num_r+1, 1))
+        R = np.kron(np.eye(num_r + 1), np.ones((1, self.season_period)))
+        q = np.zeros((num_r+1, 1))
 
-        beta_tilde = beta_hat - np.dot(
-            Z_2_inv, 
-            np.dot(
-                np.dot(
-                    R.T, 
-                    linalg.pinv(np.dot(np.dot(R, Z_2_inv), R.T))
-                ),
-                (np.dot(R, beta_hat - q))
-            )
-        )
+        beta_tilde = (beta_hat - (Z_D_2_inv @ R.T @ linalg.pinv(R @ Z_D_2_inv @ R.T) @ (R @ beta_hat - q.T).T).T).T
 
         v_fixed = beta_tilde[1:self.season_period].T
         fixed_hat = np.kron(np.ones((self.periods, 1)), v_fixed.T)
@@ -170,7 +160,7 @@ class RSVDSeasonalRegularizer(object):
 
         season_svd = season_hat.T.reshape(1,-1).squeeze()
     
-        info_cri = np.log(np.mean((self.signal-season_svd)**2)) + self.num_r * np.log(self.periods)/self.periods
+        info_cri = np.log(np.mean((self.signal-season_svd)**2)) + num_r * np.log(self.periods)/self.periods
             
         return info_cri, u_hat, v_fixed, v_hat2, season_svd
 
