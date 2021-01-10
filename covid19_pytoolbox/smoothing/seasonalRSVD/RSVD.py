@@ -3,7 +3,7 @@ from scipy import linalg, optimize
 import numpy as np
 import pandas as pd
 
-class RSVDSeasonalRegularizer(object):
+class SeasonalRegularizer(object):
 
     def _log(self, *args):
         print(*args)
