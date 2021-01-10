@@ -3,6 +3,8 @@
 FROM r-base
 
 RUN R -e 'install.packages(c("EpiEstim"))'
+RUN R -e 'install.packages(c("x13binary"))'
+RUN R -e 'install.packages(c("seasonal"))'
 
 RUN mkdir /R-scripts
 

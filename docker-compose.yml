@@ -47,5 +47,7 @@ services:
       - type: bind
         source: ./R-scripts
         target: /R-scripts
-
+      - type: bind
+        source: ./R_Seasonal_rsvd
+        target: /R_Seasonal_rsvd
       
