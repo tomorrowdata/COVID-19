@@ -1,3 +1,4 @@
+from collections import namedtuple
 from scipy import linalg, optimize
 import numpy as np
 import pandas as pd
@@ -51,9 +52,7 @@ class RSVDSeasonalRegularizer(object):
         """
         self.Q = np.eye(N=self.periods)-np.full(shape=(self.periods,self.periods), fill_value=1/self.periods)
 
-        self.X_D_remain = np.dot(self.Q, self.X_D)
-
-    def fit(self, X):
+    def _fit(self, X):
 
         """
 
@@ -97,21 +96,22 @@ class RSVDSeasonalRegularizer(object):
             v = v / np.sqrt(np.sum(v**2))
 
             def gcv(nu):
-                M_nu = linalg.inv(I + (10.**nu) * self.Omega)
+                M_nu = linalg.solve(I + (10.**nu) * self.Omega, I)
+                #M_nu = linalg.inv(I + (10.**nu) * self.Omega)
                 return (1/rows_X) * np.sum(np.dot(np.dot((I - M_nu), X), v) ** 2) / (1 - np.trace(M_nu)/rows_X) ** 2
 
-            re_gcv = optimize.minimize_scalar(gcv, bounds=(-6,6), method='brent')
+            re_gcv = optimize.minimize_scalar(gcv, bounds=(-6,6), method='bounded')
 
             alpha_star = 10.**(re_gcv.x)
             u = np.dot(np.dot(linalg.inv(I + alpha_star * self.Omega), X), v)
             criter = np.mean((u-u_ini)**2)
             iter = iter + 1
             u_ini = u
-        
-        return u, v, alpha_star
+        fitout = namedtuple('fitout', ['u_hat', 'v_hat', 'alpha_star'])
+        return fitout(u, v, alpha_star)
 
 
-    def eval(self, u_hat, num_r):
+    def _eval(self, u_hat, num_r):
         """
         func_EVAL <- function(mat_u_hat1){
             
@@ -167,5 +167,50 @@ class RSVDSeasonalRegularizer(object):
     
         info_cri = np.log(np.mean(np.diff(self.signal-season_svd)**2)) + num_r * np.log(self.periods)/self.periods
             
-        return info_cri, u_hat, v_fixed, v_hat2, season_svd
+        evalout = namedtuple('evalout', ['info_cri', 'u_hat', 'v_fixed', 'v_hat2', 'season_svd'])
+        return evalout(info_cri, u_hat, v_fixed, v_hat2, season_svd)
 
+
+    def fit(self):
+        
+        X_D_remain = np.dot(self.Q, self.X_D)
+
+        u_hat1 = []
+
+
+        info_cri_old = np.Inf
+        er_last = None
+        er_final = None
+
+        for num_r in range(1, self.max_r):
+
+            self._log("################################################")
+            self._log("num_r: ", num_r)
+
+            self._X_D_remain = X_D_remain
+            fr = self._fit(X_D_remain)
+            self._fr = fr
+    
+            self._log("alpha_star: ", fr.alpha_star)
+
+            u_hat1.append(fr.u_hat)
+
+            er_cur = self._eval(np.hstack(u_hat1), num_r)
+
+            if er_cur.info_cri > info_cri_old:
+                final_r = num_r-1
+                er_final = er_last
+                break
+            else:
+                if num_r < self.max_r:
+                    info_cri_old = er_cur.info_cri
+                    u_hat1 = [er_cur.u_hat]
+                    X_D_remain = X_D_remain - fr.u_hat.reshape((self.periods, 1)) @ fr.v_hat.reshape((1, fr.v_hat.shape[0]))
+                    er_last = er_cur
+                else:
+                    final_r = num_r
+                    er_final = er_cur
+
+
+        multifitresult = namedtuple('multifitresult', ['info_cri', 'u_hat', 'v_fixed', 'v_hat2', 'season_svd', 'final_r'])
+        return multifitresult(*er_final, final_r)
