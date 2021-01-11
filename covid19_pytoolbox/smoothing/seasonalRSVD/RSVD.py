@@ -16,7 +16,8 @@ class SeasonalRegularizer(object):
         if type(signal) == pd.Series:
             signal = signal.to_numpy()
         
-        self.signal = signal[signal.shape[0]-int(signal.shape[0] / self.season_period)*self.season_period:]
+        self.padding_left = signal.shape[0]-int(signal.shape[0] / self.season_period)*self.season_period
+        self.signal = signal[self.padding_left:]
         self.X = self.signal.reshape(-1, self.season_period)
 
         self.periods, _ = self.X.shape
@@ -205,5 +206,5 @@ class SeasonalRegularizer(object):
                     er_final = er_cur
 
 
-        multifitresult = namedtuple('multifitresult', ['info_cri', 'u_hat', 'v_fixed', 'v_hat2', 'season_svd', 'final_r'])
-        return multifitresult(*er_final, final_r)
+        multifitresult = namedtuple('multifitresult', ['info_cri', 'u_hat', 'v_fixed', 'v_hat2', 'season_svd', 'final_r', 'padding_left'])
+        return multifitresult(*er_final, final_r, self.padding_left)
