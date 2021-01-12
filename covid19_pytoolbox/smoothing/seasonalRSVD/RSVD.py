@@ -190,6 +190,7 @@ class SeasonalRegularizer(object):
 
             self._u_hat1 = np.hstack(u_hat1)
             er_cur = self._eval(np.hstack(u_hat1), num_r)
+            self._log('info_cri: ', er_cur.info_cri)
 
             if er_cur.info_cri > info_cri_old:
                 final_r = num_r-1
@@ -198,7 +199,7 @@ class SeasonalRegularizer(object):
             else:
                 if num_r < self.max_r:
                     info_cri_old = er_cur.info_cri
-                    u_hat1 = [er_cur.u_hat.reshape(fr.u_hat.shape[0],1)]
+                    u_hat1 = [er_cur.u_hat.reshape(fr.u_hat.shape[0],-1)]
                     X_D_remain = X_D_remain - fr.u_hat.reshape((self.periods, 1)) @ fr.v_hat.reshape((1, fr.v_hat.shape[0]))
                     er_last = er_cur
                 else:
