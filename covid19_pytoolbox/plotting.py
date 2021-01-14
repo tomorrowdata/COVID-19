@@ -55,9 +55,11 @@ def plot_env(plot_func):
         tick_label_rotation=TICK_LABEL_ROTATION,
         tick_width=TICK_WIDTH,
         legend_fontsize=LEGEND_FONTSIZE,
+        legend_on=True,
         legend_loc='upper left', 
         img_file_path_without_extension=None,
         dpi=300,
+        quality=90,
         **kwargs):
 
         fig, ax = _create_figure(
@@ -69,9 +71,9 @@ def plot_env(plot_func):
 
         plot_func(ax, *args, **kwargs)
 
-        _ = ax.legend(fontsize=legend_fontsize, loc=legend_loc)
+        if legend_on:
+            _ = ax.legend(fontsize=legend_fontsize, loc=legend_loc)
 
-        plt.show()
 
         if img_file_path_without_extension:
             png_path = '{}.png'.format(img_file_path_without_extension)
@@ -79,7 +81,9 @@ def plot_env(plot_func):
             plt.savefig(png_path, dpi=dpi)
             im = Image.open(png_path)
             rgb_im = im.convert('RGB')
-            rgb_im.save(jpg_path)
+            rgb_im.save(jpg_path, optimize=True, quality=quality)
+
+        plt.show()
 
     return wrapper
 
@@ -149,89 +153,3 @@ def plot_series(ax, df=None, yfields=None, data=None, xfield='data'):
                 *args,
                 **kwargs
             )
-
-
-def plot_MCMC_sampling(df, column, ISS_df, ylim=(0,3), xlim=None, average=True, std=True, conf_int=False, path=None, dpi=None):
-            
-    fig, ax1 = plt.subplots(figsize=(30,15))
-    ax1.set_title('', fontsize=30)
-    ax1.tick_params(axis='both', labelsize=27)
-    ax1.tick_params(axis='x', labelrotation=45)
-
-    ax1.xaxis.set_major_locator(mdates.WeekdayLocator(byweekday=mdates.WE))
-    ax1.xaxis.set_major_formatter(mdates.DateFormatter('%d %b'))
-    ax1.xaxis.set_tick_params(width=5)
-    ax1.yaxis.set_tick_params(width=5)
-    ax1.grid()    
-
-    updatemessage = 'Aggiornamento del {}'.format(df.data.max().strftime('%d %b %Y'))
-    props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)    
-    ax1.text(0.65, 0.97, updatemessage, transform=ax1.transAxes, fontsize=24,
-            verticalalignment='top', bbox=props)    
-    
-    ax1.set_ylim(*ylim)
-    if xlim:
-        ax1.set_xlim(*xlim)
-        
-    date = df['data'].dt.normalize()
-    ax1.plot(
-        date, 
-        df['{}_Rt_MCMC'.format(column)], 
-        label='Stima di $R_t$ sul valore dei $nuovi\_positivi$ giornalieri, dati Protezione Civile',
-        marker='o', color = 'orange'
-    )
-
-    if conf_int:
-        ax1.fill_between(
-            date, 
-            df['{}_Rt_MCMC_CI_95_min'.format(column)],
-            df['{}_Rt_MCMC_CI_95_max'.format(column)],
-            color='orange', alpha=.3,
-            label="95% confidence interval"
-        )
-
-    print('{}_Rt_MCMC_HDI_95_min'.format(column))
-    ax1.fill_between(
-        date, 
-        df['{}_Rt_MCMC_HDI_95_min'.format(column)],
-        df['{}_Rt_MCMC_HDI_95_max'.format(column)],
-        color='violet', alpha=.3, 
-        label = '95% credible interval'
-    )
-
-    if average:
-        ax1.plot(
-            date, 
-            df['{}_Rt_MCMC_avg14'.format(column)], 
-            label='Avg14 Rt MCMC Estimate - {}'.format(column),
-            marker='o', color = 'green'
-        )    
-
-    if std:
-        ax1.fill_between(
-            date, 
-            df['{}_Rt_MCMC_CI_95_14_min'.format(column)],
-            df['{}_Rt_MCMC_CI_95_14_max'.format(column)],
-            color='blue', alpha=.25,
-            label="95% confidence interval on 14 days average"
-        )
-
-    ISS_ref_date = ISS_df.Rt_reference_date.dt.normalize()
-    ax1.errorbar(
-        ISS_ref_date, 
-        ISS_df.Rt, 
-        ISS_Rt_clean.loc[:,['Rt_95_err_min','Rt_95_err_max']].to_numpy().T,
-        uplims=True, lolims=True,
-        label='Stima di $R_t$ pubblicata dall\'Istituto Superiore di Sanità, con intervallo di credibilità 95%',
-        marker='o', color = 'blue'
-    )
-
-
-    _ = ax1.legend(fontsize=27, loc='lower right')
-    
-    if path:
-        plt.savefig(path.format('png'), dpi=dpi)
-
-        im = Image.open(path.format('png'))
-        rgb_im = im.convert('RGB')
-        rgb_im.save(path.format('jpg'))
