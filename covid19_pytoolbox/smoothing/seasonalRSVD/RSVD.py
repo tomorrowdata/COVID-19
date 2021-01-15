@@ -6,10 +6,12 @@ import pandas as pd
 class SeasonalRegularizer(object):
 
     def _log(self, *args):
-        print(*args)
+        if self.verbose:
+            print(*args)
 
-    def __init__(self, signal, season_period, max_r):
+    def __init__(self, signal, season_period, max_r, verbose=False):
         
+        self.verbose = verbose
         self.season_period = season_period
         self.max_r = max_r
 
