@@ -16,7 +16,7 @@ def test():
 
     # apply the RSVD python porting to the retail dataset
     #  - the log is taken on the signal, as in the paper example
-    rsvd = RSVD.SeasonalRegularizer(signal=np.log(signal), season_period=12, max_r=12)
+    rsvd = RSVD.SeasonalRegularizer(signal=np.log(signal), season_period=12, max_r=12, trend_alpha=10.)
     mfr = rsvd.fit()
 
     # load the reference seasonal component computed via original R-lang code published with the paper
