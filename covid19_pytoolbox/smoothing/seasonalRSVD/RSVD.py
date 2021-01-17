@@ -3,17 +3,23 @@ from scipy import linalg, optimize
 import numpy as np
 import pandas as pd
 
+from covid19_pytoolbox.smoothing.tikhonovreg import TikhonovRegularization
+
 class SeasonalRegularizer(object):
 
     def _log(self, *args):
         if self.verbose:
             print(*args)
 
-    def __init__(self, signal, season_period, max_r, verbose=False):
+    def padnan(self, a):
+        return np.pad(a, (self.padding_left,0), mode='constant', constant_values=(np.nan, np.nan))
+
+    def __init__(self, signal, season_period, max_r, trend_alpha, verbose=False):
         
         self.verbose = verbose
         self.season_period = season_period
         self.max_r = max_r
+        self.trend_alpha = trend_alpha
 
         if type(signal) == pd.Series:
             signal = signal.to_numpy()
@@ -209,5 +215,20 @@ class SeasonalRegularizer(object):
                     er_final = er_cur
 
 
-        multifitresult = namedtuple('multifitresult', ['info_cri', 'u_hat', 'v_fixed', 'v_hat2', 'season_svd', 'final_r', 'padding_left'])
-        return multifitresult(*er_final, final_r, self.padding_left)
+
+        deseasoned = self.signal - er_final.season_svd
+        tikreg_des = TikhonovRegularization(timesteps=len(deseasoned), alpha=self.trend_alpha)
+        trend = tikreg_des.stat_smooth_data(deseasoned, verbose=self.verbose)
+        residuals = deseasoned - trend
+
+
+        multifitresult = namedtuple('multifitresult', [
+            'info_cri', 'u_hat', 'v_fixed', 'v_hat2', 'season_svd', 
+            'final_r', 'padding_left',
+            'deseasoned', 'trend', 'residuals'
+        ])
+        return multifitresult(
+            *er_final[:-1], self.padnan(er_final.season_svd),
+            final_r, self.padding_left,
+            self.padnan(deseasoned), self.padnan(trend), self.padnan(residuals)
+        )
