@@ -9,7 +9,7 @@ class LogSeasonalRegularizer(SeasonalRegularizer):
 
         signal = np.log(signal)
 
-        super().__init__(signal, season_period, max_r, trend_alpha, verbose=False)
+        super().__init__(signal, season_period, max_r, trend_alpha, verbose)
 
     
     def fit(self):
@@ -27,11 +27,11 @@ class LogSeasonalRegularizer(SeasonalRegularizer):
         multifitresult = namedtuple('multifitlogresult', [
             'info_cri', 'u_hat', 'v_fixed', 'v_hat2', 'season_svd', 
             'final_r', 'padding_left',
-            'deseasoned', 'trend', 'residuals'
+            'deseasoned', 'trend', 'residuals', 'relative_residuals'
         ])
 
         return multifitresult(
             *m[:-6],
             season_svd, m.final_r, m.padding_left,
-            deseasoned, trend, residuals
+            deseasoned, trend, residuals, relative_residuals
         )
