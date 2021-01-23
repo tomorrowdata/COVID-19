@@ -2,6 +2,7 @@ from collections import namedtuple
 from scipy import linalg, optimize
 import numpy as np
 import pandas as pd
+from statsmodels.tsa.stattools import adfuller
 
 from covid19_pytoolbox.smoothing.tikhonovreg import TikhonovRegularization
 
@@ -14,12 +15,13 @@ class SeasonalRegularizer(object):
     def padnan(self, a):
         return np.pad(a, (self.padding_left,0), mode='constant', constant_values=(np.nan, np.nan))
 
-    def __init__(self, signal, season_period, max_r, trend_alpha, verbose=False):
+    def __init__(self, signal, season_period, max_r, trend_alpha, difference_degree, verbose=False):
         
         self.verbose = verbose
         self.season_period = season_period
         self.max_r = max_r
         self.trend_alpha = trend_alpha
+        self.difference_degree = difference_degree
 
         if type(signal) == pd.Series:
             signal = signal.to_numpy()
@@ -49,9 +51,20 @@ class SeasonalRegularizer(object):
         mat_Delta_sq <- t(mat_Delta)%*% mat_Delta
         """
         len_s = self.signal.shape[0]
-        self.Delta = np.eye(N=len_s-1,M=len_s,k=1) - np.eye(N=len_s-1,M=len_s,k=0)
-        self.Delta2 = np.dot(self.Delta.T, self.Delta)
-        self.X_D = np.diff(self.X)
+        if self.difference_degree == 0:
+            self.X_D = self.X
+            self.Delta = np.eye(N=len_s)
+            self.Delta2 = np.eye(N=len_s)
+        else:
+            self.Delta = np.eye(N=len_s-1,M=len_s,k=1) - np.eye(N=len_s-1,M=len_s,k=0)
+            self.X_D = np.diff(self.X)
+            for deg in range(1, self.difference_degree):
+                rows = len_s-deg-1
+                cols = len_s-deg
+                self.Delta = (np.eye(N=rows,M=cols,k=1) - np.eye(N=rows,M=cols,k=0)) @ self.Delta
+                self.X_D = np.diff(self.X_D)
+            self.Delta2 = np.dot(self.Delta.T, self.Delta)
+        
 
         """
         demeaning operator:
@@ -174,7 +187,11 @@ class SeasonalRegularizer(object):
 
         season_svd = season_hat.reshape(1,-1).squeeze()
     
-        info_cri = np.log(np.mean(np.diff(self.signal-season_svd)**2)) + num_r * np.log(self.periods)/self.periods
+        residuals = self.signal-season_svd
+        for _ in range(0, self.difference_degree):
+            residuals = np.diff(residuals)
+
+        info_cri = np.log(np.mean(residuals**2)) + num_r * np.log(self.periods)/self.periods
             
         evalout = namedtuple('evalout', ['info_cri', 'u_hat', 'v_fixed', 'v_hat2', 'season_svd'])
         return evalout(info_cri, u_hat, v_fixed, v_hat2, season_svd)
@@ -232,3 +249,6 @@ class SeasonalRegularizer(object):
             final_r, self.padding_left,
             self.padnan(deseasoned), self.padnan(trend), self.padnan(residuals)
         )
+
+    def adfuller(self):
+        return adfuller(self.Delta @ self.signal)

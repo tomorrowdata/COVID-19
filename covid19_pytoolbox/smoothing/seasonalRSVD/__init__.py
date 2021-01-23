@@ -1,1 +1,1 @@
-__all__ = ['RSVD']
+__all__ = ['RSVD', 'LogRSVD']

@@ -5,11 +5,11 @@ from covid19_pytoolbox.smoothing.seasonalRSVD.RSVD import SeasonalRegularizer
 
 class LogSeasonalRegularizer(SeasonalRegularizer):
 
-    def __init__(self, signal, season_period, max_r, trend_alpha, verbose=False):
+    def __init__(self, signal, season_period, max_r, trend_alpha, difference_degree, verbose=False):
 
         signal = np.log(signal)
 
-        super().__init__(signal, season_period, max_r, trend_alpha, verbose)
+        super().__init__(signal, season_period, max_r, trend_alpha, difference_degree, verbose)
 
     
     def fit(self):
