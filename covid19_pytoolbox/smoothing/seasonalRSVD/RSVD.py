@@ -193,8 +193,8 @@ class SeasonalRegularizer(object):
 
         info_cri = np.log(np.mean(residuals**2)) + num_r * np.log(self.periods)/self.periods
             
-        evalout = namedtuple('evalout', ['info_cri', 'u_hat', 'v_fixed', 'v_hat2', 'season_svd'])
-        return evalout(info_cri, u_hat, v_fixed, v_hat2, season_svd)
+        evalout = namedtuple('evalout', ['info_cri', 'u_hat', 'v_fixed', 'v_hat2', 'season_svd', 'season_hat'])
+        return evalout(info_cri, u_hat, v_fixed, v_hat2, season_svd, season_hat)
 
 
     def fit(self):
@@ -240,12 +240,12 @@ class SeasonalRegularizer(object):
 
 
         multifitresult = namedtuple('multifitresult', [
-            'info_cri', 'u_hat', 'v_fixed', 'v_hat2', 'season_svd', 
+            'info_cri', 'u_hat', 'v_fixed', 'v_hat2', 'season_svd', 'season_hat',
             'final_r', 'padding_left',
             'deseasoned', 'trend', 'residuals'
         ])
         return multifitresult(
-            *er_final[:-1], self.padnan(er_final.season_svd),
+            *er_final[:-2], self.padnan(er_final.season_svd), er_final.season_hat,
             final_r, self.padding_left,
             self.padnan(deseasoned), self.padnan(trend), self.padnan(residuals)
         )

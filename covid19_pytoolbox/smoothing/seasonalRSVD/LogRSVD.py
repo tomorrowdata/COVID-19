@@ -17,6 +17,8 @@ class LogSeasonalRegularizer(SeasonalRegularizer):
 
         deseasoned = np.exp(m.deseasoned)        
         season_svd = deseasoned * (np.exp(m.season_svd) - 1.)
+        seasons = season_svd[self.padding_left:]
+        season_hat = seasons.reshape(-1, self.season_period)
 
         trend = np.exp(m.trend)
 
@@ -25,13 +27,13 @@ class LogSeasonalRegularizer(SeasonalRegularizer):
         residuals = trend * relative_residuals
 
         multifitresult = namedtuple('multifitlogresult', [
-            'info_cri', 'u_hat', 'v_fixed', 'v_hat2', 'season_svd', 
+            'info_cri', 'u_hat', 'v_fixed', 'v_hat2', 'season_svd', 'season_hat',
             'final_r', 'padding_left',
             'deseasoned', 'trend', 'residuals', 'relative_residuals'
         ])
 
         return multifitresult(
-            *m[:-6],
-            season_svd, m.final_r, m.padding_left,
+            *m[:-7],
+            season_svd, season_hat, m.final_r, m.padding_left,
             deseasoned, trend, residuals, relative_residuals
         )
