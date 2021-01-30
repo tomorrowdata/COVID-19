@@ -1,4 +1,5 @@
 ID,report_time_range_descr,computation_time_range_descr,computation_time_range_start,computation_time_range_end,Rt,Rt_95_min,Rt_95_max,Rt_text,report_data,notes,source,source_detail,url,link
+5299,18/1/2021-24/1/2021,06 gennaio – 19 gennaio 2021,2021-01-06,2021-01-19,0.84,0.75,0.98,"0,84 (range 0,75– 0,98)",27/01/2021,,attachement,,http://www.salute.gov.it/imgs/C_17_monitoraggi_15_1_fileNazionale.pdf,
 5289,11 - 17 gennaio 2021,30 dicembre 2020 – 12 gennaio 2021,2020-12-30,2021-01-12,0.97,0.85,1.11,"0,97 (range 0,85– 1,11)",20/1/2021,,attachement,,http://www.salute.gov.it/imgs/C_17_notizie_5289_1_file.pdf,
 5268,4/1/2021-10/1/2021,23 dicembre 2020 – 05 gennaio 2021,2020-12-23,2021-01-05,1.09,1.04,1.13,"1,09 (range 1,04– 1,13)",13 dcembre 2021,,attachement,,http://www.salute.gov.it/imgs/C_17_notizie_5268_1_file.pdf,
 5259,28 dicembre 2020 - 3 gennaio 2021,15 – 28 dicembre 2020,2020-12-15,2020-12-28,1.03,0.98,1.13,"1,03 (range 0,98 – 1,13)",5 gennaio 2021,,attachement,,http://www.salute.gov.it/imgs/C_17_notizie_5259_0_file.pdf,
