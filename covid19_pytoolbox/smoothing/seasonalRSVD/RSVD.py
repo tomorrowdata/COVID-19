@@ -8,6 +8,15 @@ from covid19_pytoolbox.smoothing.tikhonovreg import TikhonovRegularization
 
 class SeasonalRegularizer(object):
 
+    @staticmethod
+    def periods_to_matrix(signal, season_period):
+        padding_left = signal.shape[0]-int(signal.shape[0] / season_period)*season_period
+        signal = signal[padding_left:]
+        X = signal.reshape(-1, season_period)
+
+        return padding_left, signal, X
+
+
     def _log(self, *args):
         if self.verbose:
             print(*args)
@@ -25,10 +34,8 @@ class SeasonalRegularizer(object):
 
         if type(signal) == pd.Series:
             signal = signal.to_numpy()
-        
-        self.padding_left = signal.shape[0]-int(signal.shape[0] / self.season_period)*self.season_period
-        self.signal = signal[self.padding_left:]
-        self.X = self.signal.reshape(-1, self.season_period)
+
+        self.padding_left, self.signal, self.X = SeasonalRegularizer.periods_to_matrix(signal, self.season_period)
 
         self.periods, _ = self.X.shape
 
