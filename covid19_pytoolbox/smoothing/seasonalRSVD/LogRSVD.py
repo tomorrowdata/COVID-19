@@ -1,11 +1,19 @@
 from collections import namedtuple
 import numpy as np
+import pandas as pd
 
 from covid19_pytoolbox.smoothing.seasonalRSVD.RSVD import SeasonalRegularizer
 
 class LogSeasonalRegularizer(SeasonalRegularizer):
 
     def __init__(self, signal, season_period, max_r, trend_alpha, difference_degree, verbose=False):
+
+        if type(signal) == pd.Series:
+            signal = signal.to_numpy()
+        
+        # fix cases when log is not defined
+        # as we are dealing with volumes, 1 is ok instead of 0
+        signal[signal<=0.]=1.
 
         signal = np.log(signal)
 
