@@ -153,3 +153,13 @@ def plot_series(ax, df=None, yfields=None, data=None, xfield='data'):
                 *args,
                 **kwargs
             )
+
+        if 'fill_between' in d:
+            interval = d['fill_between']
+            ax.fill_between(
+                x.to_numpy().squeeze(), 
+                df.loc[:,interval[0]].to_numpy().T,
+                df.loc[:,interval[1]].to_numpy().T,
+                color='violet', alpha=.25,
+            )                
+
