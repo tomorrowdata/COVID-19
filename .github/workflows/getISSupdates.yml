@@ -27,7 +27,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          wget -P /tmp https://www.epicentro.iss.it/coronavirus/open-data/covid_19-iss.xlsx
+          wget -P /tmp --no-check-certificate https://www.epicentro.iss.it/coronavirus/open-data/covid_19-iss.xlsx
           TIMESTAMP=$(date --iso-8601=seconds)
           ISSFILENAME="covid_19-iss_$TIMESTAMP.xlsx"
           mkdir -p "$GITHUB_WORKSPACE/data/sources/ISS/"
