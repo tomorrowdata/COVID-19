@@ -7,6 +7,6 @@ statsmodels
 git+https://github.com/njchiang/tikhonov.git
 Theano
 pymc3
-arviz
+arviz<=0.10
 openpyxl
 pillow
