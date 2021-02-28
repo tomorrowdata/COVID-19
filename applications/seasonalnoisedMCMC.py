@@ -105,7 +105,7 @@ def main(pastdays_start, pastdays_end):
 
     compute_past_series(
         DPC_data, 'nuovi_positivi', 
-        pastdays_start=pastdays_start, pastdays_end=pastdays_end, draws=1, 
+        pastdays_start=pastdays_start, pastdays_end=pastdays_end, draws=5,
         alpha=alpha, beta=beta, trend_alpha=ALPHA)
 
 if __name__ == "__main__":
