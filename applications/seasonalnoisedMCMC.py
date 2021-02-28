@@ -14,25 +14,26 @@ from covid19_pytoolbox.settings import BASE_DATA_PATH, BASE_IMAGES_PATH
 from covid19_pytoolbox.italy.data import DPC
 from covid19_pytoolbox.modeling.datarevision.seasonal import draw_expanded_series, smooth_and_drop
 from covid19_pytoolbox.modeling.Rt.bayesian import MCMC_sample
+from covid19_pytoolbox.utils import smape, padnan
 
 def save_MCMC_sampling(df, column, trace, pastdays, interval=0.95, start=0):
     interval_frac = int(interval*100)
     sampling_mean = np.mean(trace['r_t'], axis=0)
 
-    df[f'{column}_Rt_MCMC_pastdays_{pastdays:02d}'] = padnan(sampling_mean, (start,pastdays))
+    df[f'{column}_Rt_MCMC_pastdays_{pastdays:03d}'] = padnan(sampling_mean, (start,pastdays))
     
 
     #credible interval
     sampling_hdi = pm.stats.hpd(trace['r_t'], hdi_prob=interval)
-    df[f'{column}_Rt_MCMC_HDI_{interval_frac}_min_pastdays_{pastdays:02d}'] = padnan(
+    df[f'{column}_Rt_MCMC_HDI_{interval_frac}_min_pastdays_{pastdays:03d}'] = padnan(
         sampling_hdi[:,0], (start,pastdays))
-    df[f'{column}_Rt_MCMC_HDI_{interval_frac}_max_pastdays_{pastdays:02d}'] = padnan(
+    df[f'{column}_Rt_MCMC_HDI_{interval_frac}_max_pastdays_{pastdays:03d}'] = padnan(
         sampling_hdi[:,1], (start,pastdays))
 
 
-def compute_past_series(df, new_cases_col, pastdays_start, pastdays_end, draws, alpha, beta, trend_alpha):
+def compute_past_series(df, new_cases_col, pastdays_start, pastdays_end, draws, alpha, beta, trend_alpha, rt_col_prefix='_smooth_deseas'):
 
-    for pastdays in range(pastdays_start-1, pastdays_end-1,-1):
+    for pastdays in range(pastdays_start, pastdays_end-1,-1):
         print(f'\npastdays: {pastdays}')
 
         if pastdays == 0:
@@ -63,28 +64,33 @@ def compute_past_series(df, new_cases_col, pastdays_start, pastdays_end, draws, 
             print(f'new_cases_s cut left: {new_cases_s[~np.isnan(new_cases_s)].shape}')
             print(f'rel_eps_s cut left: {rel_eps_s[~np.isnan(rel_eps_s)].shape}')
             
-            model_, trace_ = MCMC_sample(
-                onset=new_cases_s[~np.isnan(new_cases_s)],
-                alpha=alpha, beta=beta,
-                rel_eps=rel_eps_s[~np.isnan(rel_eps_s)],
-                start=0, window=None,
-                chains=4,
-                tune=10,
-                draws=20,
-                cores=4,
-                dry=False,
-                progressbar=False
-            )
-            simulations.append(trace_)
+            try:
+                model_, trace_ = MCMC_sample(
+                    onset=new_cases_s[~np.isnan(new_cases_s)],
+                    alpha=alpha, beta=beta,
+                    rel_eps=rel_eps_s[~np.isnan(rel_eps_s)],
+                    start=0, window=None,
+                    chains=4,
+                    tune=500,
+                    draws=500,
+                    cores=4,
+                    dry=False,
+                    progressbar=False
+                )
+                simulations.append(trace_)
+            except Exception as ex:
+                print(ex)
+                print(f'skipping pastdays {pastdays:03d}')
 
         sampled_Rt = np.array([t['r_t'] for t in simulations])
         combined_trace = {'r_t': sampled_Rt.reshape((-1,sampled_Rt.shape[2]))}
 
         save_MCMC_sampling(
-            df, f'{new_cases_col}_smooth_deseas', combined_trace, pastdays, interval=0.95, start=padding_left+1)
+            df, f'{new_cases_col}_{rt_col_prefix}', combined_trace, pastdays, interval=0.95, start=padding_left+1)
 
         
-        #DPC_data.to_pickle(os.path.join(BASE_DATA_PATH,'computed/WIP/deseason_MCMC_Rt.pickle'))    
+        df.to_pickle(os.path.join(BASE_DATA_PATH,
+            f'computed/WIP/deseason_MCMC_Rt_pastdays_{pastdays_start:03d}_{pastdays_end:03d}.pickle'))    
 
 def main(pastdays_start, pastdays_end):
 
@@ -103,4 +109,4 @@ def main(pastdays_start, pastdays_end):
         alpha=alpha, beta=beta, trend_alpha=ALPHA)
 
 if __name__ == "__main__":
-    main(*sys.argv[1:])
+    main(*map(int, sys.argv[1:]))
