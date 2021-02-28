@@ -25,6 +25,10 @@ services:
       - type: bind
         source: ./images
         target: /tf/images
+      - type: bind
+        source: ./applications
+        target: /tf/applications
+
         
       - type: bind
         #password: ciao
