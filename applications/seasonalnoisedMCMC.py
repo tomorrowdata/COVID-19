@@ -31,7 +31,7 @@ def save_MCMC_sampling(df, column, trace, pastdays, interval=0.95, start=0):
         sampling_hdi[:,1], (start,pastdays))
 
 
-def compute_past_series(df, new_cases_col, pastdays_start, pastdays_end, draws, alpha, beta, trend_alpha, rt_col_prefix='_smooth_deseas'):
+def compute_past_series(df, new_cases_col, pastdays_start, pastdays_end, draws, alpha, beta, trend_alpha, lower_ratio, upper_ratio, rt_col_prefix='smooth_deseas'):
 
     for pastdays in range(pastdays_start, pastdays_end-1,-1):
         print(f'\npastdays: {pastdays}')
@@ -45,7 +45,8 @@ def compute_past_series(df, new_cases_col, pastdays_start, pastdays_end, draws, 
         
         new_cases_expanded = draw_expanded_series(
                 new_cases, draws=draws, season_period=7, trend_alpha=trend_alpha, difference_degree=2, 
-                alpha=alpha, beta=beta, truncate=False
+                alpha=alpha, beta=beta, lower_ratio=lower_ratio, upper_ratio=upper_ratio,
+                truncate=False
             )
         
         print('pre smooth_and_drop')
@@ -105,8 +106,8 @@ def main(pastdays_start, pastdays_end):
 
     compute_past_series(
         DPC_data, 'nuovi_positivi', 
-        pastdays_start=pastdays_start, pastdays_end=pastdays_end, draws=5,
-        alpha=alpha, beta=beta, trend_alpha=ALPHA)
+        pastdays_start=pastdays_start, pastdays_end=pastdays_end, draws=10,
+        alpha=alpha, beta=beta, trend_alpha=ALPHA, lower_ratio=0.5, upper_ratio=1.5)
 
 if __name__ == "__main__":
     main(*map(int, sys.argv[1:]))

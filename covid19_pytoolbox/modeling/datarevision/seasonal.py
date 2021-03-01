@@ -54,7 +54,8 @@ def predict_next_value(X, use_last_values=None, search_steps=100):
     x_pred = padnan(next_from_taylor(x_tik), (X.shape[0] - use_last_values + 1,0))
     return x_pred
 
-def draw_expanded_series(X, draws, season_period, trend_alpha, difference_degree, truncate, alpha, beta, verbose=False):
+def draw_expanded_series(X, draws, season_period, trend_alpha, difference_degree, truncate, alpha, beta, 
+    lower_ratio=0.2, upper_ratio=1.2, verbose=False):
 
     if type(X) == pd.Series:
         X = X.to_numpy()
@@ -92,7 +93,7 @@ def draw_expanded_series(X, draws, season_period, trend_alpha, difference_degree
     S_tomorrow_next = predict_next_value(S_tomorrow, use_last_values=15)[-1]
         
     # compute the next X value
-    lower, upper = T_next*0.8, T_next*1.2
+    lower, upper = T_next*lower_ratio, T_next*upper_ratio
     mu, sigma = T_next, T_next
     possible_T_next = stats.truncnorm(
         (lower - mu) / sigma, (upper - mu) / sigma, loc=mu, scale=sigma)
