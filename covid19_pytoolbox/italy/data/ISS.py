@@ -29,6 +29,9 @@ def preprocess(df):
         ).dt.normalize()+timedelta(days=1, minutes=-1)
     )
 
+    ISS_Rt_clean.sort_values(by='Rt_reference_date', inplace=True)
+    ISS_Rt_clean.reset_index(inplace=True, drop=True)    
+
     return ISS_Rt_clean
 
 def export_Rt_clean(df, path='computed/Rt_from_ISS_processed.{}'):
