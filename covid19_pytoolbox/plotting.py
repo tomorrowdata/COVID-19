@@ -1,6 +1,8 @@
 import os
 from PIL import Image
 from matplotlib import pyplot as plt, dates as mdates, cbook, image
+from matplotlib.collections import PatchCollection
+from matplotlib.patches import Rectangle
 
 FIGSIZE=(30,15)
 TITLE_FONTSIZE=30
@@ -9,6 +11,26 @@ TICK_FONTSIZE=30
 TICK_LABEL_ROTATION=45
 TICK_WIDTH=5
 LEGEND_FONTSIZE=30
+MESSAGE_FONTSIZE=24
+
+def make_error_boxes(ax, ydata, xerror, yerror, facecolor='r',
+                     edgecolor='None', alpha=0.5):
+
+    # Create list for all the error patches
+    errorboxes = []
+
+    # Loop over data points; create box from errors at each point
+    xerror = mdates.date2num(xerror)
+    for y, xe, ye in zip(ydata, xerror.T, yerror.T):        
+        rect = Rectangle((xe[0], y - ye[0]), xe[1]-xe[0], ye.sum())
+        errorboxes.append(rect)
+
+    # Create patch collection with specified colour/alpha
+    pc = PatchCollection(errorboxes, facecolor=facecolor, alpha=alpha,
+                         edgecolor=edgecolor)
+
+    # Add collection to axes
+    ax.add_collection(pc)
 
 def _create_figure(
     figsize=FIGSIZE, 
@@ -18,7 +40,9 @@ def _create_figure(
     label_fontsize=LABEL_FONTSIZE,
     tick_fontsize=TICK_FONTSIZE,
     tick_label_rotation=TICK_LABEL_ROTATION,
-    tick_width=TICK_WIDTH
+    tick_width=TICK_WIDTH,
+    message_fontsize=MESSAGE_FONTSIZE,
+    message=None,    
 ):
 
     fig, ax = plt.subplots(figsize=figsize)
@@ -35,6 +59,12 @@ def _create_figure(
     ax.xaxis.set_tick_params(width=tick_width)
     ax.yaxis.set_tick_params(width=tick_width)
     ax.grid()
+
+    if message:
+        props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)    
+        ax.text(0.65, 0.97, message, transform=ax.transAxes, fontsize=MESSAGE_FONTSIZE,
+                verticalalignment='top', bbox=props)    
+
 
     if ylim:
         ax.set_ylim(*ylim)
@@ -54,6 +84,8 @@ def plot_env(plot_func):
         tick_fontsize=TICK_FONTSIZE,
         tick_label_rotation=TICK_LABEL_ROTATION,
         tick_width=TICK_WIDTH,
+        message_fontsize=MESSAGE_FONTSIZE,
+        message=None,    
         legend_fontsize=LEGEND_FONTSIZE,
         legend_on=True,
         legend_loc='upper left', 
@@ -66,8 +98,8 @@ def plot_env(plot_func):
             figsize, 
             title, x_label, y_label, 
             xlim, ylim, 
-            title_fontsize, label_fontsize, tick_fontsize, tick_label_rotation, tick_width
-        )
+            title_fontsize, label_fontsize, tick_fontsize, tick_label_rotation, tick_width,
+            message_fontsize, message)
 
         plot_func(ax, *args, **kwargs)
 
@@ -148,7 +180,13 @@ def plot_series(ax, df=None, yfields=None, data=None, xfield='data'):
                 
             if bars:
                 yerr = df.loc[:,bars[findex]].to_numpy().T
-                kwargs.update({'yerr': yerr, 'uplims':True, 'lolims':True})
+                timeranges = d.get('timeranges')
+                kwargs.update({'yerr': yerr, 'uplims':True, 'lolims':True, 'ecolor': 'dodgerblue'})
+                if timeranges:
+                    xerr = df.loc[:,timeranges[findex]].to_numpy().T
+                    make_error_boxes(ax, args[1], xerr, yerr, facecolor='dodgerblue', alpha=0.15)
+                    kwargs.update({'uplims':False, 'lolims':False})
+
             plotfunc(
                 *args,
                 **kwargs
@@ -160,6 +198,6 @@ def plot_series(ax, df=None, yfields=None, data=None, xfield='data'):
                 x.to_numpy().squeeze(), 
                 df.loc[:,interval[0]].to_numpy().T,
                 df.loc[:,interval[1]].to_numpy().T,
-                color='violet', alpha=.25,
+                color='violet', alpha=.3,
             )                
 
