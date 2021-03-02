@@ -55,11 +55,17 @@ def predict_next_value(X, use_last_values=None, search_steps=100):
     return x_pred
 
 def draw_expanded_series(X, draws, season_period, trend_alpha, difference_degree, truncate, alpha, beta, 
-    lower_ratio=0.2, upper_ratio=1.2, verbose=False):
+    method='future_range', lower_ratio=0.2, upper_ratio=1.2, res_window=None, verbose=False):
+
+    assert(method in ['future_range', 'residuals'])
 
     if type(X) == pd.Series:
         X = X.to_numpy()
-        
+
+    # res_window
+    if not res_window:
+        res_window = season_period
+
     # deseason:
     lrsvd = LogSeasonalRegularizer(
         X, season_period=season_period, max_r=season_period, 
@@ -93,12 +99,26 @@ def draw_expanded_series(X, draws, season_period, trend_alpha, difference_degree
     S_tomorrow_next = predict_next_value(S_tomorrow, use_last_values=15)[-1]
         
     # compute the next X value
-    lower, upper = T_next*lower_ratio, T_next*upper_ratio
-    mu, sigma = T_next, T_next
-    possible_T_next = stats.truncnorm(
-        (lower - mu) / sigma, (upper - mu) / sigma, loc=mu, scale=sigma)
-    X_next = S_tomorrow_next + possible_T_next.rvs((draws,1))
-    
+    if method=='future_range':
+        # draws multiple X_next based on range applied to last T_next
+        lower, upper = T_next*lower_ratio, T_next*upper_ratio
+        mu, sigma = T_next, T_next
+        possible_T_next = stats.truncnorm(
+            (lower - mu) / sigma, (upper - mu) / sigma, loc=mu, scale=sigma)
+        X_next = S_tomorrow_next + possible_T_next.rvs((draws,1))
+    elif method=='residuals':
+        # draw multiple eps based on eps_rel
+        if res_window == 1:
+            eps_mean = 0.
+            eps_sigma = np.abs(eps_rel[-1])
+        else:
+            eps_mean = eps_rel[-res_window:].mean()
+            eps_sigma = eps_rel[-res_window:].std()
+        eps_rel_draw = np.random.normal(loc=eps_mean, scale=eps_sigma, size=(draws,1))
+        eps_draw=eps_rel_draw*T_next
+        X_next = T_next + S_tomorrow_next + eps_draw
+        
+
     # expand the original X series and return it
     X_expanded = np.repeat(X[sl].reshape((1,-1)), draws, axis=0)
     X_expanded = np.append(X_expanded, X_next, axis=1)
