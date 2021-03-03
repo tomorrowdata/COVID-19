@@ -31,7 +31,7 @@ def save_MCMC_sampling(df, column, trace, pastdays, interval=0.95, start=0):
         sampling_hdi[:,1], (start,pastdays))
 
 
-def compute_past_series(df, new_cases_col, pastdays_start, pastdays_end, draws, alpha, beta, trend_alpha, lower_ratio, upper_ratio, rt_col_prefix='smooth_deseas'):
+def compute_past_series(df, new_cases_col, pastdays_start, pastdays_end, draws, alpha, beta, trend_alpha, lower_ratio, upper_ratio, pickleprefix, rt_col_prefix='smooth_deseas'):
 
     for pastdays in range(pastdays_start, pastdays_end-1,-1):
         print(f'\npastdays: {pastdays}')
@@ -91,9 +91,9 @@ def compute_past_series(df, new_cases_col, pastdays_start, pastdays_end, draws, 
 
         
         df.to_pickle(os.path.join(BASE_DATA_PATH,
-            f'computed/WIP/deseason_MCMC_Rt_pastdays_{pastdays_start:03d}_{pastdays_end:03d}.pickle'))    
+            f'computed/WIP/{pickleprefix}_MCMC_Rt_pastdays_{pastdays_start:03d}_{pastdays_end:03d}.pickle'))    
 
-def main(pastdays_start, pastdays_end):
+def main(pickleprefix, pastdays_start, pastdays_end):
 
     print(f'pastdays_start: {pastdays_start} - pastdays_end: {pastdays_end}')
 
@@ -106,6 +106,7 @@ def main(pastdays_start, pastdays_end):
 
     compute_past_series(
         DPC_data, 'nuovi_positivi', 
+        pickleprefix=pickleprefix,
         pastdays_start=pastdays_start, pastdays_end=pastdays_end, draws=10,
         alpha=alpha, beta=beta, trend_alpha=ALPHA, lower_ratio=0.5, upper_ratio=1.5)
 
