@@ -110,7 +110,7 @@ def main(pickleprefix, pastdays_start, pastdays_end):
         parse_dates=['data'],
         date_parser=parse_date
     )
-    regional_raw_data = regions_raw_data.loc[regions_raw_data.denominazione_regione=='Piemonte'].reset_index()
+    regional_raw_data = regions_raw_data.loc[regions_raw_data.denominazione_regione=='Piemonte'].reset_index().copy()
 
     compute_past_series(
         regional_raw_data, 'nuovi_positivi', 
