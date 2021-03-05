@@ -72,9 +72,10 @@ def compute_past_series(df, new_cases_col, pastdays_start, pastdays_end, draws, 
                     rel_eps=rel_eps_s[~np.isnan(rel_eps_s)],
                     start=0, window=None,
                     chains=4,
-                    tune=1000,
-                    draws=1000,
+                    tune=500,
+                    draws=500,
                     cores=4,
+                    target_accept=0.99,
                     dry=False,
                     progressbar=False
                 )
