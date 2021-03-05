@@ -74,6 +74,7 @@ def compute_past_series(df, new_cases_col, startday, pastdays_start, pastdays_en
                     chains=4,
                     tune=500,
                     draws=500,
+                    target_accept=0.99,
                     cores=4,
                     dry=False,
                     progressbar=False
