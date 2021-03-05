@@ -113,7 +113,7 @@ def main(pickleprefix, pastdays_start, pastdays_end):
     regional_raw_data = regions_raw_data.loc[regions_raw_data.denominazione_regione=='Piemonte'].reset_index()
 
     compute_past_series(
-        regions_raw_data, 'nuovi_positivi', 
+        regional_raw_data, 'nuovi_positivi', 
         pickleprefix=pickleprefix,
         pastdays_start=pastdays_start, pastdays_end=pastdays_end, draws=5,
         alpha=alpha, beta=beta, trend_alpha=ALPHA, lower_ratio=0.8, upper_ratio=1.2)
