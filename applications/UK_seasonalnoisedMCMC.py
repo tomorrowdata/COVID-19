@@ -31,15 +31,15 @@ def save_MCMC_sampling(df, column, trace, pastdays, interval=0.95, start=0):
         sampling_hdi[:,1], (start,pastdays))
 
 
-def compute_past_series(df, new_cases_col, pastdays_start, pastdays_end, draws, alpha, beta, trend_alpha, difference_degree, lower_ratio, upper_ratio, pickleprefix, rt_col_prefix='smooth_deseas'):
+def compute_past_series(df, new_cases_col, startday, pastdays_start, pastdays_end, draws, alpha, beta, trend_alpha, difference_degree, lower_ratio, upper_ratio, pickleprefix, rt_col_prefix='smooth_deseas'):
 
     for pastdays in range(pastdays_start, pastdays_end-1,-1):
         print(f'\npastdays: {pastdays}')
 
         if pastdays == 0:
-            sl = np.s_[:]
+            sl = np.s_[startday:]
         else:
-            sl = np.s_[:-pastdays]
+            sl = np.s_[startday:-pastdays]
             
         new_cases = df[new_cases_col].to_numpy()[sl]
         
@@ -107,11 +107,12 @@ def main(pickleprefix, pastdays_start, pastdays_end):
     DIFF_DEG=4
 
     GUK_data = GOVUK.load_daily_cases_from_pub_api()
+    STARTDAY=len(GUK_data.newCasesByPublishDate) - 250
 
     compute_past_series(
         GUK_data, 'newCasesByPublishDate',
         pickleprefix=pickleprefix,
-        pastdays_start=pastdays_start, pastdays_end=pastdays_end, draws=5,
+        startday=STARTDAY, pastdays_start=pastdays_start, pastdays_end=pastdays_end, draws=5,
         alpha=alpha, beta=beta, trend_alpha=ALPHA, difference_degree=DIFF_DEG, lower_ratio=0.8, upper_ratio=1.2)
 
 if __name__ == "__main__":
