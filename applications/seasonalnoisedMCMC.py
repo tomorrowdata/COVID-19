@@ -72,8 +72,8 @@ def compute_past_series(df, new_cases_col, pastdays_start, pastdays_end, draws, 
                     rel_eps=rel_eps_s[~np.isnan(rel_eps_s)],
                     start=0, window=None,
                     chains=4,
-                    tune=1000,
-                    draws=1000,
+                    tune=500,
+                    draws=500,
                     cores=4,
                     dry=False,
                     progressbar=False
@@ -107,8 +107,8 @@ def main(pickleprefix, pastdays_start, pastdays_end):
     compute_past_series(
         DPC_data, 'nuovi_positivi', 
         pickleprefix=pickleprefix,
-        pastdays_start=pastdays_start, pastdays_end=pastdays_end, draws=10,
-        alpha=alpha, beta=beta, trend_alpha=ALPHA, lower_ratio=0.5, upper_ratio=1.5)
+        pastdays_start=pastdays_start, pastdays_end=pastdays_end, draws=5,
+        alpha=alpha, beta=beta, trend_alpha=ALPHA, lower_ratio=0.8, upper_ratio=1.2)
 
 if __name__ == "__main__":
     main(sys.argv[1], *map(int, sys.argv[2:]))
