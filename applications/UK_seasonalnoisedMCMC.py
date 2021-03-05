@@ -75,6 +75,7 @@ def compute_past_series(df, new_cases_col, startday, pastdays_start, pastdays_en
                     tune=500,
                     draws=500,
                     target_accept=0.99,
+                    max_treedepth=12,
                     cores=4,
                     dry=False,
                     progressbar=False
@@ -88,7 +89,7 @@ def compute_past_series(df, new_cases_col, startday, pastdays_start, pastdays_en
         combined_trace = {'r_t': sampled_Rt.reshape((-1,sampled_Rt.shape[2]))}
 
         save_MCMC_sampling(
-            df, f'{new_cases_col}_{rt_col_prefix}', combined_trace, pastdays, interval=0.95, start=padding_left+1)
+            df, f'{new_cases_col}_{rt_col_prefix}', combined_trace, pastdays, interval=0.95, start=padding_left+1+startday)
 
         
         df.to_pickle(os.path.join(BASE_DATA_PATH,
@@ -105,7 +106,7 @@ def main(pickleprefix, pastdays_start, pastdays_end):
     beta = serial_mu/serial_sigma**2.
 
     ALPHA=1000.
-    DIFF_DEG=4
+    DIFF_DEG=2
 
     GUK_data = GOVUK.load_daily_cases_from_pub_api()
     STARTDAY=len(GUK_data.newCasesByPublishDate) - 250

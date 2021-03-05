@@ -17,6 +17,7 @@ def MCMC_sample(
     start=0, window=None, 
     chains=1, tune=4000, draws=4000, 
     target_accept=0.95, 
+    max_treedepth=10,
     dry=False, 
     cores=None,
     progressbar=True
@@ -98,7 +99,7 @@ def MCMC_sample(
                 cores=cores,
                 tune=tune,
                 draws=draws,
-                target_accept=target_accept,
+                target_accept=target_accept, max_treedepth=max_treedepth,
                 progressbar=progressbar)
             
     return model, trace
