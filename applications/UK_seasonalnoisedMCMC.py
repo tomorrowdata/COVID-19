@@ -11,7 +11,7 @@ from sklearn.metrics import mean_squared_error
 import pymc3 as pm
 
 from covid19_pytoolbox.settings import BASE_DATA_PATH, BASE_IMAGES_PATH
-from covid19_pytoolbox.italy.data import GOVUK
+from covid19_pytoolbox.UK.data import GOVUK
 from covid19_pytoolbox.modeling.datarevision.seasonal import draw_expanded_series, smooth_and_drop
 from covid19_pytoolbox.modeling.Rt.bayesian import MCMC_sample
 from covid19_pytoolbox.utils import smape, padnan
