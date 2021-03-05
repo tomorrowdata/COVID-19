@@ -72,8 +72,8 @@ def compute_past_series(df, new_cases_col, startday, pastdays_start, pastdays_en
                     rel_eps=rel_eps_s[~np.isnan(rel_eps_s)],
                     start=0, window=None,
                     chains=4,
-                    tune=1000,
-                    draws=1000,
+                    tune=500,
+                    draws=500,
                     cores=4,
                     dry=False,
                     progressbar=False
