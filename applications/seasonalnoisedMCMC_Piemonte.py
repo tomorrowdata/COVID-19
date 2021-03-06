@@ -75,7 +75,7 @@ def compute_past_series(df, new_cases_col, pastdays_start, pastdays_end, draws, 
                     tune=500,
                     draws=500,
                     cores=4,
-                    target_accept=0.99,
+                    target_accept=0.95,
                     dry=False,
                     progressbar=False
                 )
@@ -84,7 +84,7 @@ def compute_past_series(df, new_cases_col, pastdays_start, pastdays_end, draws, 
                 print(ex)
                 print(f'skipping pastdays {pastdays:03d}')
 
-        sampled_Rt = np.array([t['r_t'] for t in simulations])
+        sampled_Rt = np.array([t['r_t'][~t.diverging,:] for t in simulations])
         combined_trace = {'r_t': sampled_Rt.reshape((-1,sampled_Rt.shape[2]))}
 
         save_MCMC_sampling(
