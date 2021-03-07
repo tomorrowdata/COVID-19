@@ -2,6 +2,7 @@ import sys
 sys.path.append('../')
 
 import os
+import pickle
 from datetime import datetime, timedelta
 from matplotlib import pyplot as plt
 import numpy as np
@@ -83,6 +84,10 @@ def compute_past_series(df, new_cases_col, pastdays_start, pastdays_end, draws, 
             except Exception as ex:
                 print(ex)
                 print(f'skipping pastdays {pastdays:03d}')
+
+
+        with open(os.path.join(BASE_DATA_PATH,f'computed/WIP/{pickleprefix}_MCMC_simulations_pastdays_{pastdays_start:03d}_{pastdays_end:03d}.pickle'), 'wb') as handle:
+            pickle.dump(simulations, handle)
 
         sampled_Rt = np.array([t['r_t'][~t.diverging,:] for t in simulations])
         combined_trace = {'r_t': sampled_Rt.reshape((-1,sampled_Rt.shape[2]))}
