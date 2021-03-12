@@ -125,4 +125,4 @@ def main(pickleprefix, region, pastdays_start, pastdays_end):
         alpha=alpha, beta=beta, trend_alpha=ALPHA, lower_ratio=0.8, upper_ratio=1.2)
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2], *map(int, sys.argv[2:]))
+    main(sys.argv[1], sys.argv[2], *map(int, sys.argv[3:]))
