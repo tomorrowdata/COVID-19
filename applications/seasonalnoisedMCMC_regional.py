@@ -32,7 +32,8 @@ def save_MCMC_sampling(df, column, trace, pastdays, interval=0.95, start=0):
         sampling_hdi[:,1], (start,pastdays))
 
 
-def compute_past_series(df, new_cases_col, pastdays_start, pastdays_end, draws, alpha, beta, trend_alpha, lower_ratio, upper_ratio, pickleprefix, rt_col_prefix='smooth_deseas'):
+def compute_past_series(df, new_cases_col, pastdays_start, pastdays_end, draws, alpha, beta, trend_alpha, lower_ratio, upper_ratio, pickleprefix, 
+    mctune=1000, mcdraws=500, mccores=8, mctargetaccept=0.95, rt_col_prefix='smooth_deseas'):
 
     for pastdays in range(pastdays_start, pastdays_end-1,-1):
         print(f'\npastdays: {pastdays}')
@@ -72,11 +73,11 @@ def compute_past_series(df, new_cases_col, pastdays_start, pastdays_end, draws, 
                     alpha=alpha, beta=beta,
                     rel_eps=rel_eps_s[~np.isnan(rel_eps_s)],
                     start=0, window=None,
-                    chains=4,
-                    tune=500,
-                    draws=500,
-                    cores=4,
-                    target_accept=0.95,
+                    chains=mccores,
+                    tune=mctune,
+                    draws=mcdraws,
+                    cores=mccores,
+                    target_accept=mctargetaccept,
                     dry=False,
                     progressbar=False
                 )
@@ -99,7 +100,7 @@ def compute_past_series(df, new_cases_col, pastdays_start, pastdays_end, draws, 
         df.to_pickle(os.path.join(BASE_DATA_PATH,
             f'computed/WIP/{pickleprefix}_MCMC_Rt_pastdays_{pastdays_start:03d}_{pastdays_end:03d}.pickle'))    
 
-def main(pickleprefix, region, pastdays_start, pastdays_end):
+def main(pickleprefix, region, pastdays_start, pastdays_end, futuredraws):
 
     print(f'pastdays_start: {pastdays_start} - pastdays_end: {pastdays_end}')
 
@@ -121,8 +122,9 @@ def main(pickleprefix, region, pastdays_start, pastdays_end):
     compute_past_series(
         regional_raw_data, 'nuovi_positivi', 
         pickleprefix=f'{pickleprefix}_{region}',
-        pastdays_start=pastdays_start, pastdays_end=pastdays_end, draws=5,
-        alpha=alpha, beta=beta, trend_alpha=ALPHA, lower_ratio=0.8, upper_ratio=1.2)
+        pastdays_start=pastdays_start, pastdays_end=pastdays_end, draws=futuredraws,
+        alpha=alpha, beta=beta, trend_alpha=ALPHA, lower_ratio=0.8, upper_ratio=1.2,
+        mctune=1000, mcdraws=500, mccores=8, mctargetaccept=0.99)
 
 if __name__ == "__main__":
     main(sys.argv[1], sys.argv[2], *map(int, sys.argv[3:]))

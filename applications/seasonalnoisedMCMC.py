@@ -97,7 +97,7 @@ def compute_past_series(df, new_cases_col, pastdays_start, pastdays_end, draws, 
         df.to_pickle(os.path.join(BASE_DATA_PATH,
             f'computed/WIP/{pickleprefix}_MCMC_Rt_pastdays_{pastdays_start:03d}_{pastdays_end:03d}.pickle'))    
 
-def main(pickleprefix, pastdays_start, pastdays_end):
+def main(pickleprefix, pastdays_start, pastdays_end, futuredraws):
 
     print(f'pastdays_start: {pastdays_start} - pastdays_end: {pastdays_end}')
 
@@ -111,7 +111,7 @@ def main(pickleprefix, pastdays_start, pastdays_end):
     compute_past_series(
         DPC_data, 'nuovi_positivi', 
         pickleprefix=pickleprefix,
-        pastdays_start=pastdays_start, pastdays_end=pastdays_end, draws=5,
+        pastdays_start=pastdays_start, pastdays_end=pastdays_end, draws=futuredraws,
         alpha=alpha, beta=beta, trend_alpha=ALPHA, lower_ratio=0.8, upper_ratio=1.2)
 
 if __name__ == "__main__":
