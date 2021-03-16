@@ -100,7 +100,7 @@ def compute_past_series(df, new_cases_col, pastdays_start, pastdays_end, draws, 
         df.to_pickle(os.path.join(BASE_DATA_PATH,
             f'computed/WIP/{pickleprefix}_MCMC_Rt_pastdays_{pastdays_start:03d}_{pastdays_end:03d}.pickle'))    
 
-def main(pickleprefix, region, pastdays_start, pastdays_end, futuredraws):
+def main(pickleprefix, region, pastdays_start, pastdays_end, futuredraws, mctune, mcdraws):
 
     print(f'pastdays_start: {pastdays_start} - pastdays_end: {pastdays_end}')
 
@@ -124,7 +124,7 @@ def main(pickleprefix, region, pastdays_start, pastdays_end, futuredraws):
         pickleprefix=f'{pickleprefix}_{region}',
         pastdays_start=pastdays_start, pastdays_end=pastdays_end, draws=futuredraws,
         alpha=alpha, beta=beta, trend_alpha=ALPHA, lower_ratio=0.8, upper_ratio=1.2,
-        mctune=1000, mcdraws=500, mccores=8, mctargetaccept=0.99)
+        mctune=mctune, mcdraws=mcdraws, mccores=8, mctargetaccept=0.99)
 
 if __name__ == "__main__":
     main(sys.argv[1], sys.argv[2], *map(int, sys.argv[3:]))
