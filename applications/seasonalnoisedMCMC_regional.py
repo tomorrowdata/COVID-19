@@ -122,9 +122,9 @@ def main(pickleprefix, region, mctargetaccept, pastdays_start, pastdays_end, fut
     STARTDAY=len(regional_raw_data.nuovi_positivi) - tot_chain_len
 
     compute_past_series(
-        regional_raw_data, 'nuovi_positivi', STARTDAY,
+        regional_raw_data, 'nuovi_positivi',
         pickleprefix=f'{pickleprefix}_{region}',
-        pastdays_start=pastdays_start, pastdays_end=pastdays_end, draws=futuredraws,
+        startday=STARTDAY, pastdays_start=pastdays_start, pastdays_end=pastdays_end, draws=futuredraws,
         alpha=alpha, beta=beta, trend_alpha=ALPHA, lower_ratio=0.8, upper_ratio=1.2,
         mctune=mctune, mcdraws=mcdraws, mccores=8, mctargetaccept=mctargetaccept)
 
