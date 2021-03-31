@@ -1,3 +1,4 @@
+from typing import Any, Type
 import numpy as np
 import pandas as pd
 from scipy import stats
@@ -10,9 +11,15 @@ def smape(A, F):
         A = A.to_numpy()
     if type(F) == pd.Series:
         F = F.to_numpy()
-        
+
     return 1/len(A) * np.sum(2 * np.abs(F - A) / (np.abs(A) + np.abs(F)))
 
 def truncnorm(mu, sigma, lower, upper, size):
     tn = stats.truncnorm((lower - mu) / sigma, (upper - mu) / sigma, loc=mu, scale=sigma)
     return tn.rvs(size)
+
+
+def cast_or_none(value, type_):
+    if value is not None:
+        return type_(value)
+    return value
