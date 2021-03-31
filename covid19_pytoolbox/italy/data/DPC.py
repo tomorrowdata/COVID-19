@@ -11,6 +11,7 @@ from covid19_pytoolbox.utils import smape, padnan
 
 prettyprint = pprint.PrettyPrinter(indent=4)
 
+
 def load_daily_cases_from_github():
     def parse_date(date):
         return datetime.strptime(date[:10], '%Y-%m-%d')
@@ -20,8 +21,19 @@ def load_daily_cases_from_github():
         parse_dates=['data'],
         date_parser=parse_date
     )
-
     return df
+
+def load_daily_cases_from_github_region(region):
+    def parse_date(date):
+        return datetime.strptime(date[:10] + " 23:59:00", "%Y-%m-%d %H:%M:%S")
+
+    regions_raw_data = pd.read_csv(
+        'https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-regioni/dpc-covid19-ita-regioni.csv',
+        parse_dates=['data'],
+        date_parser=parse_date
+    )
+    regional_raw_data = regions_raw_data.loc[regions_raw_data.denominazione_regione==region].reset_index().copy()
+    return regional_raw_data
 
 def preprocess(df):
 
@@ -125,8 +137,8 @@ def RSVD_smooth_data(df, alpha, beta, season_period=7, trend_alpha=100., differe
         print(smoothcol)
 
         lrsvd = LogSeasonalRegularizer(
-            df[col], 
-            season_period=season_period, max_r=season_period, 
+            df[col],
+            season_period=season_period, max_r=season_period,
             trend_alpha=trend_alpha, difference_degree=difference_degree, verbose=True)
 
         m = lrsvd.fit()
