@@ -1,0 +1,121 @@
+{
+    "runs": [
+        {
+            "name": "Italy",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "/home/ubuntu/COVID-19/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": null,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.95,
+                "MC_TUNE": 500,
+                "MC_DRAWS": 1000,
+                "MC_CORES": 4,
+                "REGION": null
+            }
+        },
+        {
+            "name": "Piemonte",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "/home/ubuntu/COVID-19/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 200,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.95,
+                "MC_TUNE": 500,
+                "MC_DRAWS": 500,
+                "MC_CORES": 4,
+                "REGION": "Piemonte"
+            }
+        },
+        {
+            "name": "Toscana",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "/home/ubuntu/COVID-19/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 200,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.95,
+                "MC_TUNE": 500,
+                "MC_DRAWS": 500,
+                "MC_CORES": 4,
+                "REGION": "Toscana"
+            }
+        },
+        {
+            "name": "Lombardia",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "/home/ubuntu/COVID-19/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 200,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.95,
+                "MC_TUNE": 500,
+                "MC_DRAWS": 500,
+                "MC_CORES": 4,
+                "REGION": "Lombardia"
+            }
+        },
+        {
+            "name": "Campania",
+            "image": "covid-run-apps",
+            "data": "/home/ubuntu/COVID-19/data/",
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 200,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.95,
+                "MC_TUNE": 500,
+                "MC_DRAWS": 500,
+                "MC_CORES": 4,
+                "REGION": "Campania"
+            }
+        }
+    ]
+}
