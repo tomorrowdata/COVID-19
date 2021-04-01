@@ -6,7 +6,8 @@ RUN pip install -r requirements.txt
 RUN mkdir /RTAutomation
 WORKDIR /RTAutomation
 
-COPY ./run_manager.py /RTAutomation/run_manager.py
+COPY ./manager.py /RTAutomation/manager.py
+COPY ./settings.py /RTAutomation/settings.py
 COPY ./entrypoint.sh /RTAutomation/entrypoint.sh
 
 ENTRYPOINT [ "./entrypoint.sh" ]

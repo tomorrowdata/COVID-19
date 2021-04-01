@@ -4,7 +4,7 @@
             "name": "Italy",
             "image": "covid-run-apps",
             "data": {
-                "source": "/home/ubuntu/COVID-19/data/",
+                "source": "{PROJECT_DIR}/data/",
                 "target": "/home/jupuser/data"
             },
             "app": "seasonalnoisedMCMC_generic",
@@ -28,7 +28,7 @@
             "name": "Piemonte",
             "image": "covid-run-apps",
             "data": {
-                "source": "/home/ubuntu/COVID-19/data/",
+                "source": "{PROJECT_DIR}/data/",
                 "target": "/home/jupuser/data"
             },
             "app": "seasonalnoisedMCMC_generic",
@@ -52,7 +52,7 @@
             "name": "Toscana",
             "image": "covid-run-apps",
             "data": {
-                "source": "/home/ubuntu/COVID-19/data/",
+                "source": "{PROJECT_DIR}/data/",
                 "target": "/home/jupuser/data"
             },
             "app": "seasonalnoisedMCMC_generic",
@@ -76,7 +76,7 @@
             "name": "Lombardia",
             "image": "covid-run-apps",
             "data": {
-                "source": "/home/ubuntu/COVID-19/data/",
+                "source": "{PROJECT_DIR}/data/",
                 "target": "/home/jupuser/data"
             },
             "app": "seasonalnoisedMCMC_generic",
@@ -99,8 +99,10 @@
         {
             "name": "Campania",
             "image": "covid-run-apps",
-            "data": "/home/ubuntu/COVID-19/data/",
-            "app": "seasonalnoisedMCMC_generic",
+            "data": {
+                "source": "{PROJECT_DIR}/data/",
+                "target": "/home/jupuser/data"
+            },
             "args": {
                 "PICKLEPREFIX": "{DATE}_futbound_08_12",
                 "DATA_COL_NAME": "nuovi_positivi",
@@ -117,5 +119,7 @@
                 "REGION": "Campania"
             }
         }
-    ]
+    ],
+    "max_parallel_containers" : 4,
+    "run_results_dir": "./results"
 }
