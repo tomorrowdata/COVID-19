@@ -1,8 +1,10 @@
+from genericpath import exists
 import sys
 
 sys.path.append("../")
 
 import os
+import shutil
 import pickle
 
 import numpy as np
@@ -105,10 +107,15 @@ def compute_past_series(
                 logger.info(ex)
                 logger.info(f"skipping pastdays {pastdays:03d}")
 
+        # prepare target dir path and verify if exists
+        TARGET_RESULT_DIR = os.path.join(BASE_DATA_PATH, "computed/WIP/")
+        if not os.path.exists(TARGET_RESULT_DIR):
+            os.makedirs(TARGET_RESULT_DIR, exist_ok=True)
+
         with open(
             os.path.join(
-                BASE_DATA_PATH,
-                f"computed/WIP/{pickleprefix}_MCMC_simulations_pastdays_{pastdays_start:03d}_{pastdays_end:03d}.pickle",
+                TARGET_RESULT_DIR,
+                f"{pickleprefix}_MCMC_simulations_pastdays_{pastdays_start:03d}_{pastdays_end:03d}.pickle",
             ),
             "wb",
         ) as handle:
@@ -128,8 +135,8 @@ def compute_past_series(
 
         df.to_pickle(
             os.path.join(
-                BASE_DATA_PATH,
-                f"computed/WIP/{pickleprefix}_MCMC_Rt_pastdays_{pastdays_start:03d}_{pastdays_end:03d}.pickle",
+                TARGET_RESULT_DIR,
+                f"{pickleprefix}_MCMC_Rt_pastdays_{pastdays_start:03d}_{pastdays_end:03d}.pickle",
             )
         )
 
