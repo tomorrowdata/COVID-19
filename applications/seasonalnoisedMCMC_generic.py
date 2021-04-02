@@ -1,13 +1,15 @@
-from genericpath import exists
 import sys
 
 sys.path.append("../")
 
+import json
+import logging
 import os
-import shutil
 import pickle
 
 import numpy as np
+import pymc3 as pm
+
 from covid19_pytoolbox.italy.data import DPC
 from covid19_pytoolbox.modeling.datarevision.seasonal import (
     draw_expanded_series,
@@ -15,13 +17,28 @@ from covid19_pytoolbox.modeling.datarevision.seasonal import (
 )
 from covid19_pytoolbox.modeling.Rt.bayesian import MCMC_sample
 from covid19_pytoolbox.settings import BASE_DATA_PATH
-from covid19_pytoolbox.modeling.results import process_MCMC_sampling
-from covid19_pytoolbox.utils import cast_or_none
-import logging
-import json
+from covid19_pytoolbox.utils import cast_or_none, padnan
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
+
+
+def process_MCMC_sampling(df, column, trace, pastdays, interval=0.95, start=0):
+    interval_frac = int(interval * 100)
+    sampling_mean = np.mean(trace["r_t"], axis=0)
+
+    df[f"{column}_Rt_MCMC_pastdays_{pastdays:03d}"] = padnan(
+        sampling_mean, (start, pastdays)
+    )
+
+    # credible interval
+    sampling_hdi = pm.stats.hpd(trace["r_t"], hdi_prob=interval)
+    df[f"{column}_Rt_MCMC_HDI_{interval_frac}_min_pastdays_{pastdays:03d}"] = padnan(
+        sampling_hdi[:, 0], (start, pastdays)
+    )
+    df[f"{column}_Rt_MCMC_HDI_{interval_frac}_max_pastdays_{pastdays:03d}"] = padnan(
+        sampling_hdi[:, 1], (start, pastdays)
+    )
 
 
 def compute_past_series(
@@ -42,6 +59,7 @@ def compute_past_series(
     mccores=8,
     mctargetaccept=0.95,
     rt_col_prefix="smooth_deseas",
+    debug_mode=False,
 ):
 
     for pastdays in range(pastdays_start, pastdays_end - 1, -1):
@@ -122,6 +140,10 @@ def compute_past_series(
             pickle.dump(simulations, handle)
 
         sampled_Rt = np.vstack([t["r_t"][~t.diverging, :] for t in simulations])
+        if debug_mode:
+            # use all sampled Rt, including diverging ones
+            sampled_Rt = np.vstack([t["r_t"] for t in simulations])
+
         combined_trace = {"r_t": sampled_Rt}
 
         process_MCMC_sampling(
@@ -158,6 +180,7 @@ def main(
     alpha=1.87,
     beta=0.28,
     trend_alpha=100.0,
+    debug_mode=False,
 ):
     """
     Start processing seasonalnoisedMCMC
@@ -179,6 +202,7 @@ def main(
         alpha (float, optional): parameter for the gamma distribution of 'w'. Defaults to 1.87.
         beta (float, optional): parameter for the gamma distribution of 'w'. Defaults to 0.28.
         trend_alpha (float, optional): Tikhonov regularization alpha parameter. Defaults to 100.0.
+        debug_mode (bool, optional): if true, do not remove divergent Rt samples (use for debug only). Default to False.
     """
 
     logger.info(f"pastdays_start: {pastdays_start} - pastdays_end: {pastdays_end}")
@@ -188,6 +212,7 @@ def main(
         pickleprefix = f"{pickleprefix}_{region}"
     else:
         raw_data = DPC.load_daily_cases_from_github()
+        pickleprefix = f"{pickleprefix}_National"
 
     startday = 0
     if tot_chain_len:
@@ -210,6 +235,7 @@ def main(
         mcdraws=mc_draws,
         mccores=mc_cores,
         mctargetaccept=mc_targetaccept,
+        debug_mode=debug_mode,
     )
 
 
@@ -227,6 +253,7 @@ if __name__ == "__main__":
     mc_draws = cast_or_none(os.environ.get("MC_DRAWS", 500), int)
     mc_cores = cast_or_none(os.environ.get("MC_CORES", 4), int)
     region = cast_or_none(os.environ.get("REGION", None), str)
+    debug_mode = cast_or_none(os.environ.get("DEBUG_MODE", False), bool)
 
     assert pickleprefix is not None, "pickleprefix should be defined"
     assert data_col_name is not None, "data_col_name should be defined"
@@ -245,6 +272,7 @@ if __name__ == "__main__":
         "MC_DRAWS": mc_draws,
         "MC_CORES": mc_cores,
         "REGION": region,
+        "DEBUG_MODE": debug_mode,
     }
 
     logger.info(f"Run configuration:\n{json.dumps(params, indent=2)}")
