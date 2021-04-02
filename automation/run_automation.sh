@@ -1,4 +1,5 @@
 #! /bin/bash
+docker build -f ../Dockerfile-app -t covid-run-apps ../
 docker build -f app/Dockerfile -t rt-automation-image ./app || exit 1
 
 GOOD=true
