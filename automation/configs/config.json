@@ -25,7 +25,7 @@
             }
         },
         {
-            "name": "Piemonte",
+            "name": "Abruzzo",
             "image": "covid-run-apps",
             "data": {
                 "source": "{PROJECT_DIR}/data/",
@@ -44,12 +44,12 @@
                 "MC_TARGETACCEPT": 0.95,
                 "MC_TUNE": 500,
                 "MC_DRAWS": 500,
-                "MC_CORES": 4,
-                "REGION": "Piemonte"
+                "MC_CORES": 8,
+                "REGION": "Abruzzo"
             }
         },
         {
-            "name": "Toscana",
+            "name": "Basilicata",
             "image": "covid-run-apps",
             "data": {
                 "source": "{PROJECT_DIR}/data/",
@@ -68,12 +68,12 @@
                 "MC_TARGETACCEPT": 0.95,
                 "MC_TUNE": 500,
                 "MC_DRAWS": 500,
-                "MC_CORES": 4,
-                "REGION": "Toscana"
+                "MC_CORES": 8,
+                "REGION": "Basilicata"
             }
         },
         {
-            "name": "Lombardia",
+            "name": "Calabria",
             "image": "covid-run-apps",
             "data": {
                 "source": "{PROJECT_DIR}/data/",
@@ -92,8 +92,8 @@
                 "MC_TARGETACCEPT": 0.95,
                 "MC_TUNE": 500,
                 "MC_DRAWS": 500,
-                "MC_CORES": 4,
-                "REGION": "Lombardia"
+                "MC_CORES": 8,
+                "REGION": "Calabria"
             }
         },
         {
@@ -116,11 +116,419 @@
                 "MC_TARGETACCEPT": 0.95,
                 "MC_TUNE": 500,
                 "MC_DRAWS": 500,
-                "MC_CORES": 4,
+                "MC_CORES": 8,
                 "REGION": "Campania"
+            }
+        },
+        {
+            "name": "Emilia-Romagna",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "{PROJECT_DIR}/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 200,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.95,
+                "MC_TUNE": 500,
+                "MC_DRAWS": 500,
+                "MC_CORES": 8,
+                "REGION": "Emilia-Romagna"
+            }
+        },
+        {
+            "name": "Friuli Venezia Giulia",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "{PROJECT_DIR}/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 200,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.95,
+                "MC_TUNE": 500,
+                "MC_DRAWS": 500,
+                "MC_CORES": 8,
+                "REGION": "Friuli Venezia Giulia"
+            }
+        },
+        {
+            "name": "Lazio",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "{PROJECT_DIR}/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 200,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.95,
+                "MC_TUNE": 500,
+                "MC_DRAWS": 500,
+                "MC_CORES": 8,
+                "REGION": "Lazio"
+            }
+        },
+        {
+            "name": "Liguria",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "{PROJECT_DIR}/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 200,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.95,
+                "MC_TUNE": 500,
+                "MC_DRAWS": 500,
+                "MC_CORES": 8,
+                "REGION": "Liguria"
+            }
+        },
+        {
+            "name": "Lombardia",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "{PROJECT_DIR}/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 200,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.95,
+                "MC_TUNE": 500,
+                "MC_DRAWS": 500,
+                "MC_CORES": 8,
+                "REGION": "Lombardia"
+            }
+        },
+        {
+            "name": "Marche",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "{PROJECT_DIR}/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 200,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.95,
+                "MC_TUNE": 500,
+                "MC_DRAWS": 500,
+                "MC_CORES": 8,
+                "REGION": "Marche"
+            }
+        },
+        {
+            "name": "Molise",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "{PROJECT_DIR}/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 200,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.95,
+                "MC_TUNE": 500,
+                "MC_DRAWS": 500,
+                "MC_CORES": 8,
+                "REGION": "Molise"
+            }
+        },
+        {
+            "name": "P.A. Bolzano",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "{PROJECT_DIR}/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 200,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.95,
+                "MC_TUNE": 500,
+                "MC_DRAWS": 500,
+                "MC_CORES": 8,
+                "REGION": "P.A. Bolzano"
+            }
+        },
+        {
+            "name": "P.A. Trento",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "{PROJECT_DIR}/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 200,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.95,
+                "MC_TUNE": 500,
+                "MC_DRAWS": 500,
+                "MC_CORES": 8,
+                "REGION": "P.A. Trento"
+            }
+        },
+        {
+            "name": "Piemonte",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "{PROJECT_DIR}/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 200,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.95,
+                "MC_TUNE": 500,
+                "MC_DRAWS": 500,
+                "MC_CORES": 8,
+                "REGION": "Piemonte"
+            }
+        },
+        {
+            "name": "Puglia",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "{PROJECT_DIR}/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 200,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.95,
+                "MC_TUNE": 500,
+                "MC_DRAWS": 500,
+                "MC_CORES": 8,
+                "REGION": "Puglia"
+            }
+        },
+        {
+            "name": "Sardegna",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "{PROJECT_DIR}/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 200,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.95,
+                "MC_TUNE": 500,
+                "MC_DRAWS": 500,
+                "MC_CORES": 8,
+                "REGION": "Sardegna"
+            }
+        },
+        {
+            "name": "Sicilia",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "{PROJECT_DIR}/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 200,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.95,
+                "MC_TUNE": 500,
+                "MC_DRAWS": 500,
+                "MC_CORES": 8,
+                "REGION": "Sicilia"
+            }
+        },
+        {
+            "name": "Toscana",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "{PROJECT_DIR}/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 200,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.95,
+                "MC_TUNE": 500,
+                "MC_DRAWS": 500,
+                "MC_CORES": 8,
+                "REGION": "Toscana"
+            }
+        },
+        {
+            "name": "Umbria",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "{PROJECT_DIR}/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 200,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.95,
+                "MC_TUNE": 500,
+                "MC_DRAWS": 500,
+                "MC_CORES": 8,
+                "REGION": "Umbria"
+            }
+        },
+        {
+            "name": "Valle d'Aosta",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "{PROJECT_DIR}/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 200,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.95,
+                "MC_TUNE": 500,
+                "MC_DRAWS": 500,
+                "MC_CORES": 8,
+                "REGION": "Valle d'Aosta"
+            }
+        },
+        {
+            "name": "Veneto",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "{PROJECT_DIR}/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 200,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.95,
+                "MC_TUNE": 500,
+                "MC_DRAWS": 500,
+                "MC_CORES": 8,
+                "REGION": "Veneto"
             }
         }
     ],
-    "max_parallel_containers" : 4,
+    "max_parallel_containers": 3,
     "run_results_dir": "./results"
 }
