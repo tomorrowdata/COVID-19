@@ -6,6 +6,7 @@ import json
 import logging
 import os
 import pickle
+import re
 
 import numpy as np
 import pymc3 as pm
@@ -22,6 +23,7 @@ from covid19_pytoolbox.utils import cast_or_none, padnan
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
+SANITIZE_PATTERN = re.compile("[\.,'@;$&\"%?\- ]+")
 
 def process_MCMC_sampling(df, column, trace, pastdays, interval=0.95, start=0):
     interval_frac = int(interval * 100)
@@ -209,7 +211,8 @@ def main(
 
     if region:
         raw_data = DPC.load_daily_cases_from_github_region(region)
-        pickleprefix = f"{pickleprefix}_{region}"
+        region_cleaned = SANITIZE_PATTERN.sub("_", region).replace(" ", "_")
+        pickleprefix = f"{pickleprefix}_{region_cleaned}"
     else:
         raw_data = DPC.load_daily_cases_from_github()
         pickleprefix = f"{pickleprefix}_National"

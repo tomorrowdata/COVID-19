@@ -18,6 +18,8 @@ from settings import CHECK_INTERVAL, LOG_LEVEL
 FORMATTER = "[%(asctime)s] [%(name)s] [%(levelname)s] %(message)s"
 logging.basicConfig(format=FORMATTER)
 
+SANITIZE_PATTERN = re.compile("[\.,'@;$&\"%? ]+")
+
 def get_logger(name: str, log_level=logging.INFO) -> logging.Logger:
     logger = logging.getLogger(name)
     logger.setLevel(log_level)
@@ -59,11 +61,13 @@ def set_config_placeholders(config: dict, placeholder: str, value: str) -> dict:
     return json.loads(config_str_ch)
 
 
-
 def _assert_defined(value: Any) -> Any:
     assert value is not None
     return value
 
+
+def _sanitize_docker_name(name: str) -> str:
+    return SANITIZE_PATTERN.sub("-", name)
 
 class Run:
     PROGRAM = "python3"
@@ -77,7 +81,7 @@ class Run:
         logger: logging.Logger,
     ) -> None:
 
-        self.name = _assert_defined(run_conf.get("name"))
+        self.name = _sanitize_docker_name(_assert_defined(run_conf.get("name")))
         self._image = _assert_defined(run_conf.get("image"))
         self._app = _assert_defined(run_conf.get("app"))
         self._data_dir = _assert_defined(run_conf.get("data"))
@@ -235,8 +239,12 @@ class RTAutomation:
         check_period=30,
     ) -> None:
         self.dc = docker_client
-        self.max_parallel = _assert_defined(runs_config.get("max_parallel_containers", 4))
-        self.result_dir = _assert_defined(runs_config.get("run_results_dir", "./run_results"))
+        self.max_parallel = _assert_defined(
+            runs_config.get("max_parallel_containers", 4)
+        )
+        self.result_dir = _assert_defined(
+            runs_config.get("run_results_dir", "./run_results")
+        )
         self.runs = runs_config.get("runs", [])
         self.check_period = check_period
 
@@ -256,7 +264,9 @@ class RTAutomation:
             try:
                 new_run = Run(run_config, self.dc, self.log)
             except ContainerIsStillRunningError:
-                self.log.error(f"Aborting: container for run {run_name} is still running")
+                self.log.error(
+                    f"Aborting: container for run {run_name} is still running"
+                )
                 exit(1)
             except Exception as ex:
                 self.log.error(f"Aborting: Failed creating instance for run {run_name}")
@@ -283,13 +293,19 @@ class RTAutomation:
         for _ in range(len(self._running)):
             current_run = self._running.pop()
             if current_run.is_ended:
-                self.log.info(f"Removing ended run {current_run.name} from running queue")
-                self.log.info(f"Adding ended run {current_run.name} into completed list")
+                self.log.info(
+                    f"Removing ended run {current_run.name} from running queue"
+                )
+                self.log.info(
+                    f"Adding ended run {current_run.name} into completed list"
+                )
                 self._completed.append(current_run)
                 self._save_report(current_run)
                 ended += 1
             elif current_run.is_failed:
-                self.log.info(f"Removing failed run {current_run.name} from running queue")
+                self.log.info(
+                    f"Removing failed run {current_run.name} from running queue"
+                )
                 self._failed.append((current_run, Exception()))
                 self._save_report(current_run)
                 ended += 1
@@ -307,14 +323,18 @@ class RTAutomation:
                 try:
                     scheduled.run()
                 except Exception as ex:
-                    self.log.error(f"Exception while running {scheduled.name} - {ex.__class__.__name__}")
+                    self.log.error(
+                        f"Exception while running {scheduled.name} - {ex.__class__.__name__}"
+                    )
                     self._failed.append((scheduled, ex))
                     failed_ += 1
                 else:
                     # insert on the bottom of the queue
                     self._running.appendleft(scheduled)
             else:
-                self.log.info(f"Max parallel number of runs reached! Delaying run: {scheduled.name}")
+                self.log.info(
+                    f"Max parallel number of runs reached! Delaying run: {scheduled.name}"
+                )
                 # insert on top of the queue
                 self._scheduled.append(scheduled)
                 break
