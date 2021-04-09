@@ -20,12 +20,10 @@ git add notebooks/Rt_on_italian_national_data.ipynb
 git add notebooks/italy/Rt_Piemonte.ipynb
 git add notebooks/italy/Rt_regions.ipynb
 
-git add "data/computed/italy/${UDATE}_italy_futbound-08-12_draws-5_MCMC_Rt_pastdays_000_000.pickle"
+git add "data/computed/italy/${UDATE}_futbound_08_12_National_MCMC_Rt_pastdays_000_000.pickle"
 git add "data/computed/italy/${UDATE}_futbound_08_12_Piemonte_MCMC_Rt_pastdays_000_000.pickle"
 git add "data/computed/italy/${UDATE}_TD_calc_Regions_MCMC_Rt.pickle"
 
 git commit -m "update $UDATE"
-
-
 
 git push
