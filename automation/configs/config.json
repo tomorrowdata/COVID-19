@@ -62,12 +62,12 @@
                 "PASTDAYS_START": 0,
                 "PASTDAYS_END": 0,
                 "FUTUREDRAWS": 10,
-                "TOT_CHAIN_LEN": 200,
+                "TOT_CHAIN_LEN": 100,
                 "LOWER_RATIO": 0.8,
                 "UPPER_RATIO": 1.2,
                 "MC_TARGETACCEPT": 0.95,
-                "MC_TUNE": 500,
-                "MC_DRAWS": 500,
+                "MC_TUNE": 2000,
+                "MC_DRAWS": 1000,
                 "MC_CORES": 8,
                 "REGION": "Basilicata"
             }
@@ -278,12 +278,12 @@
                 "PASTDAYS_START": 0,
                 "PASTDAYS_END": 0,
                 "FUTUREDRAWS": 10,
-                "TOT_CHAIN_LEN": 200,
+                "TOT_CHAIN_LEN": 100,
                 "LOWER_RATIO": 0.8,
                 "UPPER_RATIO": 1.2,
                 "MC_TARGETACCEPT": 0.95,
-                "MC_TUNE": 500,
-                "MC_DRAWS": 500,
+                "MC_TUNE": 2000,
+                "MC_DRAWS": 1000,
                 "MC_CORES": 8,
                 "REGION": "Molise"
             }
@@ -494,12 +494,12 @@
                 "PASTDAYS_START": 0,
                 "PASTDAYS_END": 0,
                 "FUTUREDRAWS": 10,
-                "TOT_CHAIN_LEN": 200,
+                "TOT_CHAIN_LEN": 100,
                 "LOWER_RATIO": 0.8,
                 "UPPER_RATIO": 1.2,
-                "MC_TARGETACCEPT": 0.95,
-                "MC_TUNE": 500,
-                "MC_DRAWS": 500,
+                "MC_TARGETACCEPT": 0.99,
+                "MC_TUNE": 2000,
+                "MC_DRAWS": 1000,
                 "MC_CORES": 8,
                 "REGION": "Valle d'Aosta"
             }
