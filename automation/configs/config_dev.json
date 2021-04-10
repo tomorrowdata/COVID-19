@@ -1,0 +1,131 @@
+{
+    "runs": [
+        {
+            "name": "Italy",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "{PROJECT_DIR}/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 100,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.05,
+                "MC_TUNE": 1,
+                "MC_DRAWS": 20,
+                "MC_CORES": 1,
+                "REGION": null,
+                "DEBUG_MODE": true
+            }
+        },
+        {
+            "name": "Piemonte",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "{PROJECT_DIR}/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 100,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.01,
+                "MC_TUNE": 5,
+                "MC_DRAWS": 100,
+                "MC_CORES": 6,
+                "REGION": "Piemonte",
+                "DEBUG_MODE": true
+            }
+        },
+        {
+            "name": "Toscana",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "{PROJECT_DIR}/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 100,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.05,
+                "MC_TUNE": 1,
+                "MC_DRAWS": 20,
+                "MC_CORES": 1,
+                "REGION": "Toscana",
+                "DEBUG_MODE": true
+            }
+        },
+        {
+            "name": "Lombardia",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "{PROJECT_DIR}/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 100,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.05,
+                "MC_TUNE": 1,
+                "MC_DRAWS": 20,
+                "MC_CORES": 1,
+                "REGION": "Lombardia",
+                "DEBUG_MODE": true
+            }
+        },
+        {
+            "name": "Campania",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "{PROJECT_DIR}/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 10,
+                "TOT_CHAIN_LEN": 100,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.05,
+                "MC_TUNE": 1,
+                "MC_DRAWS": 20,
+                "MC_CORES": 1,
+                "REGION": "Campania",
+                "DEBUG_MODE": true
+            }
+        }
+    ],
+    "max_parallel_containers" : 2,
+    "run_results_dir": "./results"
+}
