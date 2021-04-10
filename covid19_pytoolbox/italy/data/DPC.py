@@ -53,6 +53,10 @@ def compute_first_diffs(df):
     for diffcol, col in cols.items():
         df[diffcol] = first_diff(df, col)
 
+        # fix negative values for reporting errors, substituting them with the mean of the neighbours
+        for idx in df.loc[df[diffcol]<0].index:
+            df.loc[idx,[diffcol]] = (df.loc[idx+1,[diffcol]]+df.loc[idx-1,[diffcol]])/2.
+
 
 def tikhonov_smooth_differentiate(df, regularizer):
 
@@ -116,6 +120,7 @@ def RSVD_smooth_data(df, alpha, beta, season_period=7, trend_alpha=100., differe
 
     filter_columns = [
         'nuovi_positivi',
+        'tamponi_giornalieri'
     ]
 
     prettyprint.pprint(filter_columns)
