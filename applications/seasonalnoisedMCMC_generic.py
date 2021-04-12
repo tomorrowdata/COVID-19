@@ -61,6 +61,7 @@ def compute_past_series(
     mccores=8,
     mctargetaccept=0.95,
     rt_col_prefix="smooth_deseas",
+    use_rel_res=True,
     debug_mode=False,
 ):
 
@@ -111,7 +112,7 @@ def compute_past_series(
                     onset=new_cases_s[~np.isnan(new_cases_s)],
                     alpha=alpha,
                     beta=beta,
-                    rel_eps=rel_eps_s[~np.isnan(rel_eps_s)],
+                    rel_eps=rel_eps_s[~np.isnan(rel_eps_s)] if use_rel_res else None,
                     start=0,
                     window=None,
                     chains=mccores,
@@ -182,6 +183,7 @@ def main(
     alpha=1.87,
     beta=0.28,
     trend_alpha=100.0,
+    use_relative_residuals=True,
     debug_mode=False,
 ):
     """
@@ -204,6 +206,7 @@ def main(
         alpha (float, optional): parameter for the gamma distribution of 'w'. Defaults to 1.87.
         beta (float, optional): parameter for the gamma distribution of 'w'. Defaults to 0.28.
         trend_alpha (float, optional): Tikhonov regularization alpha parameter. Defaults to 100.0.
+        use_relative_residuals (bool, optional): Use relative residuals in MCMC simulations. Defaults to True
         debug_mode (bool, optional): if true, do not remove divergent Rt samples (use for debug only). Default to False.
     """
 
@@ -238,6 +241,7 @@ def main(
         mcdraws=mc_draws,
         mccores=mc_cores,
         mctargetaccept=mc_targetaccept,
+        use_rel_res=use_relative_residuals,
         debug_mode=debug_mode,
     )
 
@@ -256,6 +260,7 @@ if __name__ == "__main__":
     mc_draws = cast_or_none(os.environ.get("MC_DRAWS", 500), int)
     mc_cores = cast_or_none(os.environ.get("MC_CORES", 4), int)
     region = cast_or_none(os.environ.get("REGION", None), str)
+    use_rel_res = cast_or_none(os.environ.get("USE_RELATIVE_RESIDUALS", True), bool)
     debug_mode = cast_or_none(os.environ.get("DEBUG_MODE", False), bool)
 
     assert pickleprefix is not None, "pickleprefix should be defined"
@@ -275,6 +280,7 @@ if __name__ == "__main__":
         "MC_DRAWS": mc_draws,
         "MC_CORES": mc_cores,
         "REGION": region,
+        "USE_RELATIVE_RESIDUALS": use_rel_res,
         "DEBUG_MODE": debug_mode,
     }
 

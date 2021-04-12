@@ -501,7 +501,8 @@
                 "MC_TUNE": 2000,
                 "MC_DRAWS": 1000,
                 "MC_CORES": 8,
-                "REGION": "Valle d'Aosta"
+                "REGION": "Valle d'Aosta",
+                "USE_RELATIVE_RESIDUALS": false
             }
         },
         {
