@@ -1,4 +1,3 @@
-from typing import Any, Type
 import numpy as np
 import pandas as pd
 from scipy import stats
@@ -20,6 +19,13 @@ def truncnorm(mu, sigma, lower, upper, size):
 
 
 def cast_or_none(value, type_):
-    if value is not None:
+    if value is not None and type_ is not bool:
         return type_(value)
+
+    if isinstance(value, str) and type_ is bool:
+        if value.lower() == "true":
+            return True
+        elif value.lower() == "false":
+            return False
+
     return value
