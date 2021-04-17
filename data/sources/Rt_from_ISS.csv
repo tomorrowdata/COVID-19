@@ -1,4 +1,5 @@
 ID,report_time_range_descr,computation_time_range_descr,computation_time_range_start,computation_time_range_end,Rt,Rt_95_min,Rt_95_max,Rt_text,report_data,notes,source,source_detail,url,link
+5432,5/4/2021-11/4/2021,24 marzo – 06 aprile 2021,2021-03-24,2021-04-06,0.85,0.71,0.97,"0,85 (range 0,71– 0,97)",14 aprile 2021,,,,https://www.iss.it/documents/20126/0/Monitoraggio+Fase+2_+report_nazionale_48.pdf,14 aprile 2021
 5421,29/3/2021-4/4/2021,17 – 30 marzo 2021,2021-03-17,2021-03-30,0.92,0.82,1.01,"0,92 (range 0,82– 1,01)",7 aprile 2021,,attachement,,http://www.salute.gov.it/imgs/C_17_monitoraggi_53_1_fileNazionale.pdf,7 aprile 2021
 5410,22/3/2021-28/3/2021,10 - 23 marzo 2021,2021-03-10,2021-03-23,0.98,0.87,1.11,"0,98 (range 0,87– 1,11)",31 marzo 2021,,attachement,,https://www.iss.it/documents/20126/0/Monitoraggio+Fase+2_+report_nazionale_46_finale.pdf,31 marzo 2021
 5399,15/3/2021-21/3/2021,3 – 16 marzo 2021,2021-03-03,2021-03-16,1.08,0.93,1.21,"1,08 (range 0,93– 1,21)",24 marzo 2021,,attachement,,https://www.iss.it/documents/20126/0/Monitoraggio+Fase+2_+report_nazionale_45.pdf,24 marzo 2021
