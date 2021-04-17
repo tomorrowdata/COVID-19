@@ -1,5 +1,5 @@
 #UDATE=$(date --iso-8601)
-UDATE="2021-04-09"
+UDATE="2021-04-16"
 
 
 git add data/computed/TD-covid19-ita-andamento-nazionale_Rt.csv
