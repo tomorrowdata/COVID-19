@@ -1,4 +1,5 @@
 ID,report_date,computation_time_range_descr,computation_time_range_start,computation_time_range_end,Rt_text,Rt,Rt_95_min,Rt_95_max,url
+5442,21 aprile 2021,31 marzo – 13 aprile 2021,2021-03-31,2021-04-13,0.7 (CI: 0.64-0.8),0.7,0.64,0.8,http://www.salute.gov.it/portale/nuovocoronavirus/dettaglioNotizieNuovoCoronavirus.jsp?lingua=italiano&menu=notizie&p=dalministero&id=5442
 5421,7 aprile 2021,17 – 30 marzo 2021,2021-03-17,2021-03-30,0.88 (CI: 0.67-1.01),0.88,0.67,1.01,http://www.salute.gov.it/portale/nuovocoronavirus/dettaglioNotizieNuovoCoronavirus.jsp?lingua=italiano&menu=notizie&p=dalministero&id=5421
 5410,31 marzo 2021,10 - 23 marzo 2021,2021-03-10,2021-03-23,0.98 (CI: 0.74-1.22),0.98,0.74,1.22,http://www.salute.gov.it/portale/nuovocoronavirus/dettaglioNotizieNuovoCoronavirus.jsp?lingua=italiano&menu=notizie&p=dalministero&id=5410
 5399,24 marzo 2021,3 – 16 marzo 2021,2021-03-03,2021-03-16,1.16 (CI: 0.83-1.39),1.16,0.83,1.39,http://www.salute.gov.it/portale/nuovocoronavirus/dettaglioNotizieNuovoCoronavirus.jsp?lingua=italiano&menu=notizie&p=dalministero&id=5399
