@@ -1,5 +1,5 @@
 #UDATE=$(date --iso-8601)
-UDATE="2021-04-16"
+UDATE="2021-04-23"
 
 
 git add data/computed/TD-covid19-ita-andamento-nazionale_Rt.csv
@@ -35,6 +35,7 @@ git add "data/computed/italy/${UDATE}_futbound_08_12_National_MCMC_Rt_pastdays_0
 git add "data/computed/italy/${UDATE}_futbound_08_12_Piemonte_MCMC_Rt_pastdays_000_000.pickle"
 git add "data/computed/italy/${UDATE}_TD_calc_Regions_MCMC_Rt.pickle"
 git add "data/computed/italy/${UDATE}_TD_calc_Regions_all_MCMC_Rt.pickle"
+git add "data/computed/italy/${UDATE}_TD_calc_Regions_all_MCMC_Rt.csv"
 
 git commit -m "update $UDATE"
 
