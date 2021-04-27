@@ -1,10 +1,13 @@
 #! /bin/bash
 
 source .env
-cd .. || exit 1
 
-echo "Move wip data to definitive"
-cp -v data/computed/WIP/$PLACEHOLDER_DATE*Rt*.pickle data/computed/italy/
+if [[ -z "${PLACEHOLDER_DATE}" ]]; then
+    echo "Please set the PLACEHOLDER_DATE env variable!"
+    exit 1
+fi
+
+cd .. || exit 1
 
 
 run_notebook(){
@@ -12,5 +15,9 @@ run_notebook(){
     tfjupyter jupyter nbconvert --to=notebook --inplace --ExecutePreprocessor.enabled=True $1
 }
 
-run_notebook notebooks/italy/Rt_regions_auto.ipynb
-run_notebook notebooks/Rt_on_italian_national_data_auto.ipynb
+run_notebook notebooks/Rt_on_italian_national_data.ipynb
+run_notebook notebooks/italy/Rt_Piemonte.ipynb
+run_notebook notebooks/italy/Rt_regions.ipynb
+run_notebook notebooks/italy/Rt-all-regions.ipynb
+run_notebook notebooks/italy/Rt_Sicilia.ipynb
+run_notebook notebooks/italy/Rt_Valle_d_Aosta.ipynb
