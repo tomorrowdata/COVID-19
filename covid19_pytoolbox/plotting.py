@@ -1,4 +1,5 @@
 import os
+import numpy as np
 from PIL import Image
 from matplotlib import pyplot as plt, dates as mdates, cbook, image
 from matplotlib.collections import PatchCollection
@@ -51,6 +52,7 @@ def _create_figure(
     message_fontsize=MESSAGE_FONTSIZE,
     message=None,
     ax_sub=None,
+    time_on_x=True,
 ):
     if not ax_sub:
         fig, ax = plt.subplots(figsize=figsize)
@@ -63,12 +65,13 @@ def _create_figure(
     ax.set_ylabel(y_label, fontsize=label_fontsize)
 
     ax.tick_params(axis="both", labelsize=tick_fontsize)
-    ax.tick_params(axis="x", labelrotation=tick_label_rotation)
-    ax.xaxis.set_major_locator(mdates.WeekdayLocator(byweekday=mdates.WE))
-    ax.xaxis.set_major_formatter(mdates.DateFormatter("%d %b"))
-    ax.xaxis.set_tick_params(width=tick_width)
-    ax.yaxis.set_tick_params(width=tick_width)
-    ax.grid()
+    if time_on_x:
+        ax.tick_params(axis="x", labelrotation=tick_label_rotation)
+        ax.xaxis.set_major_locator(mdates.WeekdayLocator(byweekday=mdates.WE))
+        ax.xaxis.set_major_formatter(mdates.DateFormatter("%d %b"))
+        ax.xaxis.set_tick_params(width=tick_width)
+        ax.yaxis.set_tick_params(width=tick_width)
+        ax.grid()
 
     if message:
         props = dict(boxstyle="round", facecolor="wheat", alpha=0.5)
@@ -113,6 +116,7 @@ def plot_env(plot_func):
         dpi=300,
         quality=90,
         ax_sub=None,
+        time_on_x=True,
         **kwargs
     ):
 
@@ -131,11 +135,13 @@ def plot_env(plot_func):
             message_fontsize,
             message,
             ax_sub,
+            time_on_x,
         )
         plot_func(ax, *args, **kwargs)
 
         if legend_on:
             _ = ax.legend(fontsize=legend_fontsize, loc=legend_loc)
+
 
         if img_file_path_without_extension:
             png_path = "{}.png".format(img_file_path_without_extension)
@@ -156,6 +162,18 @@ def errorbar(ax, x, y, bars, label):
 
     ax.errorbar(x, y, bars, uplims=True, lolims=True, label=label)
 
+@plot_env
+def herrorbars(ax, ylabels, xvalues, xerrors, xrefvalue):
+
+    y_pos = np.arange(len(ylabels))
+
+    ax.barh(y_pos, xvalues, xerr=xerrors, align='center', alpha = 0.)
+    ax.plot(xvalues, y_pos, linestyle="", marker="o")
+    if xrefvalue:
+        ax.plot([xrefvalue]*len(y_pos), y_pos, linestyle="-", marker="")
+    ax.set_yticks(y_pos)
+    ax.set_yticklabels(ylabels)
+    ax.invert_yaxis()
 
 @plot_env
 def plot_series(ax, df=None, yfields=None, data=None, xfield="data"):
