@@ -21,7 +21,8 @@ git add images/TD_Rt_computation_MCMC_300dpi.jpg || exit 1
 
 git add images/italy/TD_Rt_Regions_All_computation_MCMC_150dpi.jpg || exit 1
 git add images/italy/TD_Rt_Regions_All_computation_MCMC_150dpi.png || exit 1
-
+git add images/italy/TD_Rt_Regions_bars.jpg || exit 1
+git add images/italy/TD_Rt_Regions_bars.png || exit 1
 
 git add	images/italy/TD_Rt_Campania_computation_MCMC_150dpi.jpg || exit 1
 git add	images/italy/TD_Rt_Campania_computation_MCMC_150dpi.png || exit 1
