@@ -44,6 +44,9 @@ def preprocess(df):
     df.casi_da_sospetto_diagnostico.fillna(0, inplace=True)
     df.casi_da_screening.fillna(0, inplace=True)
 
+    # compute hospitalized_cumulative cumulative value of hospitalized cases
+    df['hospitalized_cumulative'] = df.totale_ospedalizzati + df.dimessi_guariti + df.deceduti
+
     return TIMESTEPS, FIRST_CASI_SOSP_DIAGNOSTICO
 
 def compute_first_diffs(df):
@@ -56,7 +59,8 @@ def compute_first_diffs(df):
         'nuovi_casi_da_screening': 'casi_da_screening',
         'tamponi_giornalieri': 'tamponi',
         'dimessi_guariti_giornalieri': 'dimessi_guariti',
-        'deceduti_giornalieri': 'deceduti'
+        'deceduti_giornalieri': 'deceduti',
+        'nuovi_ospedalizzati': 'hospitalized_cumulative'
     }
 
     prettyprint.pprint(cols)
@@ -78,7 +82,8 @@ def tikhonov_smooth_differentiate(df, regularizer):
         'deceduti_giornalieri_smoothed': 'deceduti',
         'nuovi_positivi_smoothed': 'totale_casi',
         'nuovi_casi_da_sospetto_diagnostico_smoothed': 'casi_da_sospetto_diagnostico',
-        'nuovi_casi_da_screening_smoothed': 'casi_da_screening'
+        'nuovi_casi_da_screening_smoothed': 'casi_da_screening',
+        'nuovi_ospedalizzati_smoothed': 'hospitalized_cumulative'
     }
 
     prettyprint.pprint(cols)
@@ -132,7 +137,8 @@ def RSVD_smooth_data(df, alpha, beta, season_period=7, trend_alpha=100., differe
 
     filter_columns = [
         'nuovi_positivi',
-        'tamponi_giornalieri'
+        'tamponi_giornalieri',
+        'nuovi_ospedalizzati'
     ]
 
     prettyprint.pprint(filter_columns)
