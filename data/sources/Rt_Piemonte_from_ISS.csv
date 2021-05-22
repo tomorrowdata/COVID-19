@@ -1,4 +1,5 @@
 ID,report_date,computation_time_range_descr,computation_time_range_start,computation_time_range_end,Rt_text,Rt,Rt_95_min,Rt_95_max,url
+5495,19 maggio 2021,28 aprile – 11 maggio 2021,2021-04-28,2021-05-11,0.81 (CI: 0.66-0.99),0.81,0.66,0.99,https://www.salute.gov.it/portale/nuovocoronavirus/dettaglioNotizieNuovoCoronavirus.jsp?lingua=italiano&menu=notizie&p=dalministero&id=5495
 5474,5 maggio 2021,14 – 27 aprile 2021,2021-04-14,2021-04-27,0.84 (CI: 0.77-0.94),0.84,0.77,0.94,https://www.iss.it/documents/20126/0/Monitoraggio+Fase+2_+report_nazionale_51.pdf/14d5f60b-0a39-2adc-71c6-8f25b750d3c6?t=1620401303557
 5465,28 aprile 2021,7 – 20 aprile 2021,2021-04-07,2021-04-20,0.75 (CI: 0.67-0.8),0.75,0.67,0.8,http://www.salute.gov.it/portale/nuovocoronavirus/dettaglioNotizieNuovoCoronavirus.jsp?id=5465
 5442,21 aprile 2021,31 marzo – 13 aprile 2021,2021-03-31,2021-04-13,0.7 (CI: 0.64-0.8),0.7,0.64,0.8,http://www.salute.gov.it/portale/nuovocoronavirus/dettaglioNotizieNuovoCoronavirus.jsp?lingua=italiano&menu=notizie&p=dalministero&id=5442
