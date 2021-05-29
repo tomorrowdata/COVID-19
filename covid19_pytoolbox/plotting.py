@@ -1,9 +1,11 @@
 import os
+import itertools
 import numpy as np
 from PIL import Image
 from matplotlib import pyplot as plt, dates as mdates, cbook, image
 from matplotlib.collections import PatchCollection
 from matplotlib.patches import Rectangle
+from cycler import cycler
 
 FIGSIZE = (30, 15)
 TITLE_FONTSIZE = 30
@@ -174,6 +176,18 @@ def herrorbars(ax, ylabels, xvalues, xerrors, xrefvalue):
     ax.set_yticks(y_pos)
     ax.set_yticklabels(ylabels)
     ax.invert_yaxis()
+
+@plot_env
+def scatter(ax, df, fieldx, fieldy, fieldlabel):
+    cm = plt.get_cmap('gist_rainbow')
+    ax.set_prop_cycle(cycler('color', [cm(1.*i/21) for i in range(21)]))    
+    marker = itertools.cycle(('o',"s","D","P","*"))
+    #(',', '+', 'o', '*')
+
+    for index, row in df.iterrows():
+        ax.scatter(row[fieldx], row[fieldy], label=row[fieldlabel], marker=next(marker), s=100)
+    _=ax.legend(bbox_to_anchor=(1.05, 1))
+    ax.ticklabel_format(style='plain')
 
 @plot_env
 def plot_series(ax, df=None, yfields=None, data=None, xfield="data"):
