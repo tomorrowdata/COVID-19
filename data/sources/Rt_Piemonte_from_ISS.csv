@@ -1,4 +1,5 @@
 ID,report_date,computation_time_range_descr,computation_time_range_start,computation_time_range_end,Rt_text,Rt,Rt_95_min,Rt_95_max,url
+5552,7 luglio 2021,16 giugno–29 giugno 2021,2021-06-16,2021-06-29,0.58 (CI: 0.38-0.95),0.58,0.38,0.95,https://www.salute.gov.it/portale/nuovocoronavirus/dettaglioNotizieNuovoCoronavirus.jsp?lingua=italiano&menu=notizie&p=dalministero&id=5552
 5543,30 giugno 2021,9 giugno–22 giugno 2021,2021-06-09,2021-06-22,0.52 (CI: 0.38-0.66),0.52,0.38,0.66,https://www.salute.gov.it/portale/nuovocoronavirus/dettaglioNotizieNuovoCoronavirus.jsp?lingua=italiano&menu=notizie&p=dalministero&id=5543
 5537,23 giugno 2021,1 giugno–15 giugno 2021,2021-06-01,2021-06-15,0.56 (CI: 0.39-0.7),0.56,0.39,0.7,https://www.salute.gov.it/portale/nuovocoronavirus/dettaglioNotizieNuovoCoronavirus.jsp?lingua=italiano&menu=notizie&p=dalministero&id=5537
 5529,16 giugno 2021,26 maggio – 8 giugno 2021,2021-05-26,2021-06-08,0.65 (CI: 0.45-0.82),0.65,0.45,0.82,https://www.salute.gov.it/portale/nuovocoronavirus/dettaglioNotizieNuovoCoronavirus.jsp?lingua=italiano&menu=notizie&p=dalministero&id=5529
