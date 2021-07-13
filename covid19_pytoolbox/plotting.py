@@ -55,6 +55,8 @@ def _create_figure(
     message=None,
     ax_sub=None,
     time_on_x=True,
+    major_locator=mdates.WeekdayLocator(byweekday=mdates.WE),
+    major_formatter=mdates.DateFormatter("%d %b")
 ):
     if not ax_sub:
         fig, ax = plt.subplots(figsize=figsize)
@@ -69,8 +71,8 @@ def _create_figure(
     ax.tick_params(axis="both", labelsize=tick_fontsize)
     if time_on_x:
         ax.tick_params(axis="x", labelrotation=tick_label_rotation)
-        ax.xaxis.set_major_locator(mdates.WeekdayLocator(byweekday=mdates.WE))
-        ax.xaxis.set_major_formatter(mdates.DateFormatter("%d %b"))
+        ax.xaxis.set_major_locator(major_locator)
+        ax.xaxis.set_major_formatter(major_formatter)
         ax.xaxis.set_tick_params(width=tick_width)
         ax.yaxis.set_tick_params(width=tick_width)
         ax.grid()
@@ -119,6 +121,8 @@ def plot_env(plot_func):
         quality=90,
         ax_sub=None,
         time_on_x=True,
+        major_locator=mdates.WeekdayLocator(byweekday=mdates.WE),
+        major_formatter=mdates.DateFormatter("%d %b"),
         **kwargs
     ):
 
@@ -138,6 +142,8 @@ def plot_env(plot_func):
             message,
             ax_sub,
             time_on_x,
+            major_locator,
+            major_formatter 
         )
         plot_func(ax, *args, **kwargs)
 
