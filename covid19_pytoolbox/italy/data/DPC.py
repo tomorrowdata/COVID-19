@@ -170,3 +170,10 @@ def RSVD_smooth_data(df, alpha, beta, season_period=7, trend_alpha=100., differe
 
         print('new columns generated:')
         prettyprint.pprint([c for c in df.columns if c not in initial_cols])
+
+
+def merge_ISS_weekly_cases(dpcdf, issdf):
+    # fill last nan observations with the last available
+    # they will be used as mean and std to sample possible imported ratios
+
+    return pd.merge(left=dpcdf, right=issdf, how='left', on=['data']).fillna(method='ffill')
