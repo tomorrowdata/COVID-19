@@ -1,14 +1,15 @@
+import datetime
 import os
 import pandas as pd
 import numpy as np
-from datetime import timedelta
+from datetime import timedelta, datetime
 
-from covid19_pytoolbox.settings import BASE_DATA_PATH
+from covid19_pytoolbox import settings
 
 def read_weekly_Rt_from_local(path='sources/Rt_from_ISS.csv'):
 
     ISS_Rt = pd.read_csv(
-        os.path.join(BASE_DATA_PATH, path),
+        os.path.join(settings.BASE_DATA_PATH, path),
         parse_dates=['computation_time_range_start', 'computation_time_range_end']
     )
     return ISS_Rt
@@ -41,12 +42,44 @@ def export_Rt_clean(df, path='computed/Rt_from_ISS_processed.{}'):
     ]]
 
     ISS_Rt_clean_save.to_csv(
-        os.path.join(BASE_DATA_PATH, path.format('csv')),
+        os.path.join(settings.BASE_DATA_PATH, path.format('csv')),
         float_format='%.2f',
         index=False        
     )
     ISS_Rt_clean_save.to_excel(
-        os.path.join(BASE_DATA_PATH, path.format('xlsx')),
+        os.path.join(settings.BASE_DATA_PATH, path.format('xlsx')),
         float_format='%.2f',
         index=False        
     )
+
+def read_weekly_cases_from_local(limit_date=None, path='sources/ISS_weakly_local_imported_cases/'):
+    if not limit_date:
+        limit_date=datetime.now()
+
+    # scan path to find the latest file before limit_date
+    _path = os.path.join(settings.BASE_DATA_PATH, path)
+
+    max_available_date = max(
+        filter(
+            lambda date: date<=limit_date,
+            map(
+                lambda filename: datetime.strptime(filename.replace('curva_epidemica_Italia_',''), '%Y-%m-%d'),
+                os.listdir(os.path.join(settings.BASE_DATA_PATH,'sources/ISS_weakly_local_imported_cases/'))
+            )
+        )
+    )
+
+    filename = f'curva_epidemica_Italia_{max_available_date:%Y-%m-%d}'
+
+    return pd.read_csv(
+        os.path.join(_path, filename),
+        names=["data", "local", "imported"],
+        parse_dates=["data"],
+        sep=" "
+    )
+
+def preprocess_cases(df):
+    df["total"] = df.local+df.imported
+    df["imported_ratio"] = df.imported/df.total
+    df['imported_ratio_avg14'] = df.imported_ratio.rolling(window=14, min_periods=1).mean()
+    df['imported_ratio_std14'] = df.imported_ratio.rolling(window=14, min_periods=1).std()
