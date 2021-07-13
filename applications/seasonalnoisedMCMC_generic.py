@@ -11,13 +11,13 @@ import re
 import numpy as np
 import pymc3 as pm
 
-from covid19_pytoolbox.italy.data import DPC
+from covid19_pytoolbox.italy.data import DPC, ISS
 from covid19_pytoolbox.modeling.datarevision.seasonal import (
     draw_expanded_series,
     smooth_and_drop,
 )
 from covid19_pytoolbox.modeling.Rt.bayesian import MCMC_sample
-from covid19_pytoolbox.settings import BASE_DATA_PATH
+from covid19_pytoolbox import settings
 from covid19_pytoolbox.utils import cast_or_none, padnan
 
 logger = logging.getLogger(__name__)
@@ -62,6 +62,7 @@ def compute_past_series(
     mctargetaccept=0.95,
     rt_col_prefix="smooth_deseas",
     use_rel_res=True,
+    imported_vs_locals_col_name=None,
     debug_mode=False,
 ):
 
@@ -113,6 +114,7 @@ def compute_past_series(
                     alpha=alpha,
                     beta=beta,
                     rel_eps=rel_eps_s[~np.isnan(rel_eps_s)] if use_rel_res else None,
+                    imported_vs_locals_col_name=imported_vs_locals_col_name,
                     start=0,
                     window=None,
                     chains=mccores,
@@ -129,7 +131,7 @@ def compute_past_series(
                 logger.info(f"skipping pastdays {pastdays:03d}")
 
         # prepare target dir path and verify if exists
-        TARGET_RESULT_DIR = os.path.join(BASE_DATA_PATH, "computed/WIP/")
+        TARGET_RESULT_DIR = os.path.join(settings.BASE_DATA_PATH, "computed/WIP/")
         if not os.path.exists(TARGET_RESULT_DIR):
             os.makedirs(TARGET_RESULT_DIR, exist_ok=True)
 
@@ -184,6 +186,7 @@ def main(
     beta=0.28,
     trend_alpha=100.0,
     use_relative_residuals=True,
+    imported_vs_locals_col_name=None,
     debug_mode=False,
 ):
     """
@@ -207,6 +210,7 @@ def main(
         beta (float, optional): parameter for the gamma distribution of 'w'. Defaults to 0.28.
         trend_alpha (float, optional): Tikhonov regularization alpha parameter. Defaults to 100.0.
         use_relative_residuals (bool, optional): Use relative residuals in MCMC simulations. Defaults to True
+        imported_vs_locals_col_name (str, optional): column name of imported vs local ratio to correct local cases in MCMC simulations. Applies only if region is None (Italy). Defaults to None.
         debug_mode (bool, optional): if true, do not remove divergent Rt samples (use for debug only). Default to False.
     """
 
@@ -218,6 +222,9 @@ def main(
         pickleprefix = f"{pickleprefix}_{region_cleaned}"
     else:
         raw_data = DPC.load_daily_cases_from_github()
+        local_imported = ISS.read_weekly_cases_from_local(raw_data.data.max())
+        ISS.preprocess_cases(local_imported)
+        DPC.merge_ISS_weekly_cases(raw_data, local_imported)
         pickleprefix = f"{pickleprefix}_National"
 
     startday = 0
@@ -242,6 +249,7 @@ def main(
         mccores=mc_cores,
         mctargetaccept=mc_targetaccept,
         use_rel_res=use_relative_residuals,
+        imported_vs_locals_col_name=imported_vs_locals_col_name,
         debug_mode=debug_mode,
     )
 
@@ -261,6 +269,7 @@ if __name__ == "__main__":
     mc_cores = cast_or_none(os.environ.get("MC_CORES", 4), int)
     region = cast_or_none(os.environ.get("REGION", None), str)
     use_rel_res = cast_or_none(os.environ.get("USE_RELATIVE_RESIDUALS", True), bool)
+    imported_vs_locals_col_name = cast_or_none(os.environ.get("IMPORTED_VS_LOCALS_COL_NAME", None), str)
     debug_mode = cast_or_none(os.environ.get("DEBUG_MODE", False), bool)
 
     assert pickleprefix is not None, "pickleprefix should be defined"
@@ -281,6 +290,7 @@ if __name__ == "__main__":
         "MC_CORES": mc_cores,
         "REGION": region,
         "USE_RELATIVE_RESIDUALS": use_rel_res,
+        "IMPORTED_VS_LOCALS_COL_NAME": imported_vs_locals_col_name,
         "DEBUG_MODE": debug_mode,
     }
 
