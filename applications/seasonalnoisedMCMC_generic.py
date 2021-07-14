@@ -135,6 +135,7 @@ def compute_past_series(
             except Exception as ex:
                 logger.info(ex)
                 logger.info(f"skipping pastdays {pastdays:03d}")
+                raise ex
 
         # prepare target dir path and verify if exists
         TARGET_RESULT_DIR = os.path.join(settings.BASE_DATA_PATH, "computed/WIP/")
@@ -150,10 +151,12 @@ def compute_past_series(
         ) as handle:
             pickle.dump(simulations, handle)
 
-        sampled_Rt = np.vstack([t["r_t"][~t.diverging, :] for t in simulations])
+        
         if debug_mode:
             # use all sampled Rt, including diverging ones
             sampled_Rt = np.vstack([t["r_t"] for t in simulations])
+        else:
+            sampled_Rt = np.vstack([t["r_t"][~t.diverging, :] for t in simulations])
 
         combined_trace = {"r_t": sampled_Rt}
 
