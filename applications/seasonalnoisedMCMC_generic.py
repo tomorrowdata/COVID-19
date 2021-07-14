@@ -228,7 +228,7 @@ def main(
         raw_data = DPC.load_daily_cases_from_github()
         local_imported = ISS.read_weekly_cases_from_local(raw_data.data.max())
         ISS.preprocess_cases(local_imported)
-        DPC.merge_ISS_weekly_cases(raw_data, local_imported)
+        raw_data = DPC.merge_ISS_weekly_cases(raw_data, local_imported)
         pickleprefix = f"{pickleprefix}_National"
 
     startday = 0
