@@ -46,8 +46,11 @@ def MCMC_sample(
     
     if not imported_ratio is None:
         imported_ratio_ = imported_ratio[start:start+window]
-        imported_ratio_mean = pd.Series(imported_ratio_).rolling(window=imported_ratio_window, min_periods=1).mean().fillna(fill_mean).to_numpy()
-        imported_ratio_std = pd.Series(imported_ratio_).rolling(window=imported_ratio_window, min_periods=1).std().fillna(fill_std).to_numpy()
+
+        # fill last missing values of mean and std forwarding the last available value
+        # as imported data are available with 7-14 days delay
+        imported_ratio_mean = pd.Series(imported_ratio_).rolling(window=imported_ratio_window, min_periods=1).mean().fillna(method='ffill').to_numpy()
+        imported_ratio_std = pd.Series(imported_ratio_).rolling(window=imported_ratio_window, min_periods=1).std().fillna(method='ffill').to_numpy()
 
 
     steps = len(onset_)
