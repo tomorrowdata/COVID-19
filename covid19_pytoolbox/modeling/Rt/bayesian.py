@@ -13,8 +13,9 @@ def MCMC_sample(
     alpha, 
     beta, 
     rel_eps=None,
-    imported_vs_locals_col_name=None,
     eps_window=7,
+    imported_ratio=None,
+    imported_ratio_window=14,
     start=0, window=None, 
     chains=1, tune=4000, draws=4000, 
     target_accept=0.95, 
@@ -31,19 +32,24 @@ def MCMC_sample(
         onset = onset.values
         
     onset_ = onset[start:start+window]
-    
+
+    # we fill nans created by the rolling std with small fixed values
+    # as pymc can't draw samples from 0. standard deviation
+    # this is going to affect only the very beginning of the series, which we are not interested into
+    fill_std = 10.**(-3)
+    fill_mean = 0.
+
     if not rel_eps is None:
         rel_eps_ = rel_eps[start:start+window]
-        
-        # we fill nans created by the rolling std with small fixed values
-        # as pymc can't draw samples from 0. standard deviation
-        # this is going to affect only the very beginning of the series, which we are not interested into
-        
-        fill_std = 10.**(-3)
-        fill_mean = 0.
-        rel_eps_std = pd.Series(rel_eps_).rolling(window=eps_window).std().fillna(fill_std).to_numpy()
         rel_eps_mean = pd.Series(rel_eps_).rolling(window=eps_window).mean().fillna(fill_mean).to_numpy()
+        rel_eps_std = pd.Series(rel_eps_).rolling(window=eps_window).std().fillna(fill_std).to_numpy()
     
+    if not imported_ratio is None:
+        imported_ratio_ = imported_ratio[start:start+window]
+        imported_ratio_mean = pd.Series(imported_ratio_).rolling(window=imported_ratio_window, min_periods=1).mean().fillna(fill_mean).to_numpy()
+        imported_ratio_std = pd.Series(imported_ratio_).rolling(window=imported_ratio_window, min_periods=1).std().fillna(fill_std).to_numpy()
+
+
     steps = len(onset_)
     x = np.linspace(1,steps-1, steps)
     w = Rt.naive.gamma_df(x, alpha, beta)    
@@ -80,12 +86,30 @@ def MCMC_sample(
                 for t in range(1, steps)        
             ])            
         )         
-        
+
+        # estimate the expected today based on Rt esimate
         expected_today = r_t * infectious_charge_
+
+        # correct the estimate based on the imported cases
+        if not imported_ratio is None:
+            # correct the onsets by reducing of the number of imported cases
+            # sample imported ratios and correct to the onsets_residuals
+            
+            imported_ratio_correction = pm.TruncatedNormal(
+                name="imported_ratios_", 
+                mu=imported_ratio_mean, 
+                sigma=imported_ratio_std,
+                lower= 0.,
+                upper=1.,
+                shape=len(imported_ratio_std)
+            )
+            expected_today_corrected = expected_today * (1. - imported_ratio_correction)
+        else:
+            expected_today_corrected = expected_today
         
         # Poisson requirements
         mu = pm.math.maximum(.1, expected_today)        
-        observed = (onset_[1:]).round()
+        observed = (expected_today_corrected[1:]).round()
 
         # test the posterior: 
         # mu values derived from R_t samples 

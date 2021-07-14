@@ -101,6 +101,10 @@ def compute_past_series(
         logger.info(f"rel_eps.shape: {rel_eps.shape}")
         logger.info(f"padding_left: {padding_left}")
 
+
+        if imported_vs_locals_col_name:
+            imported_ratio = df[imported_vs_locals_col_name]
+
         simulations = []
         for new_cases_s, rel_eps_s in zip(new_cases_smoothed, rel_eps):
             logger.info(
@@ -114,7 +118,7 @@ def compute_past_series(
                     alpha=alpha,
                     beta=beta,
                     rel_eps=rel_eps_s[~np.isnan(rel_eps_s)] if use_rel_res else None,
-                    imported_vs_locals_col_name=imported_vs_locals_col_name,
+                    imported_ratio=imported_ratio,
                     start=0,
                     window=None,
                     chains=mccores,
