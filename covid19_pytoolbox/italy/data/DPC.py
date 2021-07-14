@@ -176,4 +176,4 @@ def merge_ISS_weekly_cases(dpcdf, issdf):
     # fill last nan observations with the last available
     # they will be used as mean and std to sample possible imported ratios
 
-    return pd.merge(left=dpcdf, right=issdf, how='left', on=['data']).fillna(method='ffill')
+    return pd.merge(left=dpcdf, right=issdf, how='left', on=['data'])
