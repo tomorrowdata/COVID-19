@@ -60,6 +60,7 @@ def MCMC_sample(
     with pm.Model() as model:
                 
         # draws R_t from a prior normal distribution
+        # shape-1 as we don't have Rt on the first day
         r_t = pm.Normal("r_t", mu=1.3, sigma=10., shape=len(onset_)-1)
 
         if not rel_eps is None:
@@ -100,19 +101,22 @@ def MCMC_sample(
             
             imported_ratio_correction = pm.TruncatedNormal(
                 name="imported_ratios_", 
-                mu=imported_ratio_mean, 
-                sigma=imported_ratio_std,
+                mu=imported_ratio_mean[1:], 
+                sigma=imported_ratio_std[1:],
                 lower= 0.,
                 upper=1.,
-                shape=len(imported_ratio_std)
+                shape=len(imported_ratio_std)-1
             )
             expected_today_corrected = expected_today * (1. - imported_ratio_correction)
+            onset_corrected = onset_ * (1. - imported_ratio_mean)
         else:
             expected_today_corrected = expected_today
+            onset_corrected = onset_
         
         # Poisson requirements
-        mu = pm.math.maximum(.1, expected_today)        
-        observed = (expected_today_corrected[1:]).round()
+        mu = pm.math.maximum(.1, expected_today_corrected)        
+        # skip the first as we can't compute Rt on the first day
+        observed = (onset_corrected[1:]).round()
 
         # test the posterior: 
         # mu values derived from R_t samples 
