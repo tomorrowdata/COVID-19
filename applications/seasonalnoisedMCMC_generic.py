@@ -104,6 +104,8 @@ def compute_past_series(
 
         if imported_vs_locals_col_name:
             imported_ratio = df[imported_vs_locals_col_name]
+        else:
+            imported_ratio = None
 
         simulations = []
         for new_cases_s, rel_eps_s in zip(new_cases_smoothed, rel_eps):
