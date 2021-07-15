@@ -91,14 +91,13 @@ def MCMC_sample(
             ])            
         )         
 
-        # estimate the expected today based on Rt esimate
-        expected_today = r_t * infectious_charge_
 
         # correct the estimate based on the imported cases
         if not imported_ratio is None:
             # correct the onsets by reducing of the number of imported cases
             # sample imported ratios and correct to the onsets_residuals
             
+            # exptected_today is shape -1, so the imported_ratio_correction
             imported_ratio_correction = pm.TruncatedNormal(
                 name="imported_ratios_", 
                 mu=imported_ratio_mean[1:], 
@@ -107,16 +106,17 @@ def MCMC_sample(
                 upper=1.,
                 shape=len(imported_ratio_std)-1
             )
-            expected_today_corrected = expected_today * (1. - imported_ratio_correction)
-            onset_corrected = onset_ * (1. - imported_ratio_mean)
+
+            # estimate the expected today based on Rt esimate
+            expected_today = r_t * infectious_charge_ / (1. - imported_ratio_correction)
         else:
-            expected_today_corrected = expected_today
-            onset_corrected = onset_
+            # estimate the expected today based on Rt esimate
+            expected_today = r_t * infectious_charge_ 
         
         # Poisson requirements
-        mu = pm.math.maximum(.1, expected_today_corrected)        
+        mu = pm.math.maximum(.1, expected_today)
         # skip the first as we can't compute Rt on the first day
-        observed = (onset_corrected[1:]).round()
+        observed = (onset_[1:]).round()
 
         # test the posterior: 
         # mu values derived from R_t samples 
