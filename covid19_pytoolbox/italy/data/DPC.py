@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 
 from covid19_pytoolbox.modeling.Rt import naive
 from covid19_pytoolbox.smoothing.seasonalRSVD.LogRSVD import LogSeasonalRegularizer
-from covid19_pytoolbox.utils import smape, padnan
+from covid19_pytoolbox.utils import smape, padnan, RSVD_smooth_data_generic
 
 
 prettyprint = pprint.PrettyPrinter(indent=4)
@@ -133,47 +133,35 @@ def bulk_compute_naive_Rt(df, alpha, beta):
 
 def RSVD_smooth_data(df, alpha, beta, season_period=7, trend_alpha=100., difference_degree=2):
 
-    initial_cols = df.columns
-
     filter_columns = [
         'nuovi_positivi',
         'tamponi_giornalieri',
         'nuovi_ospedalizzati'
     ]
 
-    prettyprint.pprint(filter_columns)
-
-    for col in filter_columns:
-        smoothcol = col+'_deseason'
-        print(smoothcol)
-
-        lrsvd = LogSeasonalRegularizer(
-            df[col],
-            season_period=season_period, max_r=season_period,
-            trend_alpha=trend_alpha, difference_degree=difference_degree, verbose=True)
-
-        m = lrsvd.fit()
-        print(f'patterns: {m.final_r}')
-
-        df[f'{smoothcol}'] = m.deseasoned
-        df[f'{smoothcol}_seasonality'] = m.season_svd
-        df[f'{smoothcol}_smoothed'] = m.trend
-        df[f'{smoothcol}_residuals'] = m.residuals
-        df[f'{smoothcol}_relative_residuals'] = m.relative_residuals
-
-        df[f'{smoothcol}_smoothed_Rt'] = padnan(
-            naive.compute_Rt(df[f'{smoothcol}_smoothed'].dropna(), alpha=alpha, beta=beta),
-            (m.padding_left,0)
-        )
-
-        prettyprint.pprint(lrsvd.adfuller())
-
-        print('new columns generated:')
-        prettyprint.pprint([c for c in df.columns if c not in initial_cols])
-
+    RSVD_smooth_data_generic(df, filter_columns, alpha, beta, season_period, trend_alpha, difference_degree)
 
 def merge_ISS_weekly_cases(dpcdf, issdf):
     # fill last nan observations with the last available
     # they will be used as mean and std to sample possible imported ratios
 
-    return pd.merge(left=dpcdf, right=issdf, how='left', on=['data'])
+    ###################################
+    #TODO fix shift(8)
+    ###################################
+
+    df = pd.merge(left=dpcdf, right=issdf, how='left', on=['data'])
+    df.set_index('data', inplace=True)
+    df['imported_ratio_deseason_smoothed_shifted'] = \
+        df.imported_ratio_deseason_smoothed.shift(8)
+    df['imported_ratio_shifted'] = \
+        df.imported_ratio.shift(8)
+
+    df.reset_index(inplace=True)
+
+    return df
+
+def compute_cases_corrected_by_imported(df):
+    df['nuovi_positivi_corrected_deseason_smoothed'] = \
+        df.nuovi_positivi_deseason_smoothed*(1-df.imported_ratio_deseason_smoothed_shifted)
+    df['nuovi_positivi_corrected'] = \
+        (df.nuovi_positivi*(1-df.imported_ratio_shifted)).fillna(0.)

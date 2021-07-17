@@ -3,7 +3,10 @@ import os
 import pandas as pd
 import numpy as np
 from datetime import timedelta, datetime
+import pprint
+prettyprint = pprint.PrettyPrinter(indent=4)
 
+from covid19_pytoolbox.utils import RSVD_smooth_data_generic
 from covid19_pytoolbox import settings
 
 def read_weekly_Rt_from_local(path='sources/Rt_from_ISS.csv'):
@@ -79,7 +82,17 @@ def read_weekly_cases_from_local(limit_date=None, path='sources/ISS_weakly_local
     )
 
 def preprocess_cases(df):
+
     df["total"] = df.local+df.imported
     df["imported_ratio"] = df.imported/df.total
     df['imported_ratio_avg14'] = df.imported_ratio.rolling(window=14, min_periods=1).mean()
     df['imported_ratio_std14'] = df.imported_ratio.rolling(window=14, min_periods=1).std()
+
+def RSVD_smooth_data(df, alpha, beta, season_period=7, trend_alpha=100., difference_degree=2):
+
+    filter_columns = [
+        'total',
+        'imported',
+    ]
+
+    RSVD_smooth_data_generic(df, filter_columns, alpha, beta, season_period, trend_alpha, difference_degree)

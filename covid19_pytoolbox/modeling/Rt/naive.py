@@ -19,7 +19,12 @@ def infectious_charge(series, alpha, beta):
     
     return np.asarray(infectious_charge_)
 
-def compute_Rt(series, alpha, beta):
-    infectious_charge_ = infectious_charge(series, alpha, beta)
+def compute_Rt(series, alpha, beta, imported_series=None):
+    if not imported_series is None:
+        total_series = series + imported_series
+    else:
+        total_series = series
+
+    infectious_charge_ = infectious_charge(total_series, alpha, beta)
     
     return series / infectious_charge_
