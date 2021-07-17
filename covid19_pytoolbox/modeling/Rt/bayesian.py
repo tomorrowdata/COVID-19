@@ -14,8 +14,7 @@ def MCMC_sample(
     beta, 
     rel_eps=None,
     eps_window=7,
-    imported_ratio=None,
-    imported_ratio_window=14,
+    onset_local=None,
     start=0, window=None, 
     chains=1, tune=4000, draws=4000, 
     target_accept=0.95, 
@@ -43,15 +42,15 @@ def MCMC_sample(
         rel_eps_ = rel_eps[start:start+window]
         rel_eps_mean = pd.Series(rel_eps_).rolling(window=eps_window).mean().fillna(fill_mean).to_numpy()
         rel_eps_std = pd.Series(rel_eps_).rolling(window=eps_window).std().fillna(fill_std).to_numpy()
-    
-    if not imported_ratio is None:
-        imported_ratio_ = imported_ratio[start:start+window]
 
-        # fill last missing values of mean and std forwarding the last available value
-        # as imported data are available with 7-14 days delay
-        imported_ratio_mean = pd.Series(imported_ratio_).rolling(window=imported_ratio_window, min_periods=1).mean().fillna(method='ffill').to_numpy()
-        imported_ratio_std = pd.Series(imported_ratio_).rolling(window=imported_ratio_window, min_periods=1).std().fillna(method='ffill').to_numpy()
+    # skip the first as we can't compute Rt on the first day
+    observed = (onset_[1:]).round()
 
+    if not onset_local is None:
+        if type(onset_local)==pd.DataFrame:
+            onset_local = onset_local.values
+        onset_local_ = onset_local[start:start+window]
+        observed = (onset_local_[1:]).round()
 
     steps = len(onset_)
     x = np.linspace(1,steps-1, steps)
@@ -91,32 +90,11 @@ def MCMC_sample(
             ])            
         )         
 
-
-        # correct the estimate based on the imported cases
-        if not imported_ratio is None:
-            # correct the onsets by reducing of the number of imported cases
-            # sample imported ratios and correct to the onsets_residuals
-            
-            # exptected_today is shape -1, so the imported_ratio_correction
-            imported_ratio_correction = pm.TruncatedNormal(
-                name="imported_ratios_", 
-                mu=imported_ratio_mean[1:], 
-                sigma=imported_ratio_std[1:],
-                lower= 0.,
-                upper=1.,
-                shape=len(imported_ratio_std)-1
-            )
-
-            # estimate the expected today based on Rt esimate
-            expected_today = r_t * infectious_charge_ / (1. - imported_ratio_correction)
-        else:
-            # estimate the expected today based on Rt esimate
-            expected_today = r_t * infectious_charge_ 
+        # estimate the expected today based on Rt esimate
+        expected_today = r_t * infectious_charge_ 
         
         # Poisson requirements
         mu = pm.math.maximum(.1, expected_today)
-        # skip the first as we can't compute Rt on the first day
-        observed = (onset_[1:]).round()
 
         # test the posterior: 
         # mu values derived from R_t samples 

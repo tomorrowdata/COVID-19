@@ -62,7 +62,7 @@ def compute_past_series(
     mctargetaccept=0.95,
     rt_col_prefix="smooth_deseas",
     use_rel_res=True,
-    imported_vs_locals_col_name=None,
+    new_cases_local_col=None,
     debug_mode=False,
 ):
 
@@ -101,14 +101,31 @@ def compute_past_series(
         logger.info(f"rel_eps.shape: {rel_eps.shape}")
         logger.info(f"padding_left: {padding_left}")
 
+        # local management
+        if new_cases_local_col:
+            new_cases_local = df[new_cases_local_col].to_numpy()[sl]
 
-        if imported_vs_locals_col_name:
-            imported_ratio = df[imported_vs_locals_col_name]
+            new_cases_local_expanded = draw_expanded_series(
+                new_cases_local,
+                draws=draws,
+                season_period=7,
+                trend_alpha=trend_alpha,
+                difference_degree=2,
+                alpha=alpha,
+                beta=beta,
+                lower_ratio=lower_ratio,
+                upper_ratio=upper_ratio,
+                truncate=False,
+            )
+
+            new_cases_local_smoothed, rel_eps_local, padding_left_local = smooth_and_drop(
+                new_cases_local_expanded, season_period=7, trend_alpha=100.0, difference_degree=2
+            )
         else:
-            imported_ratio = None
+            new_cases_local_smoothed = None
 
         simulations = []
-        for new_cases_s, rel_eps_s in zip(new_cases_smoothed, rel_eps):
+        for new_cases_s, rel_eps_s, new_cases_local_s in zip(new_cases_smoothed, rel_eps, new_cases_local_smoothed):
             logger.info(
                 f"new_cases_s cut left: {new_cases_s[~np.isnan(new_cases_s)].shape}"
             )
@@ -120,7 +137,7 @@ def compute_past_series(
                     alpha=alpha,
                     beta=beta,
                     rel_eps=rel_eps_s[~np.isnan(rel_eps_s)] if use_rel_res else None,
-                    imported_ratio=imported_ratio,
+                    onset_local=new_cases_local_s,
                     start=0,
                     window=None,
                     chains=mccores,
@@ -195,7 +212,7 @@ def main(
     beta=0.28,
     trend_alpha=100.0,
     use_relative_residuals=True,
-    imported_vs_locals_col_name=None,
+    new_cases_local_col=None,
     debug_mode=False,
 ):
     """
@@ -231,9 +248,12 @@ def main(
         pickleprefix = f"{pickleprefix}_{region_cleaned}"
     else:
         raw_data = DPC.load_daily_cases_from_github()
-        local_imported = ISS.read_weekly_cases_from_local(raw_data.data.max())
-        ISS.preprocess_cases(local_imported)
-        raw_data = DPC.merge_ISS_weekly_cases(raw_data, local_imported)
+        if new_cases_local_col:
+            local_imported = ISS.read_weekly_cases_from_local(raw_data.data.max())
+            ISS.preprocess_cases(local_imported)
+            raw_data = DPC.merge_ISS_weekly_cases(raw_data, local_imported)
+            DPC.compute_cases_corrected_by_imported(raw_data)
+            
         pickleprefix = f"{pickleprefix}_National"
 
     startday = 0
@@ -258,7 +278,7 @@ def main(
         mccores=mc_cores,
         mctargetaccept=mc_targetaccept,
         use_rel_res=use_relative_residuals,
-        imported_vs_locals_col_name=imported_vs_locals_col_name,
+        new_cases_local_col=new_cases_local_col,
         debug_mode=debug_mode,
     )
 
@@ -278,7 +298,7 @@ if __name__ == "__main__":
     mc_cores = cast_or_none(os.environ.get("MC_CORES", 4), int)
     region = cast_or_none(os.environ.get("REGION", None), str)
     use_rel_res = cast_or_none(os.environ.get("USE_RELATIVE_RESIDUALS", True), bool)
-    imported_vs_locals_col_name = cast_or_none(os.environ.get("IMPORTED_VS_LOCALS_COL_NAME", None), str)
+    new_cases_local_col_name = cast_or_none(os.environ.get("NEW_CASES_LOCAL_COL_NAME", None), str)
     debug_mode = cast_or_none(os.environ.get("DEBUG_MODE", False), bool)
 
     assert pickleprefix is not None, "pickleprefix should be defined"
@@ -299,7 +319,7 @@ if __name__ == "__main__":
         "MC_CORES": mc_cores,
         "REGION": region,
         "USE_RELATIVE_RESIDUALS": use_rel_res,
-        "IMPORTED_VS_LOCALS_COL_NAME": imported_vs_locals_col_name,
+        "NEW_CASES_LOCAL_COL": new_cases_local_col_name,
         "DEBUG_MODE": debug_mode,
     }
 

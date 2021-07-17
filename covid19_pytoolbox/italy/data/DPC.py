@@ -151,8 +151,10 @@ def merge_ISS_weekly_cases(dpcdf, issdf):
 
     df = pd.merge(left=dpcdf, right=issdf, how='left', on=['data'])
     df.set_index('data', inplace=True)
-    df['imported_ratio_deseason_smoothed_shifted'] = \
-        df.imported_ratio_deseason_smoothed.shift(8)
+
+    if 'imported_ratio_deseason_smoothed' in df.columns:
+        df['imported_ratio_deseason_smoothed_shifted'] = \
+            df.imported_ratio_deseason_smoothed.shift(8)
     df['imported_ratio_shifted'] = \
         df.imported_ratio.shift(8)
 
@@ -167,7 +169,10 @@ def merge_ISS_weekly_cases(dpcdf, issdf):
     return df
 
 def compute_cases_corrected_by_imported(df):
-    df['nuovi_positivi_corrected_deseason_smoothed'] = \
-        df.nuovi_positivi_deseason_smoothed*(1-df.imported_ratio_deseason_smoothed_shifted)
+
+    if 'nuovi_positivi_deseason_smoothed' in df.columns:
+        df['nuovi_positivi_corrected_deseason_smoothed'] = \
+            df.nuovi_positivi_deseason_smoothed*(1-df.imported_ratio_deseason_smoothed_shifted)
     df['nuovi_positivi_corrected'] = \
         (df.nuovi_positivi*(1-df.imported_ratio_shifted)).fillna(0.)
+
