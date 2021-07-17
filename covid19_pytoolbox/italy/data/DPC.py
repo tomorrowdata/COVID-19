@@ -158,6 +158,12 @@ def merge_ISS_weekly_cases(dpcdf, issdf):
 
     df.reset_index(inplace=True)
 
+    # fix the last nan values just repeating the last non zero value
+    last_notna_idx = df[(df.imported_ratio_shifted!=0) & (~df.imported_ratio_shifted.isna()) ].index[-1]
+    last_notna = df.imported_ratio_shifted[last_notna_idx]
+    df['imported_ratio_shifted'] = df.imported_ratio_shifted.fillna(method='bfill').fillna(last_notna)
+
+
     return df
 
 def compute_cases_corrected_by_imported(df):
