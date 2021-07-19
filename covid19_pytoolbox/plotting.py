@@ -205,19 +205,31 @@ def plot_series(ax, df=None, yfields=None, data=None, xfield="data"):
         data[0]["labels"] = yfields
 
     for d in data:
+        pltax = ax
         df = d["df"]
         yfields = d["yfields"]
 
+        if "secondary_ylim" in d:
+            pltax = ax.twinx()
+            pltax.set_ylim(*d['secondary_ylim'])
+            pltax.tick_params(axis="y", labelsize=TICK_FONTSIZE)
+            pltax.set_ylabel(d['secondary_ylabel'], fontsize=LABEL_FONTSIZE)
+            pltax.tick_params(axis="x", labelrotation=45)
+            pltax.xaxis.set_major_locator(mdates.WeekdayLocator(byweekday=mdates.WE),)
+            pltax.xaxis.set_major_formatter(mdates.DateFormatter("%d %b"),)
+            pltax.xaxis.set_tick_params(width=TICK_WIDTH)
+            pltax.yaxis.set_tick_params(width=TICK_WIDTH)
+            
         if "xfield" in d:
             x = df.loc[:, [d["xfield"]]]
         else:
             x = df.loc[:, [xfield]]
 
         if "bars" in d:
-            plotfunc = ax.errorbar
+            plotfunc = pltax.errorbar
             bars = d["bars"]
         else:
-            plotfunc = ax.plot
+            plotfunc = pltax.plot
             bars = None
 
         if "labels" in d:
@@ -229,7 +241,7 @@ def plot_series(ax, df=None, yfields=None, data=None, xfield="data"):
             colors = d["colors"]
         else:
             colors = None
-
+        
         for f in yfields:
             findex = yfields.index(f)
             args = (x.to_numpy(), df.loc[:, [f]].to_numpy())
@@ -252,7 +264,7 @@ def plot_series(ax, df=None, yfields=None, data=None, xfield="data"):
                 if timeranges:
                     xerr = df.loc[:, timeranges[findex]].to_numpy().T
                     make_error_boxes(
-                        ax, args[1], xerr, yerr, facecolor="dodgerblue", alpha=0.15
+                        pltax, args[1], xerr, yerr, facecolor="dodgerblue", alpha=0.15
                     )
                     kwargs.update({"uplims": False, "lolims": False})
 
@@ -260,10 +272,13 @@ def plot_series(ax, df=None, yfields=None, data=None, xfield="data"):
 
         if "fill_between" in d:
             interval = d["fill_between"]
-            ax.fill_between(
+            pltax.fill_between(
                 x.to_numpy().squeeze(),
                 df.loc[:, interval[0]].to_numpy().T,
                 df.loc[:, interval[1]].to_numpy().T,
                 color="violet",
                 alpha=0.3,
             )
+        
+        if "secondary_ylim" in d:
+            _ = pltax.legend(fontsize=LEGEND_FONTSIZE, loc="lower right")
