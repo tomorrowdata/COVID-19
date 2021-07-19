@@ -43,6 +43,7 @@ def preprocess(df):
 
     df.casi_da_sospetto_diagnostico.fillna(0, inplace=True)
     df.casi_da_screening.fillna(0, inplace=True)
+    df.ingressi_terapia_intensiva.fillna(0, inplace=True)
 
     # compute hospitalized_cumulative cumulative value of hospitalized cases
     df['hospitalized_cumulative'] = df.totale_ospedalizzati + df.dimessi_guariti + df.deceduti
@@ -136,7 +137,9 @@ def RSVD_smooth_data(df, alpha, beta, season_period=7, trend_alpha=100., differe
     filter_columns = [
         'nuovi_positivi',
         'tamponi_giornalieri',
-        'nuovi_ospedalizzati'
+        'nuovi_ospedalizzati',
+        'deceduti_giornalieri',
+        'ingressi_terapia_intensiva'
     ]
 
     RSVD_smooth_data_generic(df, filter_columns, alpha, beta, season_period, trend_alpha, difference_degree)
