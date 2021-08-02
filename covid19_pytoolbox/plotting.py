@@ -154,7 +154,7 @@ def plot_env(plot_func):
         if img_file_path_without_extension:
             png_path = "{}.png".format(img_file_path_without_extension)
             jpg_path = "{}.jpg".format(img_file_path_without_extension)
-            plt.savefig(png_path, dpi=dpi)
+            plt.savefig(png_path, dpi=dpi, pad_inches = 0.1, bbox_inches = 'tight')
             im = Image.open(png_path)
             rgb_im = im.convert("RGB")
             rgb_im.save(jpg_path, optimize=True, quality=quality)
@@ -196,7 +196,7 @@ def scatter(ax, df, fieldx, fieldy, fieldlabel):
     ax.ticklabel_format(style='plain')
 
 @plot_env
-def plot_series(ax, df=None, yfields=None, data=None, xfield="data"):
+def plot_series(ax, df=None, yfields=None, data=None, xfield="data", markersize=None, linewidth=None):
 
     if data is None and df is not None:
         data = [{}]
@@ -246,7 +246,7 @@ def plot_series(ax, df=None, yfields=None, data=None, xfield="data"):
             findex = yfields.index(f)
             args = (x.to_numpy(), df.loc[:, [f]].to_numpy())
 
-            kwargs = {"label": labels[findex], "linestyle": ":", "marker": "o"}
+            kwargs = {"label": labels[findex], "linestyle": ":", "marker": "o", "markersize":markersize, "linewidth":linewidth}
             if colors:
                 kwargs.update({"color": colors[findex]})
 
