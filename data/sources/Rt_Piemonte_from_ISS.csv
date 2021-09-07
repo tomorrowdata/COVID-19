@@ -1,4 +1,5 @@
 ID,report_date,computation_time_range_descr,computation_time_range_start,computation_time_range_end,Rt_text,Rt,Rt_95_min,Rt_95_max,url
+5610,1 settembre 2021,11 – 24 agosto 2021,2021-08-11,2021-08-24,0.99 (CI: 0.83-1.16),0.99,0.83,1.16,https://www.salute.gov.it/portale/nuovocoronavirus/dettaglioNotizieNuovoCoronavirus.jsp?lingua=italiano&menu=notizie&p=dalministero&id=5610
 5605,25 agosto 2021,5 – 17 agosto 2021,2021-08-05,2021-08-17,1 (CI: 0.78-1.16),1,0.78,1.16,https://www.salute.gov.it/portale/nuovocoronavirus/dettaglioNotizieNuovoCoronavirus.jsp?lingua=italiano&menu=notizie&p=dalministero&id=5605
 5601,18 agosto 2021,28 luglio – 10 agosto 2021,2021-07-28,2021-08-10,1.09 (CI: 0.88-1.48),1.09,0.88,1.48,https://www.salute.gov.it/portale/nuovocoronavirus/dettaglioNotizieNuovoCoronavirus.jsp?lingua=italiano&menu=notizie&p=dalministero&id=5601
 5597,11 agosto 2021,21 luglio – 3 agosto 2021,2021-07-21,2021-08-03,1.42 (CI: 0.85-2.12),1.42,0.85,2.12,https://www.salute.gov.it/portale/nuovocoronavirus/dettaglioNotizieNuovoCoronavirus.jsp?lingua=italiano&menu=notizie&p=dalministero&id=5597

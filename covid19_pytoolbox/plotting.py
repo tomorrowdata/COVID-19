@@ -214,9 +214,9 @@ def plot_series(ax, df=None, yfields=None, data=None, xfield="data", markersize=
             pltax.set_ylim(*d['secondary_ylim'])
             pltax.tick_params(axis="y", labelsize=TICK_FONTSIZE)
             pltax.set_ylabel(d['secondary_ylabel'], fontsize=LABEL_FONTSIZE)
-            pltax.tick_params(axis="x", labelrotation=45)
-            pltax.xaxis.set_major_locator(mdates.WeekdayLocator(byweekday=mdates.WE),)
-            pltax.xaxis.set_major_formatter(mdates.DateFormatter("%d %b"),)
+            #pltax.tick_params(axis="x", labelrotation=45)
+            pltax.xaxis.set_major_locator(mdates.MonthLocator(bymonthday=1),)
+            pltax.xaxis.set_major_formatter(mdates.DateFormatter("%d %b %y"),)
             pltax.xaxis.set_tick_params(width=TICK_WIDTH)
             pltax.yaxis.set_tick_params(width=TICK_WIDTH)
             
@@ -281,4 +281,4 @@ def plot_series(ax, df=None, yfields=None, data=None, xfield="data", markersize=
             )
         
         if "secondary_ylim" in d:
-            _ = pltax.legend(fontsize=LEGEND_FONTSIZE, loc="lower right")
+            _ = pltax.legend(fontsize=LEGEND_FONTSIZE, loc="lower left")
