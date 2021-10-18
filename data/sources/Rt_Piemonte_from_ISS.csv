@@ -1,4 +1,5 @@
 ID,report_date,computation_time_range_descr,computation_time_range_start,computation_time_range_end,Rt_text,Rt,Rt_95_min,Rt_95_max,url
+5673,13 ottobre 2021,22 settembre - 5 ottobre 2021,2021-09-22,2021-10-05,0.9 (CI: 0.72-1.05),0.9,0.72,1.05,https://www.salute.gov.it/portale/nuovocoronavirus/dettaglioNotizieNuovoCoronavirus.jsp?lingua=italiano&menu=notizie&p=dalministero&id=5673
 5660,6 ottobre 2021,15 - 28 settembre 2021,2021-09-15,2021-09-28,0.74 (CI: 0.23-0.99),0.74,0.23,0.99,https://www.salute.gov.it/portale/nuovocoronavirus/dettaglioNotizieNuovoCoronavirus.jsp?lingua=italiano&menu=notizie&p=dalministero&id=5660
 5649,29 settembre 2021,8 - 21 settembre 2021,2021-09-08,2021-09-21,0.88 (CI: 0.76-1),0.88,0.76,1,https://www.salute.gov.it/portale/nuovocoronavirus/dettaglioNotizieNuovoCoronavirus.jsp?lingua=italiano&menu=notizie&p=dalministero&id=5649
 5634,22 settembre 2021,1 - 14 settembre 2021,2021-09-01,2021-09-14,0.87 (CI: 0.75-0.98) ,0.87,0.75,0.98,https://www.salute.gov.it/portale/nuovocoronavirus/dettaglioNotizieNuovoCoronavirus.jsp?lingua=italiano&menu=notizie&p=dalministero&id=5634
