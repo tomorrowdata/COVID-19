@@ -122,7 +122,7 @@ def compute_past_series(
                 new_cases_local_expanded, season_period=7, trend_alpha=100.0, difference_degree=2
             )
         else:
-            new_cases_local_smoothed = None
+            new_cases_local_smoothed = [None] * draws
 
         simulations = []
         for new_cases_s, rel_eps_s, new_cases_local_s in zip(new_cases_smoothed, rel_eps, new_cases_local_smoothed):
