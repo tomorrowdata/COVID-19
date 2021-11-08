@@ -55,7 +55,7 @@ def export_Rt_clean(df, path='computed/Rt_from_ISS_processed.{}'):
         index=False        
     )
 
-def read_weekly_cases_from_local(limit_date=None, path='sources/ISS_weakly_local_imported_cases/'):
+def read_weekly_cases_from_local(limit_date=None, path='sources/ISS_weekly_local_imported_cases/'):
     if not limit_date:
         limit_date=datetime.now()
 
@@ -67,7 +67,7 @@ def read_weekly_cases_from_local(limit_date=None, path='sources/ISS_weakly_local
             lambda date: date<=limit_date,
             map(
                 lambda filename: datetime.strptime(filename.replace('curva_epidemica_Italia_',''), '%Y-%m-%d'),
-                os.listdir(os.path.join(settings.BASE_DATA_PATH,'sources/ISS_weakly_local_imported_cases/'))
+                os.listdir(os.path.join(settings.BASE_DATA_PATH,'sources/ISS_weekly_local_imported_cases/'))
             )
         )
     )
