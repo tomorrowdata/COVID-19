@@ -7,6 +7,8 @@ if [[ -z "${PLACEHOLDER_DATE}" ]]; then
     exit 1
 fi
 
+PASTDAYS="002"
+
 BRANCH_DATE=$(echo $PLACEHOLDER_DATE | sed -s "s#-##g")
 echo $BRANCH_DATE
 git checkout -b WIP_$BRANCH_DATE || exit 1
@@ -42,8 +44,8 @@ git add notebooks/italy/Rt_Sicilia.ipynb || exit 1
 git add notebooks/italy/Rt_Valle_d_Aosta.ipynb || exit 1
 
 
-git add "data/computed/italy/${PLACEHOLDER_DATE}_futbound_08_12_National_MCMC_Rt_pastdays_000_000.pickle" || exit 1
-git add "data/computed/italy/${PLACEHOLDER_DATE}_futbound_08_12_Piemonte_MCMC_Rt_pastdays_000_000.pickle" || exit 1
+git add "data/computed/italy/${PLACEHOLDER_DATE}_futbound_08_12_National_MCMC_Rt_pastdays_${PASTDAYS}_${PASTDAYS}.pickle" || exit 1
+git add "data/computed/italy/${PLACEHOLDER_DATE}_futbound_08_12_Piemonte_MCMC_Rt_pastdays_${PASTDAYS}_${PASTDAYS}.pickle" || exit 1
 git add "data/computed/italy/${PLACEHOLDER_DATE}_TD_calc_Regions_MCMC_Rt.pickle" || exit 1
 git add "data/computed/italy/${PLACEHOLDER_DATE}_TD_calc_Regions_all_MCMC_Rt.pickle" || exit 1
 git add "data/computed/italy/${PLACEHOLDER_DATE}_TD_calc_Regions_all_MCMC_Rt.csv" || exit 1
