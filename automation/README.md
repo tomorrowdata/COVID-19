@@ -55,7 +55,7 @@ When the processing is done, to commit and push the results:
 
 
 
-# Run Automation
+# Detailed version
 Use the `run_automation.sh`  Automation App to run different application as defined in `./configs/config.json`.
 
 **Features**
