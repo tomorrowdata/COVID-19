@@ -1,3 +1,61 @@
+# Short version
+
+How to run the calculation of the $Rt$ index at national italian level and for each region.
+
+## Prerequisites
+
+1. have docker installed on your machine
+2. clone this repo: `git clone git@github.com:tomorrowdata/COVID-19.git`
+3. create the the directory `WIP` inside the path `COVID-19/data/computed/`
+4. create a file named `.env` in the directory `COVID-19/automation` with the following content:
+```
+CONFIG_FILE="config.json"
+PLACEHOLDER_PROJECT_DIR=$(cd ..; pwd)
+# the following date should be changed at each run
+PLACEHOLDER_DATE="2021-12-05"
+```
+
+## Steps to be repeated for each run
+
+### Start the calculation:
+1. go to `COVID-19`
+2. run `git pull` 
+    - a series of files available from your last run will be pulled
+3. run `docker rm $(docker ps -aq)` 
+    - to remove containers created from previous calculations
+4. eventually remove all the files resulted from previous calculations, which are contained in the path 
+5. go to `COVID-19/automation`
+6. edit the file `.env` changing the `PLACEHOLDER_DATE` to the last day for which DPC (Protezione Civile) data is available.
+    - For example: if it is monday morning 2021-12-06, you must set 2021-12-05, which is the the last day for which new data are available
+`COVID-19/data/computed/WIP`
+7. finally, from the same path `COVID-19/automation`, 
+    - run the command: `./run_automation.sh`
+8. the command will calculate the $Rt$ for Italy and for each region, processing 4 regions in parallel, one container for each region
+
+### Check the status
+
+... The entire calculation require some hours, depending on the machine ... 
+
+In the meanwhile you can check what is happening whith the following:
+- `docker ps`: lists the regions which are currently under calculation
+    - if no container is running, either the computation is completed, or something went wrong
+- `docker logs Italy` (or the name of a region): shows the logs of the calculation
+
+### Commit the results
+
+> **Note**: the following steps require that you have ush access to the original repo (either this one or a fork)
+
+When the processing is done, to commit and push the results:
+1. go to `COVID-19/automation`
+2. run `./run_push_wip.sh`
+3. This will perform two main actions:
+    1. update all the relevant notebooks with the results of the calculations
+    2. push all the notebooks, pickle files and images on a new branch named `WIP_<the date in $PLACEHOLDER_DATE>`
+        - you will be required for your github personal access token for the push to be successful
+
+
+
+
 # Run Automation
 Use the `run_automation.sh`  Automation App to run different application as defined in `./configs/config.json`.
 
