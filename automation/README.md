@@ -30,13 +30,13 @@ PLACEHOLDER_DATE="2021-12-05"
 `COVID-19/data/computed/WIP`
 7. finally, from the same path `COVID-19/automation`, 
     - run the command: `./run_automation.sh`
-8. the command will calculate the $Rt$ for Italy and for each region, processing 4 regions in parallel, one container for each region
+8. the command will calculate the $Rt$ index for Italy and for each region, processing 4 regions in parallel, one container for each region
 
 ### Check the status
 
 ... The entire calculation require some hours, depending on the machine ... 
 
-In the meanwhile you can check what is happening whith the following:
+In the meantime you can check what is happening whith the following:
 - `docker ps`: lists the regions which are currently under calculation
     - if no container is running, either the computation is completed, or something went wrong
 - `docker logs Italy` (or the name of a region): shows the logs of the calculation
