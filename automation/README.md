@@ -4,9 +4,9 @@ How to run the calculation of the $Rt$ index at national italian level and for e
 
 ## Prerequisites
 
-1. have docker installed on your machine
+1. have docker installed on your big Linux machine (how big? ~24 cores and ~192GB RAM)
 2. clone this repo: `git clone git@github.com:tomorrowdata/COVID-19.git`
-3. create the the directory `WIP` inside the path `COVID-19/data/computed/`
+3. create the directory `WIP` inside the path `COVID-19/data/computed/`
 4. create a file named `.env` in the directory `COVID-19/automation` with the following content:
 ```
 CONFIG_FILE="config.json"
@@ -23,11 +23,10 @@ PLACEHOLDER_DATE="2021-12-05"
     - a series of files available from your last run will be pulled
 3. run `docker rm $(docker ps -aq)` 
     - to remove containers created from previous calculations
-4. eventually remove all the files resulted from previous calculations, which are contained in the path 
+4. eventually remove all the files resulted from previous calculations, which are contained in the path `COVID-19/data/computed/WIP`
 5. go to `COVID-19/automation`
 6. edit the file `.env` changing the `PLACEHOLDER_DATE` to the last day for which DPC (Protezione Civile) data is available.
     - For example: if it is monday morning 2021-12-06, you must set 2021-12-05, which is the the last day for which new data are available
-`COVID-19/data/computed/WIP`
 7. finally, from the same path `COVID-19/automation`, 
     - run the command: `./run_automation.sh`
 8. the command will calculate the $Rt$ index for Italy and for each region, processing 4 regions in parallel, one container for each region
