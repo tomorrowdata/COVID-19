@@ -35,14 +35,14 @@ PLACEHOLDER_DATE="2021-12-05"
 
 ... The entire calculation require some hours, depending on the machine ... 
 
-In the meantime you can check what is happening whith the following:
+In the meantime you can check what is happening with the following:
 - `docker ps`: lists the regions which are currently under calculation
     - if no container is running, either the computation is completed, or something went wrong
 - `docker logs Italy` (or the name of a region): shows the logs of the calculation
 
 ### Commit the results
 
-> **Note**: the following steps require that you have ush access to the original repo (either this one or a fork)
+> **Note**: the following steps require that you have push access to the original repo (either this one or a fork)
 
 When the processing is done, to commit and push the results:
 1. go to `COVID-19/automation`
