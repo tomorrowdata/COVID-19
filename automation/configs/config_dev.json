@@ -14,7 +14,7 @@
                 "PASTDAYS_START": 0,
                 "PASTDAYS_END": 0,
                 "FUTUREDRAWS": 5,
-                "TOT_CHAIN_LEN": null,
+                "TOT_CHAIN_LEN": 365,
                 "LOWER_RATIO": 0.8,
                 "UPPER_RATIO": 1.2,
                 "MC_TARGETACCEPT": 0.95,

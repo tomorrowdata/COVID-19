@@ -14,13 +14,14 @@
                 "PASTDAYS_START": 0,
                 "PASTDAYS_END": 0,
                 "FUTUREDRAWS": 5,
-                "TOT_CHAIN_LEN": null,
+                "TOT_CHAIN_LEN": 365,
                 "LOWER_RATIO": 0.8,
                 "UPPER_RATIO": 1.2,
                 "MC_TARGETACCEPT": 0.95,
-                "MC_TUNE": 500,
+                "MC_TUNE": 2000,
                 "MC_DRAWS": 1000,
                 "MC_CORES": 4,
+                "NEW_CASES_LOCAL_COL_NAME": "nuovi_positivi_corrected",
                 "REGION": null
             }
         },
