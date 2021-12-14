@@ -7,7 +7,7 @@ if [[ -z "${PLACEHOLDER_DATE}" ]]; then
     exit 1
 fi
 
-PASTDAYS="002"
+PASTDAYS="000"
 
 BRANCH_DATE=$(echo $PLACEHOLDER_DATE | sed -s "s#-##g")
 echo $BRANCH_DATE

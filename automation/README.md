@@ -19,7 +19,8 @@ PLACEHOLDER_DATE="2021-12-05"
 
 ### Start the calculation:
 1. go to `COVID-19`
-2. run `git pull` 
+2. run `git checkout main`
+3. run `git pull` 
     - a series of files available from your last run will be pulled
 3. run `docker rm $(docker ps -aq)` 
     - to remove containers created from previous calculations
@@ -46,11 +47,11 @@ In the meantime you can check what is happening with the following:
 
 When the processing is done, to commit and push the results:
 1. go to `COVID-19/automation`
+2. run `./run_notebooks.sh`
+    - this will update all the relevant notebooks with the results of the calculations
 2. run `./run_push_wip.sh`
-3. This will perform two main actions:
-    1. update all the relevant notebooks with the results of the calculations
-    2. push all the notebooks, pickle files and images on a new branch named `WIP_<the date in $PLACEHOLDER_DATE>`
-        - you will be required for your github personal access token for the push to be successful
+    - this will push all the notebooks, pickle files and images on a new branch named `WIP_<the date in $PLACEHOLDER_DATE>`
+    - you will be required for your github personal access token for the push to be successful
 
 
 
