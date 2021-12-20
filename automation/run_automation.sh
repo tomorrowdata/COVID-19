@@ -1,6 +1,11 @@
 #! /bin/bash
-docker build -f ../Dockerfile-app -t covid-run-apps ../
+docker build --build-arg EXTERNALUSERID=$UID -f ../Dockerfile-app -t covid-run-apps ../
 docker build -f app/Dockerfile -t rt-automation-image ./app || exit 1
+
+echo "###################################"
+echo "Running calculations with user id: "
+docker run -it --rm covid-run-apps id -u jupuser
+echo "###################################"
 
 GOOD=true
 source .env

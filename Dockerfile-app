@@ -8,7 +8,8 @@ RUN pip install -r /requirements.txt
 
 EXPOSE 8888
 
-RUN useradd -ms /bin/bash jupuser
+ARG EXTERNALUSERID=1000
+RUN useradd -u $EXTERNALUSERID -ms /bin/bash jupuser
 
 USER jupuser
 
