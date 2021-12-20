@@ -46,10 +46,13 @@ In the meantime you can check what is happening with the following:
 > **Note**: the following steps require that you have push access to the original repo (either this one or a fork)
 
 When the processing is done, to commit and push the results:
-1. go to `COVID-19/automation`
-2. run `./run_notebooks.sh`
+1. go to `COVID-19` and run 
+   - `./run-compose.sh`
+   - `mv data/computed/WIP/*Rt*.pickle data/computed/italy`
+2. go to `COVID-19/automation`
+3. run `./run_notebooks.sh`
     - this will update all the relevant notebooks with the results of the calculations
-2. run `./run_push_wip.sh`
+4. run `./run_push_wip.sh`
     - this will push all the notebooks, pickle files and images on a new branch named `WIP_<the date in $PLACEHOLDER_DATE>`
     - you will be required for your github personal access token for the push to be successful
 
