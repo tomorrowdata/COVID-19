@@ -47,7 +47,7 @@ In the meantime you can check what is happening with the following:
 
 When the processing is done, to commit and push the results:
 1. go to `COVID-19` and run 
-   - `./run-compose.sh`
+   - `docker-compose up -d`
    - `mv data/computed/WIP/*Rt*.pickle data/computed/italy`
 2. go to `COVID-19/automation`
 3. run `./run_notebooks.sh`
