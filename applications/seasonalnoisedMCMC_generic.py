@@ -137,7 +137,7 @@ def compute_past_series(
                     alpha=alpha,
                     beta=beta,
                     rel_eps=rel_eps_s[~np.isnan(rel_eps_s)] if use_rel_res else None,
-                    onset_local=new_cases_local_s,
+                    onset_local=new_cases_local_s[~np.isnan(new_cases_local_s)],
                     start=0,
                     window=None,
                     chains=mccores,
