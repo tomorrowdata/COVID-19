@@ -12,15 +12,24 @@ from covid19_pytoolbox.utils import smape, padnan, RSVD_smooth_data_generic
 prettyprint = pprint.PrettyPrinter(indent=4)
 
 
-def load_daily_cases_from_github():
+"""
+  upto: optional, date string in the form yyyy-mm-dd
+"""
+def load_daily_cases_from_github(upto=None):
     def parse_date(date):
         return datetime.strptime(date[:10], '%Y-%m-%d')
 
+    dpcpath = 'https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-andamento-nazionale/dpc-covid19-ita-andamento-nazionale.csv'
+    print(dpcpath)
+
     df = pd.read_csv(
-        'https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-andamento-nazionale/dpc-covid19-ita-andamento-nazionale.csv',
+        dpcpath,
         parse_dates=['data'],
         date_parser=parse_date
     )
+    if upto:
+        df = df[df.data<=upto].copy()
+
     return df
 
 def load_daily_cases_from_github_region(region):
@@ -167,7 +176,6 @@ def merge_ISS_weekly_cases(dpcdf, issdf):
     last_notna_idx = df[(df.imported_ratio_shifted!=0) & (~df.imported_ratio_shifted.isna()) ].index[-1]
     last_notna = df.imported_ratio_shifted[last_notna_idx]
     df['imported_ratio_shifted'] = df.imported_ratio_shifted.fillna(method='bfill').fillna(last_notna)
-
 
     return df
 
