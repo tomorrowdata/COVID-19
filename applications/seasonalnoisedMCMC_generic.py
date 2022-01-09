@@ -126,6 +126,8 @@ def compute_past_series(
 
         simulations = []
         for new_cases_s, rel_eps_s, new_cases_local_s in zip(new_cases_smoothed, rel_eps, new_cases_local_smoothed):
+            if new_cases_local_s is not None:
+                new_cases_local_s = new_cases_local_s[~np.isnan(new_cases_local_s)]
             logger.info(
                 f"new_cases_s cut left: {new_cases_s[~np.isnan(new_cases_s)].shape}"
             )
@@ -137,7 +139,7 @@ def compute_past_series(
                     alpha=alpha,
                     beta=beta,
                     rel_eps=rel_eps_s[~np.isnan(rel_eps_s)] if use_rel_res else None,
-                    onset_local=new_cases_local_s[~np.isnan(new_cases_local_s)],
+                    onset_local=new_cases_local_s,
                     start=0,
                     window=None,
                     chains=mccores,
