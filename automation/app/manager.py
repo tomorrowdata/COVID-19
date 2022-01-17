@@ -15,10 +15,12 @@ from docker.errors import APIError, NotFound
 from docker.models.containers import Container
 from settings import CHECK_INTERVAL, LOG_LEVEL
 
+import pandas as pd
+
 FORMATTER = "[%(asctime)s] [%(name)s] [%(levelname)s] %(message)s"
 logging.basicConfig(format=FORMATTER)
 
-SANITIZE_PATTERN = re.compile("[\.,'@;$&\"%? ]+")
+SANITIZE_PATTERN = re.compile("[\.,'@;$&\"%?\- ]+")
 
 def get_logger(name: str, log_level=logging.INFO) -> logging.Logger:
     logger = logging.getLogger(name)
@@ -68,6 +70,10 @@ def _assert_defined(value: Any) -> Any:
 
 def _sanitize_docker_name(name: str) -> str:
     return SANITIZE_PATTERN.sub("-", name)
+
+def _sanitize_file_name(name: str) -> str:
+    return SANITIZE_PATTERN.sub("_", name)
+
 
 class Run:
     PROGRAM = "python3"
@@ -239,6 +245,13 @@ class RTAutomation:
         check_period=30,
     ) -> None:
         self.dc = docker_client
+        self.data_dir = _assert_defined(
+            runs_config.get("run_data_dir", "./data")
+        )
+        self.data_prefix = _assert_defined(
+            runs_config.get("run_data_prefix", "NA")
+        )
+
         self.max_parallel = _assert_defined(
             runs_config.get("max_parallel_containers", 4)
         )
@@ -366,6 +379,37 @@ class RTAutomation:
         with open(path_, "w") as fp:
             json.dump(run.get_run_report(), fp)
 
+    def _merge_results(self):
+        self.log.info("Merging regions results")
+        completed_regions = [
+            _sanitize_file_name(r._args.get("REGION")) 
+            for r in self._completed if r._args.get("REGION")
+        ]
+        DATA_PATH = os.path.join(self.data_dir, "computed/WIP")
+        regional_calc_data = None
+        for region in completed_regions:
+            # TODO fix hardcoded pastdays
+            region_picke_name = os.path.join(
+                DATA_PATH,
+                f'{self.data_prefix}_futbound_08_12_{region}_MCMC_Rt_pastdays_000_000.pickle'
+            )
+            tempdf = pd.read_pickle(region_picke_name)
+            cols = tempdf.columns.tolist()
+            tempdf['Region'] = region
+            tempdf = tempdf[['Region']+cols]
+            if regional_calc_data is None:
+                regional_calc_data = tempdf
+            else:
+                regional_calc_data = pd.concat((regional_calc_data, tempdf))
+
+        regional_calc_data.sort_values(by=['data', 'Region'], inplace=True)
+        regional_calc_data.drop(columns='index', inplace=True)
+        regional_calc_data.reset_index(drop=True, inplace=True)
+        
+        merged_file_name = os.path.join(DATA_PATH, f'{self.data_prefix}_TD_calc_Regions_all_MCMC_Rt.pickle')
+        regional_calc_data.to_pickle(merged_file_name)
+        self.log.info(f"Merged results saved to {merged_file_name}")
+
     def __call__(self):
         self.log.info("Start running scheduled runs")
         prog_bar = tqdm(total=len(self._scheduled), desc="Completed Runs")
@@ -392,6 +436,8 @@ class RTAutomation:
         for el in self._failed:
             run_, ex = el
             self.log.info(f"{run_} - Exception: {ex.__class__.__name__}")
+
+        self._merge_results()
 
 
 if __name__ == "__main__":

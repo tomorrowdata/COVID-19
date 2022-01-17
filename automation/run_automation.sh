@@ -34,6 +34,7 @@ docker run -it -d \
     -v /usr/bin/docker:/usr/bin/docker \
     --mount type=bind,source=$(pwd)/results,target=/RTAutomation/results \
     --mount type=bind,source=$(pwd)/configs,target=/RTAutomation/configs \
+    --mount type=bind,source=$(pwd)/../data,target=/RTAutomation/data \
     --env PLACEHOLDER_DATE=$PLACEHOLDER_DATE \
     --env PLACEHOLDER_PROJECT_DIR=$PLACEHOLDER_PROJECT_DIR \
     --env CONFIG_FILE=$CONFIG_FILE \

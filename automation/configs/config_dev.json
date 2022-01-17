@@ -13,19 +13,69 @@
                 "DATA_COL_NAME": "nuovi_positivi",
                 "PASTDAYS_START": 0,
                 "PASTDAYS_END": 0,
-                "FUTUREDRAWS": 5,
-                "TOT_CHAIN_LEN": null,
+                "FUTUREDRAWS": 1,
+                "TOT_CHAIN_LEN": 50,
                 "LOWER_RATIO": 0.8,
                 "UPPER_RATIO": 1.2,
                 "MC_TARGETACCEPT": 0.95,
-                "MC_TUNE": 2000,
-                "MC_DRAWS": 1000,
-                "MC_CORES": 4,
+                "MC_TUNE": 20,
+                "MC_DRAWS": 10,
+                "MC_CORES": 1,
                 "NEW_CASES_LOCAL_COL_NAME": "nuovi_positivi_corrected",
                 "REGION": null
             }
-        }
+        },
+        {
+            "name": "Piemonte",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "{PROJECT_DIR}/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 1,
+                "TOT_CHAIN_LEN": 50,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.95,
+                "MC_TUNE": 20,
+                "MC_DRAWS": 10,
+                "MC_CORES": 1,
+                "REGION": "Piemonte"
+            }
+        },
+        {
+            "name": "Emilia-Romagna",
+            "image": "covid-run-apps",
+            "data": {
+                "source": "{PROJECT_DIR}/data/",
+                "target": "/home/jupuser/data"
+            },
+            "app": "seasonalnoisedMCMC_generic",
+            "args": {
+                "PICKLEPREFIX": "{DATE}_futbound_08_12",
+                "DATA_COL_NAME": "nuovi_positivi",
+                "PASTDAYS_START": 0,
+                "PASTDAYS_END": 0,
+                "FUTUREDRAWS": 1,
+                "TOT_CHAIN_LEN": 50,
+                "LOWER_RATIO": 0.8,
+                "UPPER_RATIO": 1.2,
+                "MC_TARGETACCEPT": 0.95,
+                "MC_TUNE": 20,
+                "MC_DRAWS": 10,
+                "MC_CORES": 1,
+                "REGION": "Emilia-Romagna"
+            }
+        }        
     ],
-    "max_parallel_containers" : 2,
-    "run_results_dir": "./results"
+    "max_parallel_containers" : 3,
+    "run_results_dir": "./results",
+    "run_data_dir": "./data",
+    "run_data_prefix": "{DATE}"
 }

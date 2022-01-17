@@ -532,5 +532,7 @@
         }
     ],
     "max_parallel_containers": 3,
-    "run_results_dir": "./results"
+    "run_results_dir": "./results",
+    "run_data_dir": "./data",
+    "run_data_prefix": "{DATE}"    
 }
