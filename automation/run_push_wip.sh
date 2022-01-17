@@ -24,28 +24,51 @@ regions_file_target="${target_dir}/${regions_file}"
 national_file_target="${target_dir}/${national_file}"
 
 
-if [ ! -f $regions_file_source ]; then
-    echo "Regions file missing"
-    echo "Location should be $regions_file_source"
-    echo "Retry later"
-    exit 1
+if [ ! -f $regions_file_source  ]; then
+    if [ ! -f $regions_file_target ]; then
+        echo "None of the two Regions file are present. Locations should be:"
+        echo "$regions_file_source"
+        echo "or"
+        echo "$regions_file_target"
+        echo "Retry later"
+        exit 1
+    fi
+else
+    if [ ! -f $regions_file_target ]; then
+        GOOD_SUDO=true
+        sudo chown $UID:$UID $regions_file_source || GOOD_SUDO=false
+        if $GOOD_SUDO ; then
+            mv $regions_file_source $regions_file_target
+            echo "proccessed ${regions_file_source} to ${regions_file_target}"
+        else
+            echo "you must type your sudo password when asked for"
+            exit 1
+        fi
+    fi
 fi
 
 if [ ! -f $national_file_source ]; then
-    echo "National file missing"
-    echo "Location should be $national_file_source"
-    echo "Retry later"    
-    exit 1
+    if [ ! -f $national_file_target ]; then
+        echo "None of the two national files are present. Locations should be:"
+        echo "$national_file_source"
+        echo "or"
+        echo "$national_file_target"
+        echo "Retry later"    
+        exit 1
+    fi
+else
+    if [ ! -f $national_file_target ]; then
+        mv $national_file_source $national_file_target
+        echo "moved ${national_file_source} to ${national_file_target}"
+    fi
 fi
 
-sudo chown $UID:$UID $regions_file_source
 
-mv $regions_file_source $regions_file_target
-mv $national_file_source $national_file_target
+
 
 BRANCH_DATE=$(echo $PLACEHOLDER_DATE | sed -s "s#-##g")
 echo $BRANCH_DATE
-git checkout -b WIP_$BRANCH_DATE || exit 1
+git checkout -b TTT_WIP_$BRANCH_DATE || exit 1
 
 git add $regions_file_target || exit 1
 git add $national_file_target || exit 1
