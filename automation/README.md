@@ -31,6 +31,7 @@ PLACEHOLDER_DATE="2021-12-05"
 7. finally, from the same path `COVID-19/automation`, 
     - run the command: `./run_automation.sh`
 8. the command will calculate the $Rt$ index for Italy and for each region, processing 4 regions in parallel, one container for each region
+9. when all the calculations are completed, the main container will collect each regional result into one single dataset
 
 ### Check the status
 
@@ -46,14 +47,11 @@ In the meantime you can check what is happening with the following:
 > **Note**: the following steps require that you have push access to the original repo (either this one or a fork)
 
 When the processing is done, to commit and push the results:
-1. go to `COVID-19` and run 
-   - `docker-compose up -d`
-   - `mv data/computed/WIP/*Rt*.pickle data/computed/italy`
-2. go to `COVID-19/automation`
-3. run `./run_notebooks.sh`
-    - this will update all the relevant notebooks with the results of the calculations
-4. run `./run_push_wip.sh`
-    - this will push all the notebooks, pickle files and images on a new branch named `WIP_<the date in $PLACEHOLDER_DATE>`
+1. go to `COVID-19/automation`
+2. run `./run_push_wip.sh`
+    - if the above processing step is not yet completed this script will alert you with some missing file and the advice to "retry later"
+    - if the above processing step is completed this script will push two pickle files (one for the regions and one for Italy) to a new branch named `WIP_<the date in $PLACEHOLDER_DATE>`
+      - note: you will be asked for your sudo password to change the ownership of a file
     - you will be required for your github personal access token for the push to be successful
 
 
