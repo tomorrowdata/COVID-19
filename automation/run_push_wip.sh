@@ -63,12 +63,11 @@ else
     fi
 fi
 
-
-
+$GOOD_SUDO || exit 1
 
 BRANCH_DATE=$(echo $PLACEHOLDER_DATE | sed -s "s#-##g")
 echo $BRANCH_DATE
-git checkout -b TTT_WIP_$BRANCH_DATE || exit 1
+git checkout -b TTTT_WIP_$BRANCH_DATE || exit 1
 
 git add $regions_file_target || exit 1
 git add $national_file_target || exit 1
@@ -76,3 +75,6 @@ git add $national_file_target || exit 1
 git commit -m "calculations $PLACEHOLDER_DATE" || exit 1
 
 git push --set-upstream origin WIP_$BRANCH_DATE
+
+echo ""
+echo " OK. Everything pushed to ${WIP_$BRANCH_DATE}"
