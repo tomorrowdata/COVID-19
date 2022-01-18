@@ -1,5 +1,8 @@
 #! /bin/bash
 
+# to run a continuous process that automatically check for the processing to be finished:
+# GOON=1 ; while [ ! $GOON -eq 0 ] ; do echo $(date) ; ./run_push_wip.sh ; GOON=$? ; sleep 5 ; done
+
 source .env
 
 if [[ -z "${PLACEHOLDER_DATE}" ]]; then
@@ -23,7 +26,19 @@ national_file_source="${source_dir}/${national_file}"
 regions_file_target="${target_dir}/${regions_file}"
 national_file_target="${target_dir}/${national_file}"
 
+# check that the automation process is completed
+rtautomation=$(docker ps --filter "name=RTAutomation" -q)
 
+if [ ! -z $rtautomation ]; then
+    echo "$(date): processing is not completed yet. running calculations:"
+    docker ps --filter "ancestor=covid-run-apps" --format "{{.Names}}"
+    echo "retry later"
+    exit 1
+else
+    echo "$(date): processing is completed. goon with moving and pushing results"
+fi
+
+# check if regions file exists and process it
 if [ ! -f $regions_file_source  ]; then
     if [ ! -f $regions_file_target ]; then
         echo "None of the two Regions file are present. Locations should be:"
@@ -47,6 +62,7 @@ else
     fi
 fi
 
+#check if national file exists and process it
 if [ ! -f $national_file_source ]; then
     if [ ! -f $national_file_target ]; then
         echo "None of the two national files are present. Locations should be:"
@@ -66,15 +82,21 @@ fi
 $GOOD_SUDO || exit 1
 
 BRANCH_DATE=$(echo $PLACEHOLDER_DATE | sed -s "s#-##g")
-echo $BRANCH_DATE
-git checkout -b TTTT_WIP_$BRANCH_DATE || exit 1
+
+WIP_BRANCH="WIP_${BRANCH_DATE}"
+echo $WIP_BRANCH
+
+git checkout -b $WIP_BRANCH
+if [ ! $? -eq 0 ]; then
+    git checkout $WIP_BRANCH
+fi
 
 git add $regions_file_target || exit 1
 git add $national_file_target || exit 1
 
 git commit -m "calculations $PLACEHOLDER_DATE" || exit 1
 
-git push --set-upstream origin WIP_$BRANCH_DATE
+git push --set-upstream origin $WIP_BRANCH
 
 echo ""
-echo " OK. Everything pushed to ${WIP_$BRANCH_DATE}"
+echo " OK. Everything pushed to ${WIP_BRANCH}"
