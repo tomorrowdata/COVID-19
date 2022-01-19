@@ -16,8 +16,4 @@ run_notebook(){
 }
 
 run_notebook notebooks/Rt_on_italian_national_data.ipynb
-run_notebook notebooks/italy/Rt_Piemonte.ipynb
-run_notebook notebooks/italy/Rt_regions.ipynb
 run_notebook notebooks/italy/Rt-all-regions.ipynb
-run_notebook notebooks/italy/Rt_Sicilia.ipynb
-run_notebook notebooks/italy/Rt_Valle_d_Aosta.ipynb

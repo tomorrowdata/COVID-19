@@ -73,6 +73,7 @@ def read_weekly_cases_from_local(limit_date=None, path='sources/ISS_weekly_local
     )
 
     filename = f'curva_epidemica_Italia_{max_available_date:%Y-%m-%d}'
+    print(filename)
 
     return pd.read_csv(
         os.path.join(_path, filename),
