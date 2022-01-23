@@ -2,3 +2,4 @@ six
 docker
 tqdm
 pandas
+pyarrow

@@ -406,8 +406,8 @@ class RTAutomation:
         regional_calc_data.drop(columns='index', inplace=True)
         regional_calc_data.reset_index(drop=True, inplace=True)
         
-        merged_file_name = os.path.join(DATA_PATH, f'{self.data_prefix}_TD_calc_Regions_all_MCMC_Rt.pickle')
-        regional_calc_data.to_pickle(merged_file_name)
+        merged_file_name = os.path.join(DATA_PATH, f'{self.data_prefix}_TD_calc_Regions_all_MCMC_Rt.parquet')
+        regional_calc_data.to_parquet(merged_file_name)
         self.log.info(f"Merged results saved to {merged_file_name}")
 
     def __call__(self):

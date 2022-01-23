@@ -18,7 +18,7 @@ source_dir="data/computed/WIP"
 target_dir="data/computed/italy"
 
 regions_file="${PLACEHOLDER_DATE}_TD_calc_Regions_all_MCMC_Rt.pickle"
-national_file="${PLACEHOLDER_DATE}_futbound_08_12_National_MCMC_Rt_pastdays_${PASTDAYS}_${PASTDAYS}.pickle"
+national_file="${PLACEHOLDER_DATE}_futbound_08_12_National_MCMC_Rt_pastdays_${PASTDAYS}_${PASTDAYS}.parquet"
 
 regions_file_source="${source_dir}/${regions_file}"
 national_file_source="${source_dir}/${national_file}"
