@@ -381,19 +381,19 @@ class RTAutomation:
 
     def _merge_results(self):
         self.log.info("Merging regions results")
-        completed_regions = [
-            _sanitize_file_name(r._args.get("REGION")) 
+        completed_regions = {
+            r._args.get("REGION"): _sanitize_file_name(r._args.get("REGION")) 
             for r in self._completed if r._args.get("REGION")
-        ]
+        }
         DATA_PATH = os.path.join(self.data_dir, "computed/WIP")
         regional_calc_data = None
-        for region in completed_regions:
+        for region, region_sanitized in completed_regions.items():
             # TODO fix hardcoded pastdays
-            region_picke_name = os.path.join(
+            region_pickle_name = os.path.join(
                 DATA_PATH,
-                f'{self.data_prefix}_futbound_08_12_{region}_MCMC_Rt_pastdays_000_000.pickle'
+                f'{self.data_prefix}_futbound_08_12_{region_sanitized}_MCMC_Rt_pastdays_000_000.pickle'
             )
-            tempdf = pd.read_pickle(region_picke_name)
+            tempdf = pd.read_pickle(region_pickle_name)
             cols = tempdf.columns.tolist()
             tempdf['Region'] = region
             tempdf = tempdf[['Region']+cols]
