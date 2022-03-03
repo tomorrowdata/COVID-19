@@ -1,0 +1,5956 @@
+commit 437149f04f766e094eb0cd7ed4380f231c629101
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Jan 20 22:34:26 2022 +0000
+
+    ISS open data update 2022-01-20T22:34:26+00:00
+
+commit f8b3a67972f00d963e49750d19714cb8ea4b013f
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Jan 19 22:34:29 2022 +0000
+
+    ISS open data update 2022-01-19T22:34:29+00:00
+
+commit 7e2af73f528c79f323f4f3a2b03b687678df8aa1
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jan 19 11:01:39 2022 +0100
+
+    updated analysis with new file from ISS - 2022-01-05
+
+commit 9df7d24d49ff0ccdc72c8bdbb7fc6725dfdfbd15
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jan 19 11:00:54 2022 +0100
+
+    update 2022-01-13
+
+commit 8ddef03426c9d41ada7160bfcb94b0c8d82fc8c1
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jan 19 10:55:08 2022 +0100
+
+    update 2022-01-13
+
+commit a01d41b4849f9ca951dda46fa190358e3ca0b6d0
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jan 19 10:52:39 2022 +0100
+
+    remove automated notebooks for single regions; add logging to local imported data load
+
+commit 4c32f146e7b43a32f9e3c989a0e1af7ddf390d40
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jan 19 09:55:33 2022 +0100
+
+    ISS update 20220114
+
+commit 96b07b0e8d948008b219a14b2a9079ca6aaac74b
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Jan 18 22:37:05 2022 +0000
+
+    ISS open data update 2022-01-18T22:37:04+00:00
+
+commit 455756cd1c7cb34d61888decfffb774e87e2b970
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Jan 18 11:51:23 2022 +0100
+
+    check the status of the main container
+
+commit cc81cc7fbf736cfba530e4430bbf2c5d64cbefbd
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Jan 17 22:36:13 2022 +0000
+
+    ISS open data update 2022-01-17T22:36:13+00:00
+
+commit c4b9955c0056bbb1e7e98c575c502040b9baf294
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jan 17 22:10:28 2022 +0100
+
+    ISS local vs imported cases, new update since november 24
+
+commit 6e2ece8b66ba3f87b78a59d912e0fbde4801975d
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jan 17 21:53:42 2022 +0100
+
+    docs on the new automation process
+
+commit 939092f79a57ff5f0ae12534ae79590371f06cdb
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jan 17 21:47:01 2022 +0100
+
+    more checks before pushing
+
+commit 1729d76539191aed247ba4d57e52f7ce32a7864b
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jan 17 20:06:15 2022 +0100
+
+    more checks before pushing
+
+commit 9e429d02dbf88ac2c188e1e9877d91e4b9c246aa
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jan 17 19:17:51 2022 +0100
+
+    check if calculations exist befor commiting; committing just picke files
+
+commit 114653f0818974a9e54eb22631b68ab95069ccae
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jan 17 18:51:30 2022 +0100
+
+    merging regions files in the RTautomation container
+
+commit 4b3c75db345c7ab5d379c23127ee05d0bd6b40ff
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Jan 16 22:35:56 2022 +0000
+
+    ISS open data update 2022-01-16T22:35:56+00:00
+
+commit 8207d61e512d028a68eb69d56e037d66716064bb
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Jan 15 22:35:42 2022 +0000
+
+    ISS open data update 2022-01-15T22:35:41+00:00
+
+commit 651864d7efec580d7006c4683ce6494534734aa3
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Jan 14 22:36:13 2022 +0000
+
+    ISS open data update 2022-01-14T22:36:12+00:00
+
+commit d727ef10c26869472ce4551ebe8ffc7968038452
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Jan 13 22:36:28 2022 +0000
+
+    ISS open data update 2022-01-13T22:36:28+00:00
+
+commit de5e1b50ab7f7f459cf86ff64422193a736b7703
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Jan 12 22:36:18 2022 +0000
+
+    ISS open data update 2022-01-12T22:36:18+00:00
+
+commit aa1d567cb1e18c135b01705e3e3066b14e6d2ccf
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Jan 11 22:36:20 2022 +0000
+
+    ISS open data update 2022-01-11T22:36:20+00:00
+
+commit f6bdf76d5d9478d036874d87a7b7f889a0d51cb2
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Jan 10 22:35:37 2022 +0000
+
+    ISS open data update 2022-01-10T22:35:37+00:00
+
+commit 70217898ebb7879f33c3c6442a46cc7d12b4f29c
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Jan 9 22:35:51 2022 +0000
+
+    ISS open data update 2022-01-09T22:35:50+00:00
+
+commit 053f4ca4587686e8e3c03b4be447cbb198f20337
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jan 9 10:13:20 2022 +0100
+
+    correctly handle absence of local cases for regions
+
+commit 9a43f4318a9eefe00363e37851c177326f189e5a
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Jan 8 22:37:08 2022 +0000
+
+    ISS open data update 2022-01-08T22:37:08+00:00
+
+commit b54e84e433fe66a079dcd6123774d6c710bcac93
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jan 8 15:03:50 2022 +0100
+
+    update 2022-01-06
+
+commit faa159581639546550ae93a08ccd0b8108e30f12
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jan 8 14:31:04 2022 +0100
+
+    ISS update 20220107
+
+commit cfeb69367cd97dffd6d4e8c9be0ae2ffdca277ec
+Merge: 5d36c95 88769f5
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jan 8 14:29:49 2022 +0100
+
+    Merge branch 'main' into WIP_20220106
+
+commit 5d36c95b67094a2768682803d869084f34e35da2
+Author: albertoacquadro <alberto.acquadro@unito.it>
+Date:   Sat Jan 8 12:02:23 2022 +0100
+
+    update 2022-01-06
+
+commit 88769f525e871f825d5fcf514e1c2c9282b6bc10
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Jan 7 22:36:19 2022 +0000
+
+    ISS open data update 2022-01-07T22:36:19+00:00
+
+commit 3d7eac3fdc068f22ff403823eba26ae1ab7af26b
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Jan 6 22:36:21 2022 +0000
+
+    ISS open data update 2022-01-06T22:36:21+00:00
+
+commit 041395cfb9221c9b1a455e0bedad552001082081
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Jan 6 13:25:59 2022 +0100
+
+    allow setting an upto date when loading data from DPC
+
+commit d76711007011a42ddddaddf65b4bbf3e8b3cd51d
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Jan 6 13:24:54 2022 +0100
+
+    fixed bad mcmc initial conditions when calc day different from sunday
+
+commit b2532d196c20146b6ec65f3f233865c6ab28953c
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Jan 5 22:36:11 2022 +0000
+
+    ISS open data update 2022-01-05T22:36:11+00:00
+
+commit 34f8b084d49f43137e901175aa0d595bd703f27c
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Jan 4 22:35:58 2022 +0000
+
+    ISS open data update 2022-01-04T22:35:57+00:00
+
+commit cde3156ce11b5006ca63ca0b5cf362d1ad57309a
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Jan 3 22:36:00 2022 +0000
+
+    ISS open data update 2022-01-03T22:35:59+00:00
+
+commit ee45d28d6429d4122a60b0c0f0080a630bb6d7f5
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Jan 2 22:35:43 2022 +0000
+
+    ISS open data update 2022-01-02T22:35:42+00:00
+
+commit 8a87e946454f104753f567121cda0e96c258432f
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Jan 1 22:35:31 2022 +0000
+
+    ISS open data update 2022-01-01T22:35:31+00:00
+
+commit a94b2826cb290cb2ae7d275a3fc343acc756a800
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Dec 31 22:35:49 2021 +0000
+
+    ISS open data update 2021-12-31T22:35:49+00:00
+
+commit 3803144740d069a497f17fbb143d4973ca5e9caa
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Dec 30 22:35:46 2021 +0000
+
+    ISS open data update 2021-12-30T22:35:46+00:00
+
+commit 15c3fdb16f525f3c2946a4905258c1537085a139
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Dec 29 22:35:52 2021 +0000
+
+    ISS open data update 2021-12-29T22:35:51+00:00
+
+commit 9b547fcd94bdafc75c62bcd11854bc49b84d16fe
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Dec 28 22:35:45 2021 +0000
+
+    ISS open data update 2021-12-28T22:35:45+00:00
+
+commit 82843d197f350085344ebab2d2ec1f26aefaf7af
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 28 21:25:28 2021 +0100
+
+    update 2021-12-26
+
+commit cf752e1b0807c95b541de2ed39aedfc05e1e3813
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 28 20:29:55 2021 +0100
+
+    ISS update 20211224
+
+commit fb93df20ff07239c7450c70ce22327fca53c3bb3
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Dec 27 22:35:49 2021 +0000
+
+    ISS open data update 2021-12-27T22:35:49+00:00
+
+commit 56847ca39021b55aa262c5d807d05fde2977c1be
+Author: albertoacquadro <alberto.acquadro@unito.it>
+Date:   Mon Dec 27 15:40:27 2021 +0100
+
+    update 2021-12-25
+
+commit eb24d30f6bc79b4744a7bfc0ee6cecbfa9adfb0b
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Dec 26 22:35:14 2021 +0000
+
+    ISS open data update 2021-12-26T22:35:14+00:00
+
+commit 3c0c1954a59681949b8f886a93e0f2621eab7fc8
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Dec 25 22:35:11 2021 +0000
+
+    ISS open data update 2021-12-25T22:35:10+00:00
+
+commit 33dbc0a8f3f2d877a0f7f10559868eba4f9eefd6
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Dec 24 22:35:51 2021 +0000
+
+    ISS open data update 2021-12-24T22:35:50+00:00
+
+commit 63c148915c5cd4166a608b7d61eac2c1a384d303
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Dec 23 22:35:45 2021 +0000
+
+    ISS open data update 2021-12-23T22:35:45+00:00
+
+commit 173be4ad212932639e301ccb5fb36f4e07ce1f9b
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Dec 22 22:35:58 2021 +0000
+
+    ISS open data update 2021-12-22T22:35:57+00:00
+
+commit 97241d62fc4b5c79820202e05ba094fff535f9a0
+Merge: f5aed7d 5704cc4
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Dec 22 19:29:04 2021 +0100
+
+    Merge branch 'WIP_20211219' into main
+
+commit 5704cc49740d435db6de6b30451ad25e4d23f7e8
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Dec 22 19:28:50 2021 +0100
+
+    update 2021-12-19
+
+commit aa24231d313a814858a2fdb49f098be7241446a2
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Dec 22 18:35:05 2021 +0100
+
+    ISS update 20211217
+
+commit 3114c1df657e8db926f840db50dda637da1cbc5b
+Author: albertoacquadro <alberto.acquadro@unito.it>
+Date:   Wed Dec 22 01:18:15 2021 +0100
+
+    update 2021-12-19
+
+commit f5aed7d72af188107e85a5031a8ea70671e26738
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Dec 21 22:35:49 2021 +0000
+
+    ISS open data update 2021-12-21T22:35:48+00:00
+
+commit 82b0594a47ecbe2f9100479633568443450bf919
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Dec 20 22:35:57 2021 +0000
+
+    ISS open data update 2021-12-20T22:35:56+00:00
+
+commit 72ac8897e955f606d1db9b64e277529f369206d9
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Dec 20 13:41:53 2021 +0100
+
+    more help
+
+commit a0c08096bfb311da6ef85886d489951c6efce70d
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Dec 20 13:40:48 2021 +0100
+
+    more help
+
+commit 07b83a8ec7e94903c00f915770aff08ccd8dd545
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Dec 20 12:49:26 2021 +0100
+
+    run calculations with same UID as logged user
+
+commit d88bc05ee7f2a5190e1d5b30b4442950f950eaf1
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Dec 19 22:35:43 2021 +0000
+
+    ISS open data update 2021-12-19T22:35:43+00:00
+
+commit 724aea3e275ace88b3345686653e8e245d06e2a5
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Dec 18 22:35:13 2021 +0000
+
+    ISS open data update 2021-12-18T22:35:12+00:00
+
+commit 04428284b4161418915dbad70603e8923a586265
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Dec 17 22:35:42 2021 +0000
+
+    ISS open data update 2021-12-17T22:35:42+00:00
+
+commit 2ff124d1fa1378768fc5e2f06fbc5bd86a517598
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Dec 16 22:35:24 2021 +0000
+
+    ISS open data update 2021-12-16T22:35:23+00:00
+
+commit 4da07570175d3642575c7dce1bce79be0cc0e9d6
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Dec 15 22:35:25 2021 +0000
+
+    ISS open data update 2021-12-15T22:35:25+00:00
+
+commit ada62cf88b8b3c8590bc4f6ddb69947691cab7fe
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Dec 14 22:35:41 2021 +0000
+
+    ISS open data update 2021-12-14T22:35:40+00:00
+
+commit 05735cab65840241d19ffa920cab56630cb56290
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 14 19:37:08 2021 +0100
+
+    changed time range for charts
+
+commit c7fe05c1fe528f58888af1500657d5098d22314a
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 14 18:15:53 2021 +0100
+
+    fix total len of national chains
+
+commit 7aefe9b36b57124999c84e096c89da265eb5bdfd
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 14 18:13:55 2021 +0100
+
+    update 2021-12-12
+
+commit 45044deffd32ee594ea4881809947b66df4d781d
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 14 17:57:05 2021 +0100
+
+    ISS update 20211210
+
+commit e1dabcba2077d53d075f5db5731c46378b7a1fd3
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Dec 13 22:34:24 2021 +0000
+
+    ISS open data update 2021-12-13T22:34:24+00:00
+
+commit 205f9ba63e8c7171ee8209570eed363e572645db
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Dec 12 22:35:03 2021 +0000
+
+    ISS open data update 2021-12-12T22:35:02+00:00
+
+commit 073ec22150a71780fc0dec1d66740856a189c5d3
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Dec 11 22:34:58 2021 +0000
+
+    ISS open data update 2021-12-11T22:34:57+00:00
+
+commit b072667032e5b013b2c56ac460264f5e875ecf97
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Dec 10 22:35:23 2021 +0000
+
+    ISS open data update 2021-12-10T22:35:23+00:00
+
+commit 161a2437013936732ea61e2479ba62ce701a0d76
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Dec 9 22:34:53 2021 +0000
+
+    ISS open data update 2021-12-09T22:34:53+00:00
+
+commit 159cc9f926ff350f53d46237df519da2c80c4f20
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Dec 9 17:54:10 2021 +0100
+
+    short instructions to run the automated calculation
+
+commit a48344a1667406811498c9e35893ad4292a44b41
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Dec 9 17:52:11 2021 +0100
+
+    short instructions to run the automated calculation
+
+commit 9f819bc220d6ba49e36e09e310f678285e0e73f0
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Dec 9 17:50:13 2021 +0100
+
+    short instructions to run the automated calculation
+
+commit 08bb40221cd9a33f18517d3318fa2865d80db562
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Dec 9 17:14:55 2021 +0100
+
+    short instructions to run the automated calculation
+
+commit f8f1cf1d0489d5814d0352548aa682eca14a31d7
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Dec 9 17:12:38 2021 +0100
+
+    short instructions to run the automated calculation
+
+commit ffe35c063ab6bd56ea9028eed1ad4d9ecbb65f90
+Author: TD-AI <technical@tomorrowdata.io>
+Date:   Thu Dec 9 15:28:10 2021 +0000
+
+    update config files from prod
+
+commit 41853f65362118b1ca9dda267c2bb2c80900e3cf
+Merge: d049286 0030d09
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Dec 9 16:23:01 2021 +0100
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit d04928649948c2d1836fd394412a6bc9c14bf6c6
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Dec 9 16:22:49 2021 +0100
+
+    fix pastdays
+
+commit 0030d0976375db85aa2570e0eb749ca155953d33
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Dec 8 22:35:53 2021 +0000
+
+    ISS open data update 2021-12-08T22:35:53+00:00
+
+commit 0955656356dfebf157edd9e2781f5c134ed2086a
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Dec 7 22:36:09 2021 +0000
+
+    ISS open data update 2021-12-07T22:36:09+00:00
+
+commit c23cbcef3d89323c4370fe9a61e952d80111c679
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 7 20:50:00 2021 +0100
+
+    update 2021-12-05
+
+commit da39865d4ae0ce91e946cf447fbad3635f72b1d4
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 7 20:10:12 2021 +0100
+
+    update 2021-12-05
+
+commit 06b37c6c5745204080a64e69ff82ee55c36d6db2
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 7 13:53:59 2021 +0100
+
+    ISS update 20211203
+
+commit ffd7bf3ce8a5e5870c1f14eea9ff1a4185bc835c
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Dec 6 22:34:57 2021 +0000
+
+    ISS open data update 2021-12-06T22:34:57+00:00
+
+commit 8544b60a7d1feabfbd1c6d816e4e50386e32f2db
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Dec 5 22:35:01 2021 +0000
+
+    ISS open data update 2021-12-05T22:35:00+00:00
+
+commit 3d6b4cee608606094a8dfec4991b38549f419b27
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Dec 4 22:36:22 2021 +0000
+
+    ISS open data update 2021-12-04T22:36:22+00:00
+
+commit 6e2e55a76a8538316968e32fb1e0122dcf3f79c0
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Dec 3 22:35:24 2021 +0000
+
+    ISS open data update 2021-12-03T22:35:24+00:00
+
+commit 61d2b36c4f6c35c9060190899878002da86a916b
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Dec 2 22:35:29 2021 +0000
+
+    ISS open data update 2021-12-02T22:35:29+00:00
+
+commit ba38eb614bc2ec93002d091c0f15b450c70d98a6
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Dec 1 22:35:39 2021 +0000
+
+    ISS open data update 2021-12-01T22:35:39+00:00
+
+commit eaab90cbd7c3e4d664f6e16eb367db316f35b5e4
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Nov 30 22:35:34 2021 +0000
+
+    ISS open data update 2021-11-30T22:35:34+00:00
+
+commit 0b780f65ce8e2aac2c34b891f1e75857a8b17984
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Nov 29 22:35:21 2021 +0000
+
+    ISS open data update 2021-11-29T22:35:21+00:00
+
+commit d5a04809f336c820d56ee0f30e448728fefc22cf
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Nov 29 14:26:30 2021 +0100
+
+    WIP fix allow past days
+
+commit b4ae961f418bd746314489a45face0730cba69e9
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Nov 29 14:25:12 2021 +0100
+
+    update 2021-11-28
+
+commit 1722f684d84ba085792fbd227957bf3196027e51
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Nov 29 13:45:19 2021 +0100
+
+    ISS update 20211126
+
+commit 9537c4ecad0ad854effaeccd53cb17ef0bf34612
+Merge: d332fa9 a4726a8
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Nov 29 13:28:51 2021 +0100
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit a4726a898ed316f07a3117e5276abca9370ac317
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Nov 28 22:34:54 2021 +0000
+
+    ISS open data update 2021-11-28T22:34:54+00:00
+
+commit d332fa9f45a2517f39fb79c07fe55cf09ee843c3
+Merge: d1094d6 f6750cb
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Nov 28 18:21:22 2021 +0100
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit f6750cbee64e83093308d6585a844c8075c59c50
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Nov 27 23:04:12 2021 +0000
+
+    ISS open data update 2021-11-27T23:04:11+00:00
+
+commit 4fefa53ca4da5b28d876079ad2e67781bdadc68e
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Nov 26 22:35:09 2021 +0000
+
+    ISS open data update 2021-11-26T22:35:08+00:00
+
+commit 569539aba844117c9c6725b69673600b11d15770
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Nov 25 22:35:04 2021 +0000
+
+    ISS open data update 2021-11-25T22:35:03+00:00
+
+commit d1094d614d66c65b05a5447fca78aa08b5d5bc69
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Nov 25 14:17:06 2021 +0100
+
+    update 2021-11-15
+
+commit 97557e6427ff406150bbf23e6614f5f3c256bb8c
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Nov 24 22:35:08 2021 +0000
+
+    ISS open data update 2021-11-24T22:35:08+00:00
+
+commit 1a3285a520e63706880e97a5e568a0971d2ae159
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Nov 23 22:35:11 2021 +0000
+
+    ISS open data update 2021-11-23T22:35:11+00:00
+
+commit 6a07357861b6ce9cf8032b556dd8abec03fb25fd
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Nov 22 22:35:22 2021 +0000
+
+    ISS open data update 2021-11-22T22:35:22+00:00
+
+commit 4be919f50b67720011588f284c62c3cdf385e4cb
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Nov 21 22:34:50 2021 +0000
+
+    ISS open data update 2021-11-21T22:34:50+00:00
+
+commit 049d8b89fa71d9e3cd575f2540774b210a68e861
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Nov 20 22:34:52 2021 +0000
+
+    ISS open data update 2021-11-20T22:34:51+00:00
+
+commit fe4f82e1a7b02633c138f96655e0f1f47400dc23
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Nov 19 22:35:11 2021 +0000
+
+    ISS open data update 2021-11-19T22:35:11+00:00
+
+commit 3cfa4a1a73b08e65feb3fc580e488c575d867416
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Nov 18 22:35:12 2021 +0000
+
+    ISS open data update 2021-11-18T22:35:12+00:00
+
+commit 2aec1a1bed1bac347ac82e8b78ef7489c95a9326
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Nov 17 22:35:10 2021 +0000
+
+    ISS open data update 2021-11-17T22:35:10+00:00
+
+commit dc29893735986a6fdeb88008fceda3d942fd3ee1
+Merge: 265dba7 b221937
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Nov 16 23:47:35 2021 +0100
+
+    Merge branch 'WIP_20211114' into main
+
+commit 265dba7bd7e9c738c2f901fc15bf0ffdaa46df8a
+Merge: ef490e4 152e816
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Nov 16 23:47:14 2021 +0100
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit b221937b04e24a460afe77d343edacab7e44c3d0
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Nov 16 23:46:18 2021 +0100
+
+    update 2021-11-14
+
+commit 152e81694e5848b2bed9c68d3b7141a036dbd6e9
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Nov 16 22:35:06 2021 +0000
+
+    ISS open data update 2021-11-16T22:35:05+00:00
+
+commit ef490e433572ee66a56dc028e98cf453f7964127
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Nov 16 22:50:07 2021 +0100
+
+    ISS update 20211112
+
+commit fce2bc47c40120d5a159fb1c851d79535d46e15e
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Nov 16 22:38:55 2021 +0100
+
+    update 2021-11-07
+
+commit 1d0be6043ff1366633b904ba18946df193c1af49
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Nov 15 22:35:07 2021 +0000
+
+    ISS open data update 2021-11-15T22:35:06+00:00
+
+commit 9f78504831ceaf6cf7c6af058db15b05ee122596
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Nov 14 22:34:51 2021 +0000
+
+    ISS open data update 2021-11-14T22:34:50+00:00
+
+commit d0d51baaccc94de486954f6428381121f39b8120
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Nov 13 22:34:47 2021 +0000
+
+    ISS open data update 2021-11-13T22:34:47+00:00
+
+commit 16092a3dc701fcde201e583ba32632338efbb451
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Nov 12 22:35:04 2021 +0000
+
+    ISS open data update 2021-11-12T22:35:04+00:00
+
+commit bf1a91be8450690172cac0a20ec7d2adb8b1d7bb
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Nov 11 22:35:18 2021 +0000
+
+    ISS open data update 2021-11-11T22:35:17+00:00
+
+commit 023f00012d39ede5b804d65a88477664f7ad8d89
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Nov 10 22:35:12 2021 +0000
+
+    ISS open data update 2021-11-10T22:35:12+00:00
+
+commit 6b4a1c4b0834cd11a003efca46b0648c7ca29266
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Nov 9 22:35:16 2021 +0000
+
+    ISS open data update 2021-11-09T22:35:16+00:00
+
+commit 391d96ae9ea8b8806d60cb2aa8679ff9a22b59de
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Nov 9 13:53:27 2021 +0100
+
+    update 2021-11-07
+
+commit d25f5ca86c8db24540da55685a9e15b7a1095abd
+Merge: b058f2f 42623f5
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Nov 9 13:53:18 2021 +0100
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit b058f2f4e4438fe456dfdc63c28650104f2ba6a6
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Nov 9 13:53:03 2021 +0100
+
+    update 2021-11-07
+
+commit 42623f5e91d89ec71353f5a97f14e54276b20668
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Nov 8 22:35:09 2021 +0000
+
+    ISS open data update 2021-11-08T22:35:09+00:00
+
+commit 8c2641c1c389d79734818d6266af016a3336bb75
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Nov 8 21:52:04 2021 +0100
+
+    fix dir name
+
+commit d9692027005d0f63da1c55e661c6452b27114484
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Nov 8 21:47:34 2021 +0100
+
+    ISS update 20211105
+
+commit 39010fbd338428624dc6a900a5df5765bb92d7af
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Nov 8 21:36:05 2021 +0100
+
+    update 2021-10-31
+
+commit 49dc485261655292392284a87172d7150c541c9d
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Nov 7 22:34:51 2021 +0000
+
+    ISS open data update 2021-11-07T22:34:51+00:00
+
+commit 772d7a5a648ac1b0c56a257ad6acc49385993390
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Nov 7 21:57:35 2021 +0100
+
+    fix skipping local cases in regional calculations
+
+commit 68accdff848a7a5c92c6d3fbdad716825291a1b9
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Nov 6 22:34:54 2021 +0000
+
+    ISS open data update 2021-11-06T22:34:54+00:00
+
+commit 862d1b6c1b966804aa280f445883c3eae10a458b
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Nov 5 22:35:07 2021 +0000
+
+    ISS open data update 2021-11-05T22:35:07+00:00
+
+commit a8a8b176491dd6b728f822542ffca18679db5dd7
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Nov 4 22:35:09 2021 +0000
+
+    ISS open data update 2021-11-04T22:35:08+00:00
+
+commit 8f775b30371b7fcd7ab7e881f25cc689ad24c858
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Nov 3 22:34:59 2021 +0000
+
+    ISS open data update 2021-11-03T22:34:59+00:00
+
+commit 4a53f2da382d9721dacf02dd01ce8f6019a03524
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Nov 2 22:35:09 2021 +0000
+
+    ISS open data update 2021-11-02T22:35:09+00:00
+
+commit 1d8ed10b0d340052eb02a55a25cef846f0840365
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Nov 1 22:34:30 2021 +0000
+
+    ISS open data update 2021-11-01T22:34:30+00:00
+
+commit 72a07ac92256802d567f26012d12d30271f1c32b
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Nov 1 19:05:12 2021 +0100
+
+    update 2021-10-31
+
+commit d793b0de5156bf27dc77fdf1310ab5a1e5281859
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Nov 1 17:36:52 2021 +0100
+
+    ISS update 20211029
+
+commit 1aaf4a4371e0126cd4ee2093425200feddb21006
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Oct 31 22:34:50 2021 +0000
+
+    ISS open data update 2021-10-31T22:34:49+00:00
+
+commit a3a4821238ae38c86a0030b8546800a90d12489d
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Oct 30 22:34:47 2021 +0000
+
+    ISS open data update 2021-10-30T22:34:47+00:00
+
+commit 2f112689dc76aafc1b9e85a8dfaaf895503bc0f9
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Oct 29 22:35:07 2021 +0000
+
+    ISS open data update 2021-10-29T22:35:06+00:00
+
+commit 6430a4a1a9fcc8859c6f56dbb41c7d8ff7db70d2
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Oct 28 22:34:50 2021 +0000
+
+    ISS open data update 2021-10-28T22:34:49+00:00
+
+commit 5074a2bffe455baffb5ac41f12668db55841959c
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Oct 27 22:35:06 2021 +0000
+
+    ISS open data update 2021-10-27T22:35:05+00:00
+
+commit 4906caf0df36d33bae97edc80876d3281056abf6
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Oct 26 22:35:17 2021 +0000
+
+    ISS open data update 2021-10-26T22:35:17+00:00
+
+commit b40cf097fbdc28abba4b792d869082a41e188454
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Oct 25 22:35:01 2021 +0000
+
+    ISS open data update 2021-10-25T22:35:01+00:00
+
+commit f8b8a3e0aee6880e59e39ab74b02c1ba60df69f8
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Oct 25 23:39:41 2021 +0200
+
+    update 2021-10-24
+
+commit 1238eba5f92a2d907e1a3313ede7860a08c0ef3d
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Oct 25 22:13:28 2021 +0200
+
+    ISS update 20211022
+
+commit 4335da51ab72eea4d79556a6c323f8f7c6709ae3
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Oct 24 22:34:49 2021 +0000
+
+    ISS open data update 2021-10-24T22:34:48+00:00
+
+commit eedeea01f71c2c5077072e66a38b402edc24ac09
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Oct 23 22:34:40 2021 +0000
+
+    ISS open data update 2021-10-23T22:34:39+00:00
+
+commit 4d5c7e79714d5235dd67efd8bdbee45ba2fc2c79
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Oct 22 22:35:01 2021 +0000
+
+    ISS open data update 2021-10-22T22:35:00+00:00
+
+commit a198d5dab08b45239c7f19422b066fd353e1195f
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Oct 21 22:35:02 2021 +0000
+
+    ISS open data update 2021-10-21T22:35:02+00:00
+
+commit 7b8c2b8088269443e6335f391bb386021415a0f1
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Oct 20 22:35:05 2021 +0000
+
+    ISS open data update 2021-10-20T22:35:05+00:00
+
+commit d16a7aa488e5fe81b68d3c387c6bfe8b0df250dd
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Oct 19 22:34:56 2021 +0000
+
+    ISS open data update 2021-10-19T22:34:55+00:00
+
+commit 7fe750f91943e258af9b65d8a25f41365796a465
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Oct 18 22:34:54 2021 +0000
+
+    ISS open data update 2021-10-18T22:34:54+00:00
+
+commit bb9ae350c608b8cc7bc659decd59bf2d8ceeefa2
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Oct 18 20:37:13 2021 +0200
+
+    update 2021-10-17
+
+commit d11f661953cb1cf7e36cf5c14492ff99e2ed9533
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Oct 18 17:46:21 2021 +0200
+
+    ISS update 20211015
+
+commit 554a891282d68cb5c03c5f5532868c8acd7816d1
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Oct 17 22:34:40 2021 +0000
+
+    ISS open data update 2021-10-17T22:34:40+00:00
+
+commit 5faedd55fba0fc6c9ba298d711d14f4a68f84f83
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Oct 16 22:34:36 2021 +0000
+
+    ISS open data update 2021-10-16T22:34:36+00:00
+
+commit c3056853fac7bb93ac584640cc7f4943f291b974
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Oct 15 22:34:47 2021 +0000
+
+    ISS open data update 2021-10-15T22:34:46+00:00
+
+commit d2e331ddfc3dda4338022fcc0872096762a9a0ef
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Oct 14 22:35:17 2021 +0000
+
+    ISS open data update 2021-10-14T22:35:16+00:00
+
+commit ca06f9993afe89cc8046f4060827c2f41c40a4bf
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Oct 13 22:34:48 2021 +0000
+
+    ISS open data update 2021-10-13T22:34:47+00:00
+
+commit cd184050178b368a50ab4cf6b1d199a0021590b1
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Oct 12 22:34:46 2021 +0000
+
+    ISS open data update 2021-10-12T22:34:45+00:00
+
+commit 7a8453f385afadd0f2c2701d924205389e982388
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Oct 12 13:43:38 2021 +0200
+
+    update 2021-10-10
+
+commit 9aa7f75c64133f5df74d0f966679848cb3b90176
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Oct 12 13:03:24 2021 +0200
+
+    ISS update 20211008
+
+commit e1611bb4b39f7b8cbc27af0cbe737ea1669ae893
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Oct 11 22:34:45 2021 +0000
+
+    ISS open data update 2021-10-11T22:34:45+00:00
+
+commit 68b861bac77e63734af75b40a1226b9dd2564afd
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Oct 10 22:34:37 2021 +0000
+
+    ISS open data update 2021-10-10T22:34:37+00:00
+
+commit 34afe3c86b5f160b80f704dfc59a4ba9626c7c54
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Oct 9 22:34:35 2021 +0000
+
+    ISS open data update 2021-10-09T22:34:35+00:00
+
+commit 4e975c212cb3cd155f8e08c41e4f8794ca936ce5
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Oct 8 22:34:09 2021 +0000
+
+    ISS open data update 2021-10-08T22:34:08+00:00
+
+commit 533865ad14e91690e24dc2f8b4151921b5c4789f
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Oct 7 22:34:54 2021 +0000
+
+    ISS open data update 2021-10-07T22:34:53+00:00
+
+commit c95f13d733b7ba29fcb543312e26bec65bd2c698
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Oct 5 22:34:52 2021 +0000
+
+    ISS open data update 2021-10-05T22:34:51+00:00
+
+commit 60d857587fd7c2659bd4cefcd3800cc19f413c75
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Oct 4 22:34:47 2021 +0000
+
+    ISS open data update 2021-10-04T22:34:46+00:00
+
+commit 8cb2d02c2f8654676d47e7e4c2fa5e5c9b777c20
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Oct 4 17:31:03 2021 +0200
+
+    update 2021-10-03
+
+commit c8a7b5f16ae842d11c4884e5ff9fad4066b840ba
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Oct 4 16:50:45 2021 +0200
+
+    ISS update 20211001
+
+commit cbf0b530db3edd06946b1e1fed50ab0d4eaee580
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Oct 3 22:34:38 2021 +0000
+
+    ISS open data update 2021-10-03T22:34:38+00:00
+
+commit 24a230d26dcdd8b4d1f645236ff7b821e568f41c
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Oct 2 22:34:33 2021 +0000
+
+    ISS open data update 2021-10-02T22:34:32+00:00
+
+commit 12cf429035e5f271d89c5b7b35a33a209d41fad2
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Oct 1 22:34:48 2021 +0000
+
+    ISS open data update 2021-10-01T22:34:47+00:00
+
+commit cf85c46c88d2940cc4e33372a2f54da555e9d876
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Sep 30 22:34:33 2021 +0000
+
+    ISS open data update 2021-09-30T22:34:33+00:00
+
+commit b04df906a71640eabb239f5d81bd7d040bf2d3bf
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Sep 29 22:34:50 2021 +0000
+
+    ISS open data update 2021-09-29T22:34:49+00:00
+
+commit 9379e15764110ada46e03f7ea429defa38ded16d
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Sep 29 18:08:39 2021 +0200
+
+    update 2021-09-26
+
+commit 07469448dc105eb8430f9846efa1fced193f9c85
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Sep 29 16:27:53 2021 +0200
+
+    ISS update 20210924
+
+commit f8c42819ef8c91ddbe1a2a4c7b7aa82c7f263225
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Sep 28 22:34:43 2021 +0000
+
+    ISS open data update 2021-09-28T22:34:43+00:00
+
+commit 4bd04f36c5da39d400bf93cd89854e8c1d684806
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Sep 27 22:34:48 2021 +0000
+
+    ISS open data update 2021-09-27T22:34:47+00:00
+
+commit af7fd80f044f18ac08dd6bb9b404da69ffd8dcfe
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Sep 26 22:34:33 2021 +0000
+
+    ISS open data update 2021-09-26T22:34:32+00:00
+
+commit a2cd8a07983d70a10c5d8185deb7dcebf39c2f17
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Sep 25 22:34:41 2021 +0000
+
+    ISS open data update 2021-09-25T22:34:41+00:00
+
+commit 0befaa283b06d533b3318a7b5a745686b3b96947
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Sep 24 22:34:39 2021 +0000
+
+    ISS open data update 2021-09-24T22:34:38+00:00
+
+commit c4023cc323d73229c2d269affda7f53df4fba430
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Sep 23 22:34:48 2021 +0000
+
+    ISS open data update 2021-09-23T22:34:48+00:00
+
+commit a00a00e119767a03231e7af5bf366cfa812ca61c
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Sep 22 22:34:56 2021 +0000
+
+    ISS open data update 2021-09-22T22:34:56+00:00
+
+commit 8a859166d10026c1e3f04aeea3f20a6f489516b6
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Sep 21 22:34:51 2021 +0000
+
+    ISS open data update 2021-09-21T22:34:51+00:00
+
+commit 9e0269520c7c36cdc4d2b6f76a08a3e6a791de99
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Sep 21 20:16:28 2021 +0200
+
+    update 2021-09-19
+
+commit 9e8a11873abb2eb3a24898d99d637f941ceb3d7e
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Sep 21 20:16:10 2021 +0200
+
+    update 2021-09-19
+
+commit 0f5de36e798be31851c2fd82812029b455be3dd1
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Sep 21 14:21:06 2021 +0200
+
+    ISS update 20210917
+
+commit 3c455b200d80a10196a9638297bf83b6abe7a96b
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Sep 20 22:34:46 2021 +0000
+
+    ISS open data update 2021-09-20T22:34:45+00:00
+
+commit 53ba9d7c026b4b70d0a9f7fe62591026329b4d15
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Sep 19 22:34:34 2021 +0000
+
+    ISS open data update 2021-09-19T22:34:34+00:00
+
+commit 329bde8e2533f1d75f059efe92910b3740206222
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Sep 18 22:34:30 2021 +0000
+
+    ISS open data update 2021-09-18T22:34:29+00:00
+
+commit a31d8b85d7c22a14aabc791f14bf2a99dc7ee2c2
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Sep 17 22:34:44 2021 +0000
+
+    ISS open data update 2021-09-17T22:34:44+00:00
+
+commit d7260373a75176919be7573de12dc4b222d5fcde
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Sep 16 22:34:44 2021 +0000
+
+    ISS open data update 2021-09-16T22:34:43+00:00
+
+commit ad7ae2407fd6f97b52f58aa88a7394e41d246b59
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Sep 15 22:34:43 2021 +0000
+
+    ISS open data update 2021-09-15T22:34:42+00:00
+
+commit 0613361c9b2471415cb6d1e3b95a0e741261ce36
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Sep 14 22:34:42 2021 +0000
+
+    ISS open data update 2021-09-14T22:34:42+00:00
+
+commit baafc380db1b3095bb310429872f6968814f6770
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Sep 14 15:38:48 2021 +0200
+
+    update 2021-09-12
+
+commit 949d801315a71742c7f4678320dd9f424b3916fb
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Sep 14 14:41:06 2021 +0200
+
+    ISS update 20210910
+
+commit 51d09c87d9020a54e8431807a4d8636811c4e0a2
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Sep 13 22:34:47 2021 +0000
+
+    ISS open data update 2021-09-13T22:34:46+00:00
+
+commit a4ceb7714708ae9846b5f8fccd7566345157b40f
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Sep 12 22:34:39 2021 +0000
+
+    ISS open data update 2021-09-12T22:34:39+00:00
+
+commit 9e52452a1265df9194733880e2606ce8206f4ce5
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Sep 11 22:34:31 2021 +0000
+
+    ISS open data update 2021-09-11T22:34:30+00:00
+
+commit 628c3b2cbb6c1226b13b70c02c921ea2cda8920a
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Sep 10 22:34:43 2021 +0000
+
+    ISS open data update 2021-09-10T22:34:42+00:00
+
+commit d10a04386ce4ffd281334c0233313d37f66f259a
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Sep 9 22:34:53 2021 +0000
+
+    ISS open data update 2021-09-09T22:34:53+00:00
+
+commit 486d5ba1c68806b1614bffe8df4605505f4b53d5
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Sep 8 22:34:57 2021 +0000
+
+    ISS open data update 2021-09-08T22:34:57+00:00
+
+commit aec1490fb50579520f504db2ece431e51447af17
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Sep 7 22:34:55 2021 +0000
+
+    ISS open data update 2021-09-07T22:34:54+00:00
+
+commit b36546a9e417c632e0bc763aa67640ce38a6b1da
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Sep 7 15:28:17 2021 +0200
+
+    update 2021-09-05
+
+commit 6654c3537c0f7d68a6ab413f75b1e42335e95929
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Sep 6 22:34:44 2021 +0000
+
+    ISS open data update 2021-09-06T22:34:43+00:00
+
+commit 74f3ce47676a558cf2a1e4de3e2632e270cfce86
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Sep 5 22:34:42 2021 +0000
+
+    ISS open data update 2021-09-05T22:34:42+00:00
+
+commit eb26ddc4a232dfa738d47fc1bfcbbd5ee023cb25
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Sep 4 22:34:48 2021 +0000
+
+    ISS open data update 2021-09-04T22:34:48+00:00
+
+commit 78c1bbf952c884dcab87520adb5e847df7bc5202
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Sep 3 22:34:52 2021 +0000
+
+    ISS open data update 2021-09-03T22:34:51+00:00
+
+commit e3d147fd66a51ebc931d9add4f5bdc7e385c137a
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Sep 2 22:35:13 2021 +0000
+
+    ISS open data update 2021-09-02T22:35:12+00:00
+
+commit e19be96ad014e867451d375d744fc5460474b969
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Sep 1 22:34:53 2021 +0000
+
+    ISS open data update 2021-09-01T22:34:52+00:00
+
+commit 79dbc07748df131339db32dad236697061bc2f4a
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Aug 31 22:34:28 2021 +0000
+
+    ISS open data update 2021-08-31T22:34:27+00:00
+
+commit dc3803ed8b35c52750abd591642e49cac32e4c97
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Aug 31 11:45:07 2021 +0200
+
+    update 2021-08-29
+
+commit 89d495ffe3a406f88c40a9ee4bb72640326ea7c2
+Merge: bd54a8f 9c896d8
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Aug 31 09:49:56 2021 +0200
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit bd54a8fe6a2786fca601f33b49fdf5279d984a51
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Aug 31 09:49:51 2021 +0200
+
+    ISS update 20210827
+
+commit 9c896d8d2913ccb39c2b73740bc85ff32ca862f1
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Aug 30 22:34:44 2021 +0000
+
+    ISS open data update 2021-08-30T22:34:43+00:00
+
+commit 031597e8672cd808fb65bfc78b6991116b6ba6c6
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Aug 29 22:34:34 2021 +0000
+
+    ISS open data update 2021-08-29T22:34:34+00:00
+
+commit e4e9845098992af4ca56b4e31130577c6a96d403
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Aug 28 22:34:30 2021 +0000
+
+    ISS open data update 2021-08-28T22:34:29+00:00
+
+commit 4fd4f1ad0088db0973125378a8893635bfc167ce
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Aug 27 22:34:45 2021 +0000
+
+    ISS open data update 2021-08-27T22:34:44+00:00
+
+commit bad92090641f85e566f2337dcf08edf62ca4f7a6
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Aug 26 22:34:56 2021 +0000
+
+    ISS open data update 2021-08-26T22:34:56+00:00
+
+commit 2598bac8fb28f295ebb472f8bd0bfacc17eae855
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Aug 25 22:34:58 2021 +0000
+
+    ISS open data update 2021-08-25T22:34:58+00:00
+
+commit 4aa5882750a1975888a59a3bc7f3a3eb78c336d2
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Aug 24 22:33:57 2021 +0000
+
+    ISS open data update 2021-08-24T22:33:56+00:00
+
+commit 9c94f369fae3eb1810a1f76a7b7ca60b9ce7e9d7
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Aug 23 22:35:01 2021 +0000
+
+    ISS open data update 2021-08-23T22:35:01+00:00
+
+commit e872bf9ce37d64ea38322b9c0028c0dd5faced3b
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Aug 22 22:34:47 2021 +0000
+
+    ISS open data update 2021-08-22T22:34:47+00:00
+
+commit 64529de8a507408908686454ec5633ed3276117e
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Aug 21 22:34:35 2021 +0000
+
+    ISS open data update 2021-08-21T22:34:35+00:00
+
+commit 7affc3ce8997693b15fec66e85e22ee09d877408
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Aug 20 22:34:55 2021 +0000
+
+    ISS open data update 2021-08-20T22:34:55+00:00
+
+commit 56828a83bc631d8233307c4bb0586cd1ea66775e
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Aug 19 22:33:36 2021 +0000
+
+    ISS open data update 2021-08-19T22:33:35+00:00
+
+commit 1aaa7ebf6d124153f3d667dae7d6dd83f021bedf
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Aug 18 22:35:02 2021 +0000
+
+    ISS open data update 2021-08-18T22:35:01+00:00
+
+commit 69b85f17f963602961cfd4be03ecb9ae0a7f1dc4
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Aug 17 22:34:55 2021 +0000
+
+    ISS open data update 2021-08-17T22:34:55+00:00
+
+commit 11ff560b6ed026df051e37744991c5bd0a936867
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Aug 16 22:34:55 2021 +0000
+
+    ISS open data update 2021-08-16T22:34:55+00:00
+
+commit 6929604ac4515a52f477e93a63b6ac469e68d28d
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Aug 15 22:34:38 2021 +0000
+
+    ISS open data update 2021-08-15T22:34:38+00:00
+
+commit c90f50d3f3a2f77dbb9fac319145f0556c2c16c9
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Aug 14 22:34:38 2021 +0000
+
+    ISS open data update 2021-08-14T22:34:37+00:00
+
+commit b0c4baefffe49666cdfd3788d36f2a30d1a97a7e
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Aug 13 22:34:50 2021 +0000
+
+    ISS open data update 2021-08-13T22:34:50+00:00
+
+commit 5854058b62fc33f3f8c17680ae25ab0e84fc4ffc
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Aug 12 22:33:35 2021 +0000
+
+    ISS open data update 2021-08-12T22:33:35+00:00
+
+commit 29e2e874b004663bec5bdf00a18f98770c3a1f95
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Aug 11 22:35:00 2021 +0000
+
+    ISS open data update 2021-08-11T22:34:59+00:00
+
+commit 3d9064248c07756716ac2942ac4e712d3ae58f22
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Aug 10 23:15:52 2021 +0000
+
+    ISS open data update 2021-08-10T23:15:52+00:00
+
+commit 9427d4abc76452aacfac2080becc0600c6b922c6
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Aug 10 15:03:24 2021 +0200
+
+    update 2021-08-08
+
+commit 7f5ed86e0d0a4ac121457689aa315ef638de300e
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Aug 10 15:02:18 2021 +0200
+
+    ISS update 20210806
+
+commit 309c43518001a86eb9388b6a47d18a629cbdbafd
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Aug 10 14:18:31 2021 +0200
+
+    ISS update 20210806
+
+commit 84325f1849b74300d41b68076ded73ecef84a618
+Merge: 02fe2b1 1d97847
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Aug 10 13:52:34 2021 +0200
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit 02fe2b1343371d9960d11911730ebd2e867fdec4
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Aug 10 13:11:19 2021 +0200
+
+    ISS update 20210806
+
+commit 1d97847570446eee2aa3b3ed9a7f16690779ebe5
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Aug 9 22:34:47 2021 +0000
+
+    ISS open data update 2021-08-09T22:34:47+00:00
+
+commit 6bd41719eefa5d0c1f4ac160d0a47a4e6a1a64a4
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Aug 9 23:31:35 2021 +0200
+
+    ISS update 20210804
+
+commit bedf829ecd96b358ff2fdb258c70fad48d5b0f25
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Aug 8 22:34:31 2021 +0000
+
+    ISS open data update 2021-08-08T22:34:30+00:00
+
+commit ab4bd3666e5de742afd565ef4765e04bb3c7c076
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Aug 7 22:34:38 2021 +0000
+
+    ISS open data update 2021-08-07T22:34:38+00:00
+
+commit 078d76e664ff2e742a3371b90280356a9721afbc
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Aug 6 22:34:42 2021 +0000
+
+    ISS open data update 2021-08-06T22:34:42+00:00
+
+commit ecb9d00badef5f4f9386c0dfd1b2ad0f50bc6756
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Aug 5 22:34:48 2021 +0000
+
+    ISS open data update 2021-08-05T22:34:47+00:00
+
+commit eb4f511582cad32b2837e1df526922fd189b586d
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Aug 4 22:34:27 2021 +0000
+
+    ISS open data update 2021-08-04T22:34:26+00:00
+
+commit c652227116991c229b1081c9cd5db9e97013d694
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Aug 3 22:34:57 2021 +0000
+
+    ISS open data update 2021-08-03T22:34:57+00:00
+
+commit 9f4f8bdbf53f877a7f0ba47752715d091fddfd65
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Aug 3 17:18:12 2021 +0200
+
+    update 2021-08-01
+
+commit c392ad2accc2156b4095aa3f02ce67f0cd28cec5
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Aug 3 17:06:16 2021 +0200
+
+    update 2021-08-01
+
+commit cf3f47f72a2407babeb12900eaf558aabc06042c
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Aug 2 22:34:55 2021 +0000
+
+    ISS open data update 2021-08-02T22:34:54+00:00
+
+commit 8f7f3e457f76ed7aab0247ddb0af68d5e262aa54
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Aug 2 15:10:26 2021 +0200
+
+    ISS update 20210730
+
+commit e9c2ad31330cd503700fa49a31751429daefd5be
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Aug 2 14:58:06 2021 +0200
+
+    ABModelCOVID-19Diffusion support material
+
+commit 382f6643a24431da5cb11f2d1f7c9b2545d85f83
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Aug 2 14:50:39 2021 +0200
+
+    can change markersize and linewidthin plot_series
+
+commit cd7a3ec6106dafe81fdfd9189bef5deab1612697
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Aug 1 22:34:43 2021 +0000
+
+    ISS open data update 2021-08-01T22:34:43+00:00
+
+commit 00b7a43c94e15f6cb7146d4f95aee34ac587c9f9
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Jul 31 22:34:52 2021 +0000
+
+    ISS open data update 2021-07-31T22:34:51+00:00
+
+commit 85c03ac39bcf05f69aeda70bab9d3340f82e3413
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jul 31 23:40:58 2021 +0200
+
+    reference data for paper
+
+commit e4184822f65047d4b3383e433b951cd23222da3b
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Jul 30 22:34:45 2021 +0000
+
+    ISS open data update 2021-07-30T22:34:44+00:00
+
+commit a8bd79028dfa7094a4d1857c5c3190291c4403c3
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Jul 29 22:35:12 2021 +0000
+
+    ISS open data update 2021-07-29T22:35:11+00:00
+
+commit aa03fe7375fc02e4b2034af46244988e6dee4bf5
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Jul 28 22:33:35 2021 +0000
+
+    ISS open data update 2021-07-28T22:33:34+00:00
+
+commit a2c8ba6ebc3d89d97c2a1fc01711718a63598ed4
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Jul 27 22:35:02 2021 +0000
+
+    ISS open data update 2021-07-27T22:35:01+00:00
+
+commit fdc8f56e4b75c72f69e9c4c9b46c97ec86be14c5
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Jul 26 22:35:07 2021 +0000
+
+    ISS open data update 2021-07-26T22:35:06+00:00
+
+commit 55651cc716d99fe9479d89007e6cbe3c7f28c3c2
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jul 26 18:23:52 2021 +0200
+
+    update 2021-07-25
+
+commit 4cb3224a78ac4db654e0a5e4d8a84ab41134ad30
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jul 26 17:23:43 2021 +0200
+
+    ISS update 20210723
+
+commit 574b863376271834a8275ad340451dc0705d9bda
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Jul 25 22:34:40 2021 +0000
+
+    ISS open data update 2021-07-25T22:34:40+00:00
+
+commit 3451c91f43fd4ff4c4f03014f6060af9440fa2e0
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Jul 24 22:34:45 2021 +0000
+
+    ISS open data update 2021-07-24T22:34:45+00:00
+
+commit 9e5cff84a9809297b41f11e33a42104be524e3d0
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Jul 23 22:34:51 2021 +0000
+
+    ISS open data update 2021-07-23T22:34:50+00:00
+
+commit fb579953d5706480568ba41608d311a950ac93a5
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Jul 22 22:34:56 2021 +0000
+
+    ISS open data update 2021-07-22T22:34:55+00:00
+
+commit 44cbffce23986f8ee98f197bf364c5a265219c2d
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Jul 21 22:34:59 2021 +0000
+
+    ISS open data update 2021-07-21T22:34:59+00:00
+
+commit 501a44fd52d3002c26a2245e59a4a07850b535f9
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Jul 20 22:35:06 2021 +0000
+
+    ISS open data update 2021-07-20T22:35:05+00:00
+
+commit 3b5248c2950f3555104af469620b9692030914aa
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Jul 19 22:35:02 2021 +0000
+
+    ISS open data update 2021-07-19T22:35:02+00:00
+
+commit 28fec576cf890475a5a4e5e2ac4ba5dbe9f67578
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jul 19 18:13:58 2021 +0200
+
+    update 20210718
+
+commit ec4a2d1f01cfa4f00cf7be553dfcf9736a63429e
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jul 19 18:12:52 2021 +0200
+
+    WIP add secondary axis
+
+commit 4a2fcce8fbe456d262d52ae0fad495e69e8730fe
+Merge: 305c77a caff3ac
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jul 19 13:29:02 2021 +0200
+
+    Merge branch 'main' into local_vs_imported_cases
+
+commit 305c77a26d55604388dc240aa8a13017b855fb9b
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jul 19 13:27:48 2021 +0200
+
+    WIP ricoveri
+
+commit 73e485303ddb04bf2c51427f078106a4ee332ac6
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jul 19 13:27:21 2021 +0200
+
+    update imported cases file from ISS
+
+commit 221a3d65a104bc7f73903f876c5a818888d69c3c
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jul 19 13:25:28 2021 +0200
+
+    more tuning steps
+
+commit 09e406d6c0ce6f4e04d3bf9422c5b0990b72ce9d
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jul 19 13:25:12 2021 +0200
+
+    add deseason of decessi and ricoveri
+
+commit caff3acc82c1fd3075b75a5d1e7f6dcb56e21a6d
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Jul 18 22:34:52 2021 +0000
+
+    ISS open data update 2021-07-18T22:34:52+00:00
+
+commit 986fa6e9ed2cb5c2acca6c4bc6eb762f2dd41b6a
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Jul 17 22:34:51 2021 +0000
+
+    ISS open data update 2021-07-17T22:34:50+00:00
+
+commit bae087494a1d940dcb7ee364260ac5313e478641
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jul 17 17:34:41 2021 +0200
+
+    doc
+
+commit adaee7fed152657e6f30a75f5587b9bb24925cf9
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jul 17 17:04:38 2021 +0200
+
+    WIP force MCMC to sample Rt values to match new cases local based on new cases total
+
+commit c4a82a64314a8699edee285a6933e5beec06f7bb
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jul 17 16:17:43 2021 +0200
+
+    fix last nan values in the ratio series
+
+commit 394c09ce14659537a91c8b291da51163e96595b8
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jul 17 12:19:14 2021 +0200
+
+    naive Rt calculation with new cases corrected by imported cases
+
+commit a81dc27322ac920ae03faa7b486c9921eccf2486
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jul 17 12:18:27 2021 +0200
+
+    naive Rt calculation with new cases corrected by imported cases
+
+commit 20ca934392bbf904cdaa9cd293ea209a8477bbf9
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Jul 16 22:34:57 2021 +0000
+
+    ISS open data update 2021-07-16T22:34:57+00:00
+
+commit 6cc6052165e08105c761db9b902c0935f86002f6
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Jul 15 22:34:53 2021 +0000
+
+    ISS open data update 2021-07-15T22:34:53+00:00
+
+commit 13302975eb4d3f6d98bf514781d82280d29296bd
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Jul 15 10:47:07 2021 +0200
+
+    WIP correction alg with imported cases - apply the imported correction as a prior to estimate the onsets
+
+commit 464f66d91c68fa040d36018a1d5c94cfdbe8dea4
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Jul 14 22:34:56 2021 +0000
+
+    ISS open data update 2021-07-14T22:34:56+00:00
+
+commit 94abea7f55160bc68091a356d6148defc9cbdcc4
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jul 14 23:30:00 2021 +0200
+
+    WIP correction alg with imported cases - correct shapes and posterior
+
+commit 3300c7c4ac1a55ae72e8a31e6dd6e2f694144ca9
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jul 14 23:28:47 2021 +0200
+
+    fix debug mode
+
+commit 4ef579e724587fd54f267080b557338b50c6d240
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jul 14 21:50:20 2021 +0200
+
+    WIP correction alg with imported cases - fix
+
+commit 3435d60d113a5f8952fb812d07e524d40b9eb76d
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jul 14 21:48:04 2021 +0200
+
+    WIP correction alg with imported cases - fix
+
+commit fa3faf017997cd8aef0a3af5cc6a5fc94ae09d02
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jul 14 21:47:45 2021 +0200
+
+    WIP correction alg with imported cases - fix forward fill
+
+commit e5c7aa6afc0a4b3a513cc6e4851861d34d4ccee6
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jul 14 21:34:35 2021 +0200
+
+    WIP correction alg with imported cases - fix forward fill
+
+commit 09fa5044661e8681075b98e6c2bd8aadc0f358ff
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jul 14 21:27:34 2021 +0200
+
+    WIP correction alg with imported cases
+
+commit e377ad4c54e972f6ef5c1361d0b75c2b7571fdea
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jul 14 20:57:11 2021 +0200
+
+    fix missing dep
+
+commit 1cb4713feee5175b4d4f56f29057063b33e06194
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Jul 13 22:34:55 2021 +0000
+
+    ISS open data update 2021-07-13T22:34:54+00:00
+
+commit c2ab3f80fd53155c0d9d546ced36d9ef1f5a8212
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Jul 13 23:54:42 2021 +0200
+
+    refactor with new toolbox functions
+
+commit caff5c323f64ccb43d24d13c13ba4b628281339f
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Jul 13 23:46:24 2021 +0200
+
+    merge local vs imported data into raw ones and allow for new column name to propagate down to MCMC core function
+
+commit c6e4c9ff50538560e1054e3edd6dd526a2b358ca
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Jul 13 23:44:31 2021 +0200
+
+    merge DPC data with local vs imported data from ISS
+
+commit b4a5065ddb3a9fa076b9abf99ac3781f650d3bc6
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Jul 13 23:43:56 2021 +0200
+
+    load imported vs local cases from local file
+
+commit 27f95cacd6044cd55d950b32f8aef37e5ad44cec
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Jul 13 13:33:59 2021 +0200
+
+    imported vs local analysis
+
+commit e4f4505b163cb00b19c6df2e6b2f8bb2eb35e0f6
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Jul 13 13:32:42 2021 +0200
+
+    update 2021-07-11
+
+commit a5fe848c583c7c1a33d814e7c2289a220b920a2d
+Merge: 931fcfa ba4f089
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Jul 13 13:31:52 2021 +0200
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit 931fcfa2ba0865f0c2dcecd56a0a50fabf747816
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Jul 13 13:31:46 2021 +0200
+
+    allow changing locators and formatters on x axis
+
+commit ba4f0893bf3e466634470226caab5327938ce1f1
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Jul 12 22:33:52 2021 +0000
+
+    ISS open data update 2021-07-12T22:33:52+00:00
+
+commit c1eb7f592094f45fd5e6d289709f9781428e9cf2
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jul 12 18:19:31 2021 +0200
+
+    20210709 ISS update
+
+commit e3fb29023f4cbdc50089b614a4b10a9b23390079
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Jul 11 22:34:40 2021 +0000
+
+    ISS open data update 2021-07-11T22:34:40+00:00
+
+commit 97d67f957ff7c4e4ea650d72b781dca1aae043de
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Jul 10 22:34:41 2021 +0000
+
+    ISS open data update 2021-07-10T22:34:41+00:00
+
+commit 9cb07b231f01df8997993b01fc7e3f07b3ebe91c
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Jul 9 22:34:49 2021 +0000
+
+    ISS open data update 2021-07-09T22:34:49+00:00
+
+commit 097b9d726486451dcbfc12bd755934c7ad956ec4
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Jul 8 22:34:50 2021 +0000
+
+    ISS open data update 2021-07-08T22:34:50+00:00
+
+commit a26554de184599e3e8ffa2fe83d10c33748a5a18
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Jul 7 22:34:51 2021 +0000
+
+    ISS open data update 2021-07-07T22:34:50+00:00
+
+commit 75993b657970852e1111a944ed309398de6c4099
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Jul 6 22:34:51 2021 +0000
+
+    ISS open data update 2021-07-06T22:34:50+00:00
+
+commit 5defc1ff575913585960a72962e11c70cd800b88
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Jul 5 22:34:46 2021 +0000
+
+    ISS open data update 2021-07-05T22:34:46+00:00
+
+commit 3880eba7ec0568d688a49a095945ed156152c0f5
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jul 5 19:31:07 2021 +0200
+
+    update 2021-07-04
+
+commit e4d2e9f3c4d117ddf4321cc81dde18f3ced60ac6
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jul 5 15:38:04 2021 +0200
+
+    ISS update 20210702
+
+commit 444da021aced1f077d52c84d008408ed2f761837
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Jul 4 22:34:41 2021 +0000
+
+    ISS open data update 2021-07-04T22:34:40+00:00
+
+commit 2c88dd05a26c9ff647cf432890709bb26ee7239c
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Jul 3 22:34:41 2021 +0000
+
+    ISS open data update 2021-07-03T22:34:41+00:00
+
+commit 5c5ca645ef9c968343df35ae93b8fe21134cbd57
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Jul 2 22:37:51 2021 +0000
+
+    ISS open data update 2021-07-02T22:37:50+00:00
+
+commit 48c40dc089a99986400aa06120d3f225d0bcadab
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Jul 1 22:34:57 2021 +0000
+
+    ISS open data update 2021-07-01T22:34:57+00:00
+
+commit cfdbc264b702f667411a0edc7a4494b796c9240f
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Jun 30 22:35:13 2021 +0000
+
+    ISS open data update 2021-06-30T22:35:12+00:00
+
+commit 415d22d5b85964899dadce886b0b965a5b04d3ac
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jun 30 14:57:26 2021 +0200
+
+    update 2021-06-27
+
+commit 2ddfe714779b5844a56034dfd13893bb14a20985
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jun 30 14:23:56 2021 +0200
+
+    ISS update 20210625
+
+commit e74d3f4212e8277df576ddc55ab293af5c8b1155
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Jun 29 22:35:23 2021 +0000
+
+    ISS open data update 2021-06-29T22:35:23+00:00
+
+commit 0276add8e3f035102915827f8ff25f5dc13dcf03
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Jun 28 22:34:52 2021 +0000
+
+    ISS open data update 2021-06-28T22:34:51+00:00
+
+commit 0d303ae523685cfca0a70682263947140a352848
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Jun 27 22:34:58 2021 +0000
+
+    ISS open data update 2021-06-27T22:34:58+00:00
+
+commit caf11ff4ffcf4b68837443d0fe7e2082379bee3a
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Jun 26 22:34:58 2021 +0000
+
+    ISS open data update 2021-06-26T22:34:58+00:00
+
+commit 9b1184089011840a50eeae4974ed66e1bc21575c
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Jun 25 22:35:36 2021 +0000
+
+    ISS open data update 2021-06-25T22:35:35+00:00
+
+commit f699853c90c694f4f0ccbe8235593c2f7fe79bf5
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Jun 24 22:35:25 2021 +0000
+
+    ISS open data update 2021-06-24T22:35:24+00:00
+
+commit 7d58962cfdece5d791d9d9c8085fea6c223e41b5
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Jun 23 22:34:58 2021 +0000
+
+    ISS open data update 2021-06-23T22:34:57+00:00
+
+commit aa73d124496f7567b9ede450431408ef7a3650d9
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Jun 22 22:36:18 2021 +0000
+
+    ISS open data update 2021-06-22T22:36:17+00:00
+
+commit f8e21a2c9f049b971a056c28d0b07779a355d7ba
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Jun 21 22:37:25 2021 +0000
+
+    ISS open data update 2021-06-21T22:37:24+00:00
+
+commit a5eae210ec2a800d63b765f8c961a248c4a23b92
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jun 21 18:40:08 2021 +0200
+
+    update 2021-06-20
+
+commit 1a72271362875629d83473d22db8d5e14a154590
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jun 21 13:16:28 2021 +0200
+
+    update 2021-06-20
+
+commit b9a7822d6cb92613add042b77b97bc20285b49fd
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Jun 20 22:37:02 2021 +0000
+
+    ISS open data update 2021-06-20T22:37:01+00:00
+
+commit 710af41024495d58e9d425fde75525a7fb887ae7
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jun 20 22:07:04 2021 +0200
+
+    ISS update 20210618
+
+commit 9f52b5acc17715e4d5ad1c09e467911585cf5758
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Jun 19 22:36:52 2021 +0000
+
+    ISS open data update 2021-06-19T22:36:52+00:00
+
+commit 0cf1e3c97e48c8af9c853f8a9b6387cd5136332b
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Jun 18 22:37:27 2021 +0000
+
+    ISS open data update 2021-06-18T22:37:26+00:00
+
+commit 4d91276d4d0c2f5c84abfb7759d660772c34fc5d
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Jun 17 22:37:57 2021 +0000
+
+    ISS open data update 2021-06-17T22:37:56+00:00
+
+commit 9668f33c489cd9162c4a659e75821b33b964dd77
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Jun 16 22:37:51 2021 +0000
+
+    ISS open data update 2021-06-16T22:37:50+00:00
+
+commit 5397d5ecf088ce93fb88aaadb5b7284b00ca5bb2
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Jun 15 22:38:03 2021 +0000
+
+    ISS open data update 2021-06-15T22:38:02+00:00
+
+commit 1a5d33b938cf1ee084b84c872b003664536954ab
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Jun 14 22:38:24 2021 +0000
+
+    ISS open data update 2021-06-14T22:38:24+00:00
+
+commit 2efd110d41bdd91b83cc9b3e84743aa2f19115da
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jun 14 14:52:56 2021 +0200
+
+    update 2021-06-13
+
+commit 4c2b2e84b8582da45a751395797f4a45b9d42cdf
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jun 14 13:37:30 2021 +0200
+
+    update 2021-06-13
+
+commit 9dc98517aefa13cf2a3533aaf04000553a63dba1
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Jun 13 22:37:21 2021 +0000
+
+    ISS open data update 2021-06-13T22:37:20+00:00
+
+commit e57190d50eb869e3696b5b472a831fc75f27b6d0
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jun 13 19:36:31 2021 +0200
+
+    ISS update 20210611
+
+commit ced660e841347ee76fddbf69c543b7d9e8aec38d
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Jun 12 22:37:20 2021 +0000
+
+    ISS open data update 2021-06-12T22:37:20+00:00
+
+commit e450cb3d5a6b0975d97308e7602c808a82f8e329
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Jun 11 22:37:49 2021 +0000
+
+    ISS open data update 2021-06-11T22:37:48+00:00
+
+commit c1580dcf7e38775594a6cebe435d63ce990ad3e8
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Jun 10 22:37:12 2021 +0000
+
+    ISS open data update 2021-06-10T22:37:11+00:00
+
+commit f551bc44506efb233ab7a32855aea31015612318
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Jun 9 22:39:16 2021 +0000
+
+    ISS open data update 2021-06-09T22:39:15+00:00
+
+commit e85c800608a59ed980c212108aad187b7640d348
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Jun 8 22:39:35 2021 +0000
+
+    ISS open data update 2021-06-08T22:39:35+00:00
+
+commit e949acbcd1c713ed7146c3397c1b1a65bbaf5d14
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Jun 7 22:48:24 2021 +0000
+
+    ISS open data update 2021-06-07T22:48:24+00:00
+
+commit 229c3154e8f55ed3c1ef72278ea77a1ebf823c71
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Jun 6 22:43:53 2021 +0000
+
+    ISS open data update 2021-06-06T22:43:53+00:00
+
+commit 6fb835e9c389ca7896246b7c199744451ce8e55a
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Jun 5 22:44:19 2021 +0000
+
+    ISS open data update 2021-06-05T22:44:19+00:00
+
+commit fd33eb033b4580cde37784f8231681571cce5238
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jun 5 14:32:07 2021 +0200
+
+    update 2021-06-04
+
+commit b3b2164a9507e8572b7bf88c6baa4e2756285783
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jun 5 13:35:53 2021 +0200
+
+    update 2021-06-04
+
+commit a785c265f50cda6a6e855ce7e2195ecc81f6b0e4
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jun 5 13:21:13 2021 +0200
+
+    ISS update 20210604
+
+commit 58a110ef5a07db8438bab4738e109bd1ae117fe1
+Merge: 1644a1b baa0eeb
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jun 5 13:15:04 2021 +0200
+
+    Merge branch 'WIP_20210531' into main
+
+commit 1644a1b47717743aa2aefc0983f576fd8eb5786d
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Jun 4 22:48:37 2021 +0000
+
+    ISS open data update 2021-06-04T22:48:36+00:00
+
+commit c1a3ed3509b2ace6328bedb0298b87d5af4cf5b5
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Jun 3 22:48:58 2021 +0000
+
+    ISS open data update 2021-06-03T22:48:57+00:00
+
+commit 5b44fb531f07ee94ac224a50258dd7fcbe667185
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Jun 2 22:48:47 2021 +0000
+
+    ISS open data update 2021-06-02T22:48:46+00:00
+
+commit 70f59d765a7be3e8422ad9df38d5359b9a64ed77
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Jun 1 22:49:36 2021 +0000
+
+    ISS open data update 2021-06-01T22:49:36+00:00
+
+commit baa0eeb5d988d4bedf6b6121f482b58eddde7a10
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Jun 1 19:00:02 2021 +0200
+
+    update 2021-05-31
+
+commit ede4cf596acbfa726e229cd3da1d95ecb6beae5b
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon May 31 22:48:28 2021 +0000
+
+    ISS open data update 2021-05-31T22:48:27+00:00
+
+commit 79903d92925946c1c2978613619f18e666b8f3d4
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun May 30 22:46:14 2021 +0000
+
+    ISS open data update 2021-05-30T22:46:14+00:00
+
+commit b2a00be0d21bf8ecb19f80dd58fb2ace7dc01916
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat May 29 22:45:00 2021 +0000
+
+    ISS open data update 2021-05-29T22:44:59+00:00
+
+commit 31be26d4bd7fa68c56270f68ed2b522ccd7b9f06
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat May 29 22:46:19 2021 +0200
+
+    add population dataset and incidence calculation
+
+commit 8dc1933b1843fd60e646914015919ba706a6a423
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat May 29 22:43:52 2021 +0200
+
+    population data
+
+commit 2d7ddfe55e1bfbb62d65ba04ee20c11899980bf3
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat May 29 19:04:12 2021 +0200
+
+    update 2021-05-28
+
+commit 7b24c686c03e0e935162d5a9b84cded7b3c7a381
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat May 29 19:03:31 2021 +0200
+
+    scatter plot
+
+commit 21e4e0a00ed44064c95946de9249357cdd260da5
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat May 29 10:31:21 2021 +0200
+
+    update 2021-05-28
+
+commit e38bd30fce315cf954e4e481e96488cee1e54652
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat May 29 10:06:23 2021 +0200
+
+    ISS update 20210528
+
+commit 7c47f92e4e7eaf28510adf5ff0702a3bd37f9adc
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri May 28 22:44:52 2021 +0000
+
+    ISS open data update 2021-05-28T22:44:52+00:00
+
+commit f379f4c518f6035515b4e6868f9944a57a94abf6
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu May 27 22:43:42 2021 +0000
+
+    ISS open data update 2021-05-27T22:43:42+00:00
+
+commit c5eb029496d898bbdc79c8aca45e5933689dcfe6
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu May 27 17:21:49 2021 +0200
+
+    added check of average nuovi_positivi in last 7 days above 40
+
+commit a36e2e2338cac9faef27b747fa0553aef7a925c6
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Thu May 27 08:55:15 2021 +0200
+
+    update 2021-05-26
+
+commit 6f32957a58ab71b590aa16228c50f9d04ef9b712
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed May 26 22:43:09 2021 +0000
+
+    ISS open data update 2021-05-26T22:43:08+00:00
+
+commit 9d1285a489c2656e2a5bbe7997bc8f3a05392309
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue May 25 22:41:42 2021 +0000
+
+    ISS open data update 2021-05-25T22:41:41+00:00
+
+commit c3776855c73b8a00b4bf84d6dfb457bc43874c1e
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Tue May 25 12:10:31 2021 +0200
+
+    update 2021-05-24
+
+commit 07fedeced4033850450a10eed8532553c834db4a
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon May 24 22:40:22 2021 +0000
+
+    ISS open data update 2021-05-24T22:40:21+00:00
+
+commit 82f5dafa6c3b30f706d2c18c0e853cde444e884f
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun May 23 22:39:36 2021 +0000
+
+    ISS open data update 2021-05-23T22:39:36+00:00
+
+commit 4eab99d201a9818df228c337f5e2dfb834e875af
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat May 22 22:39:31 2021 +0000
+
+    ISS open data update 2021-05-22T22:39:30+00:00
+
+commit e724ff0056183425602eb3988cb04f983b121cba
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat May 22 17:07:51 2021 +0200
+
+    update 2021-05-21
+
+commit 1e744edc91458b4f2c635f7694ea3856393f67b4
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat May 22 16:52:52 2021 +0200
+
+    update 2021-05-21
+
+commit 774414c1ff58a5143944bfba38002cdb5d742286
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat May 22 16:42:44 2021 +0200
+
+    ISS update 20210521
+
+commit ca044577af1d63f835ff1e5f4dce5785e7f2b970
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri May 21 22:39:33 2021 +0000
+
+    ISS open data update 2021-05-21T22:39:33+00:00
+
+commit 0092084be44bdc0013e5d93e28bb59ac889dd75c
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu May 20 22:40:48 2021 +0000
+
+    ISS open data update 2021-05-20T22:40:48+00:00
+
+commit de6784aa5c6fe015c87151f6c23008f12bd3259a
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed May 19 22:41:08 2021 +0000
+
+    ISS open data update 2021-05-19T22:41:07+00:00
+
+commit 7425904428e7e1f367de7e29bdbc559b274806fd
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed May 19 13:24:02 2021 +0200
+
+    update 2021-05-18
+
+commit 7117b66558c0202eda4537dd6a78b5aadfe968a3
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue May 18 22:41:19 2021 +0000
+
+    ISS open data update 2021-05-18T22:41:19+00:00
+
+commit 221206db2f506698209ee9891c0d9febc573e6b7
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon May 17 22:41:24 2021 +0000
+
+    ISS open data update 2021-05-17T22:41:24+00:00
+
+commit bc975717630ad39a85ba90616b6fdd0bd77fc4e2
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun May 16 22:41:01 2021 +0000
+
+    ISS open data update 2021-05-16T22:41:01+00:00
+
+commit 913c2e4d3216d56c55f4037dca791eb410526ea9
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat May 15 22:41:06 2021 +0000
+
+    ISS open data update 2021-05-15T22:41:06+00:00
+
+commit 06eac029e6b412a65e4b29e0d19871620c842b11
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat May 15 21:55:27 2021 +0200
+
+    hospitalized analysis
+
+commit 7cb0a82a36efcef37d65501b73079a671156efb7
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat May 15 16:16:13 2021 +0200
+
+    update 2021-05-14
+
+commit 80098258a78599c8bf871cc0c1564baf875df089
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat May 15 16:08:30 2021 +0200
+
+    ISS update 20210514
+
+commit 47ead58efc4f679720e0ef153244421e2c48842d
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri May 14 22:41:24 2021 +0000
+
+    ISS open data update 2021-05-14T22:41:24+00:00
+
+commit 64f49bc103e53405005cdc7f4abf612cdcdb871d
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu May 13 22:41:14 2021 +0000
+
+    ISS open data update 2021-05-13T22:41:14+00:00
+
+commit 4e395a9938d968dfa55434f9f552fac6bd1c5093
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed May 12 22:52:04 2021 +0000
+
+    ISS open data update 2021-05-12T22:52:03+00:00
+
+commit e363af52884c389e9180a9c9cb1fddc3cdf3763f
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed May 12 22:38:51 2021 +0200
+
+    update 2021-05-11
+
+commit dc405b5488eaa3f022d139c288e017569d996663
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed May 12 18:51:57 2021 +0200
+
+    update 2021-05-11
+
+commit 4f0e1aa6a70bd4f722688bd313967804ca955d81
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue May 11 22:50:06 2021 +0000
+
+    ISS open data update 2021-05-11T22:50:05+00:00
+
+commit 5f50067e68d69087e78c5c108b08c990fedcadfb
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon May 10 22:49:45 2021 +0000
+
+    ISS open data update 2021-05-10T22:49:45+00:00
+
+commit ca30643a735827f2bec07b298316f19d316ee397
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun May 9 22:49:30 2021 +0000
+
+    ISS open data update 2021-05-09T22:49:29+00:00
+
+commit 0d9622b16032902974d2d3e0e02eec5e1ac5f2b9
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat May 8 22:48:28 2021 +0000
+
+    ISS open data update 2021-05-08T22:48:27+00:00
+
+commit 93883f699c31b93dd29b2e96b5929a6c58152cd3
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat May 8 17:56:52 2021 +0200
+
+    fix h errorbars
+
+commit 5f1c12cd07d3ad4fcc60020abf00b1917a3c7f08
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat May 8 17:13:34 2021 +0200
+
+    update 2021-05-07
+
+commit 2ac96b0ccf53f3f7cbbb971c9d6c9e363af3f387
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat May 8 17:11:16 2021 +0200
+
+    update 2021-05-07
+
+commit 7411c322087fe86d1154320c3f1a4b8174720e47
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat May 8 13:22:39 2021 +0200
+
+    push region error bars
+
+commit ffd976edcf0005f2f62175d46f2121fbaeda12e9
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat May 8 13:22:18 2021 +0200
+
+    update 2021-05-07
+
+commit dc0640ce79e20664bd8f222b404a2dd6046e456b
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat May 8 13:19:05 2021 +0200
+
+    added herrorbars plot
+
+commit d47d4e05dcb2980739b7bca05e251596da94c806
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat May 8 11:33:33 2021 +0200
+
+    update 2021-05-07
+
+commit 2161c00568a259832c97199650b62290dbfbac0a
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat May 8 11:23:47 2021 +0200
+
+    ISS update 20210507
+
+commit b9b27494ca46ef432cc04a917e3d0a98c50b2bd2
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri May 7 22:50:01 2021 +0000
+
+    ISS open data update 2021-05-07T22:50:01+00:00
+
+commit 375df3326aa3ef59d44ae188db85b3db3851d654
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu May 6 22:48:58 2021 +0000
+
+    ISS open data update 2021-05-06T22:48:58+00:00
+
+commit 72da7f0d0f98c795ed330085dd91dba892c1a646
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Thu May 6 09:06:49 2021 +0200
+
+    update 2021-05-05
+
+commit 037acb56836b0b919dca52618e0e70fb4cd5792a
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed May 5 22:49:17 2021 +0000
+
+    ISS open data update 2021-05-05T22:49:16+00:00
+
+commit 252c154c6f34458b7423813a0dd743d8429c5e51
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue May 4 22:48:57 2021 +0000
+
+    ISS open data update 2021-05-04T22:48:57+00:00
+
+commit 1098fcb284b034c5aabbf5070618006004a2dba4
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Tue May 4 09:13:50 2021 +0200
+
+    update 2021-05-03
+
+commit 4963e094c01f90642b0149f47832a60e8490b4d5
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon May 3 22:40:12 2021 +0000
+
+    ISS open data update 2021-05-03T22:40:12+00:00
+
+commit ad529f385047c0fad8a345f94d0540c787a73a98
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun May 2 22:40:17 2021 +0000
+
+    ISS open data update 2021-05-02T22:40:16+00:00
+
+commit ee09050beb70e5098ce15d67941d3fc8711b0cdf
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat May 1 22:40:24 2021 +0000
+
+    ISS open data update 2021-05-01T22:40:24+00:00
+
+commit a9a957b20c5eac8248eab9995d2d69a75002149e
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat May 1 16:00:09 2021 +0200
+
+    update 2021-04-30
+
+commit 096eea713560136f9495f2431b34108e785499d7
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat May 1 13:12:19 2021 +0200
+
+    ISS update 20210430
+
+commit f5ea3ec6822b020535c36dcc48ef630a6b29ab8e
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Apr 30 22:40:25 2021 +0000
+
+    ISS open data update 2021-04-30T22:40:24+00:00
+
+commit 5c660190b42e967eb0f3b986ce71fa939e55574f
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Apr 29 22:40:37 2021 +0000
+
+    ISS open data update 2021-04-29T22:40:37+00:00
+
+commit 6498ff03fadf6b9e5550b3123c41ffe78aa5ac1e
+Merge: 0ec49b7 65c46c1
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Apr 29 14:01:48 2021 +0200
+
+    Merge branch 'WIP_20210428' into main
+
+commit 0ec49b7113fd1f66c461b539f1b85471f199f131
+Merge: 874ea53 2145518
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Apr 29 10:53:50 2021 +0200
+
+    Merge branch 'fix_differences' into main
+
+commit 65c46c1a98f841694e0bde9aebb1c67f9b18440b
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Thu Apr 29 09:10:19 2021 +0200
+
+    update 2021-04-28
+
+commit 874ea53c44a657b1a1b1938007c3ff35d272371e
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Apr 28 22:38:07 2021 +0000
+
+    ISS open data update 2021-04-28T22:38:07+00:00
+
+commit 7d9ab6e85b9162bbcfb2a50e56230e2e4ad85e8a
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Apr 27 22:41:08 2021 +0000
+
+    ISS open data update 2021-04-27T22:41:08+00:00
+
+commit eb2a3d0b411f681f78d85caa5cf7014c3971d8e6
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Tue Apr 27 09:52:56 2021 +0200
+
+    update 2021-04-26
+
+commit 1aed2060920953bce7f2c96c5387125a86a5756f
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Apr 26 22:41:03 2021 +0000
+
+    ISS open data update 2021-04-26T22:41:02+00:00
+
+commit 4643b55243b732e0e2cbd2cbb11ab29ce5622a0a
+Merge: 01aa768 caca36a
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Apr 26 17:21:55 2021 +0200
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit 01aa76841c005d1c113cf29b09a89385cfcaa2a3
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Apr 26 17:21:46 2021 +0200
+
+    generate csv with Rt for all regions
+
+commit caca36a7fb775896bc1f58f2d5e32aac3a40a0a6
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Apr 25 22:40:58 2021 +0000
+
+    ISS open data update 2021-04-25T22:40:57+00:00
+
+commit 20979af5f3a5e67043950d5546eeb945efc5410f
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Apr 24 22:41:01 2021 +0000
+
+    ISS open data update 2021-04-24T22:41:01+00:00
+
+commit bd2c280cb8af19b7d7e5c6170cc2fc64b01170f7
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Apr 24 10:25:06 2021 +0200
+
+    update 2021-04-23
+
+commit a95d340c3c98c6ac403ced9d4f1be23a5e599349
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Apr 24 09:50:07 2021 +0200
+
+    ISS update 20210423
+
+commit 261ad7f949956f476a32b971016c90fff64e5063
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Apr 23 22:41:25 2021 +0000
+
+    ISS open data update 2021-04-23T22:41:24+00:00
+
+commit 691c20565b6c1c07cf65315fae57b3d24307992c
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Fri Apr 23 18:27:34 2021 +0200
+
+    increased hspace for subplots
+
+commit 90bd59bada4e7209385e2ce0aac9659232500532
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Apr 22 22:40:59 2021 +0000
+
+    ISS open data update 2021-04-22T22:40:59+00:00
+
+commit 81bd992cc63149db4665d8b3c5e07d35e61d73a0
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Thu Apr 22 09:04:57 2021 +0200
+
+    update 2021-04-21
+
+commit 4a36faed522b40ef1f5f0747cf378ab067e48522
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Apr 21 22:40:46 2021 +0000
+
+    ISS open data update 2021-04-21T22:40:45+00:00
+
+commit 771ff6b1b95dcaa1748d7f3af49592f15f489b24
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Apr 20 22:40:35 2021 +0000
+
+    ISS open data update 2021-04-20T22:40:35+00:00
+
+commit f0c2c857e929253f55e30e2d3c1879e8ba53d3ca
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Tue Apr 20 09:09:52 2021 +0200
+
+    update 2021-04-19
+
+commit 715056ddc57c3491bcaf8a8c23360a9b822dbfad
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Apr 19 22:40:19 2021 +0000
+
+    ISS open data update 2021-04-19T22:40:18+00:00
+
+commit 5ae920422f5c80394e9905ad2f014d9428ea66e8
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Apr 18 22:40:01 2021 +0000
+
+    ISS open data update 2021-04-18T22:40:01+00:00
+
+commit 38947a685754a63231923f68115bc94bb7a62aae
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Apr 17 22:39:57 2021 +0000
+
+    ISS open data update 2021-04-17T22:39:56+00:00
+
+commit c634240870b81e867973e10071c3d91e9dedd59d
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Apr 17 18:31:44 2021 +0200
+
+    update 2021-04-16
+
+commit 3379a14a1200189ebac2808bcac87560ff1c73e7
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Apr 17 18:31:12 2021 +0200
+
+    added italian locale to parse localizes dates
+
+commit 09ee2a2ecb740d4b595b5dbce0e0472ab8920655
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Apr 17 18:27:18 2021 +0200
+
+    update 2021-04-16
+
+commit 616ef4ee61f9eedc2191b500afd48f7afd611c1e
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Apr 17 18:24:50 2021 +0200
+
+    update 2021-04-16
+
+commit 8983eae8fe073498cfae960092636e71f7c15fb7
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Apr 17 18:24:17 2021 +0200
+
+    ISS update 20210416
+
+commit 6244e30101044f73aa9e09f31475e77604fb7709
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Apr 16 22:40:01 2021 +0000
+
+    ISS open data update 2021-04-16T22:40:01+00:00
+
+commit 6d9aa4fe7c94902b6adea024abe02e69fc11b0b2
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Apr 15 22:39:52 2021 +0000
+
+    ISS open data update 2021-04-15T22:39:52+00:00
+
+commit 442b9426f2cf8ff2f111c9d024975b0b3180b931
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Apr 15 15:07:24 2021 +0200
+
+    update 2021-04-14
+
+commit 69f0d4ddb1e4340496d2ea37e9a45fa505740507
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Thu Apr 15 09:33:09 2021 +0200
+
+    update 2021-04-14
+
+commit 7b867bedf8029467ddaf33f12b03b1b32d9fbfc6
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Apr 14 22:39:28 2021 +0000
+
+    ISS open data update 2021-04-14T22:39:28+00:00
+
+commit 86a426f23aed4a35671d321f13a3f5ed419c6b9d
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Apr 13 22:39:50 2021 +0000
+
+    ISS open data update 2021-04-13T22:39:50+00:00
+
+commit 14dfb55e250e511b7ada37413869c1e52594d45e
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Apr 13 22:35:23 2021 +0200
+
+    update 2021-04-12
+
+commit cead35b5eb373e4506424ef521ef5f476518e449
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Tue Apr 13 11:52:24 2021 +0200
+
+    update 2021-04-12
+
+commit 9720ad7b3760e68dbe2b31f34682e3177a8032f1
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Apr 12 22:40:00 2021 +0000
+
+    ISS open data update 2021-04-12T22:39:59+00:00
+
+commit dd121a521ffb35cee7c343d4a67761e4cc3b4f1f
+Merge: a5db48a 0327126
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Mon Apr 12 18:40:23 2021 +0200
+
+    Merge branch 'main' of github.com:tomorrowdata/COVID-19 into main
+
+commit a5db48a45c81cf2cd2504c6e181702f9ec991891
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Mon Apr 12 18:39:46 2021 +0200
+
+    added USE_RELATIVE_RESIDUALS as run parameter
+
+commit 0327126a88ca6e3873bf814f186aec940ff35db3
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Apr 11 22:39:56 2021 +0000
+
+    ISS open data update 2021-04-11T22:39:55+00:00
+
+commit 3540d3df94f3fe8814f36c8b54d548579ff919b7
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Apr 10 22:39:50 2021 +0000
+
+    ISS open data update 2021-04-10T22:39:50+00:00
+
+commit a7fd147f2157cc77530d01250ea4841087d3e5bb
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Apr 10 19:32:34 2021 +0200
+
+    fix image compression
+
+commit 945305248fbf36f06c8ea53e56619b9349e720f5
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Apr 10 19:16:59 2021 +0200
+
+    push regions data
+
+commit f9912f1b95572f684b69a7e732cba64530fbcd70
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Apr 10 19:16:28 2021 +0200
+
+    update 2021-04-09
+
+commit 0a30864ecc5fe3c411f87979c3059a7e0f681a7b
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Apr 10 19:15:31 2021 +0200
+
+    update 2021-04-09
+
+commit b2d652edbcb4e91d373d797baa00f5094bbd4c93
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Apr 10 17:29:09 2021 +0200
+
+    ISS update 20210409
+
+commit 920f0871a0e32b92c1206eb826b3b2c8fe222f8c
+Merge: 9effd8f 9062a23
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Apr 10 12:53:49 2021 +0200
+
+    Merge branch 'dev-all-regions' into main
+
+commit 9effd8fce65fbb9a9fb31300eaa39465386703ba
+Merge: 51d231c df5014a
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Apr 10 12:51:28 2021 +0200
+
+    Merge branch 'automation' into main
+
+commit 9062a235bcf376b22c9613d6883df8ab16dd8407
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Apr 10 12:49:45 2021 +0200
+
+    moving all regions to main - adding specific cases Sicilia Valle_d_Aosta
+
+commit 2145518beff3b21075e13e060467be3140d77197
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Apr 10 09:59:33 2021 +0200
+
+    fix decreasing cumulative data
+
+commit 51d231c922ad6d989c6e44fc99be8ac3c5a810dc
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Apr 9 22:40:03 2021 +0000
+
+    ISS open data update 2021-04-09T22:40:03+00:00
+
+commit df5014a330904c95b9239342139d9f7112b3f4fc
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Fri Apr 9 18:27:31 2021 +0200
+
+    run config updated
+
+commit 80357069c46acd11726179a03131ce1114a53e60
+Merge: 6aafd1d 807c512
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Fri Apr 9 09:41:03 2021 +0200
+
+    Merge remote-tracking branch 'origin/main' into dev-all-regions
+
+commit 5c71a69550fe6edd4b13a2d5ddf00765ffe6c8ea
+Merge: 29f0130 807c512
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Fri Apr 9 09:36:51 2021 +0200
+
+    Merge remote-tracking branch 'origin/main' into automation
+
+commit 807c5122a1fa9a2eefaa043354d0f5857848ac3e
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Apr 8 22:40:07 2021 +0000
+
+    ISS open data update 2021-04-08T22:40:07+00:00
+
+commit 6aafd1d4c4210f3af60686be2d2d152e860b2454
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Thu Apr 8 12:30:03 2021 +0200
+
+    update 20210407
+
+commit dca16671544b0049b40658f88d148d0472061877
+Merge: 34436bd 6a03111
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Thu Apr 8 12:01:46 2021 +0200
+
+    Merge remote-tracking branch 'origin/main' into dev-all-regions
+
+commit 4066e59f532cabb65dfda2c6bbe9879c3bb7d265
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Thu Apr 8 11:32:16 2021 +0200
+
+    update 2021-04-07
+
+commit 87921fd7516620ead09bcd87e1df16d9ad04c0fe
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Thu Apr 8 11:30:05 2021 +0200
+
+    changed pickle filename for italian data
+
+commit 6a03111f98535a60fd300e0b9b46c34a40149cd2
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Apr 7 22:40:31 2021 +0000
+
+    ISS open data update 2021-04-07T22:40:31+00:00
+
+commit 9cecfbd2d73a4e4d8221545d4c880d851c037490
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Apr 7 21:44:17 2021 +0200
+
+    ISS update all regions 20210402
+
+commit 34436bdb926c8b4ddad5d1c736fa365da5a9d407
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Wed Apr 7 19:04:19 2021 +0200
+
+    dev notebook for all regions
+
+commit 7b748d3dcbaca0c3aa3fd7616c6165b4e60b0f3b
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Wed Apr 7 18:32:20 2021 +0200
+
+    changes for suplots support
+
+commit 29f0130b61cfa85998058c1a532e479a9ce059e1
+Merge: 9c7a0ce 4090791
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Wed Apr 7 16:07:02 2021 +0200
+
+    Merge remote-tracking branch 'origin/main' into automation
+
+commit 9c7a0ce77d743e50358d47f99282521a6ed49f13
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Wed Apr 7 09:29:14 2021 +0200
+
+    sanitized region name
+
+commit 4090791d893ac7d3482e2c0ef2f9049adf896987
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Apr 6 22:39:34 2021 +0000
+
+    ISS open data update 2021-04-06T22:39:33+00:00
+
+commit 6bbb51a5d8806bc1fdc0c4dfc77bea4b86caa571
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Tue Apr 6 18:36:36 2021 +0200
+
+    all regions
+
+commit 410b8bd706ef42a7c193ab6b0a851ad9b20113ec
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Tue Apr 6 13:07:25 2021 +0200
+
+    update 2021-04-05
+
+commit 039921ca3f90f5897b6e1acd7101c3c9e4572d6f
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Apr 5 22:40:29 2021 +0000
+
+    ISS open data update 2021-04-05T22:40:28+00:00
+
+commit befd2e65cfb020be409b83ed37c407c93ddff5c3
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Apr 4 22:40:05 2021 +0000
+
+    ISS open data update 2021-04-04T22:40:05+00:00
+
+commit dd681b9c51d10d5db4b6df30d1b6cea8f63ac8a0
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Apr 3 22:40:20 2021 +0000
+
+    ISS open data update 2021-04-03T22:40:20+00:00
+
+commit c347d3058e15e2540d68fe600e3c828be3c83e68
+Merge: c5766dc 090cb3e
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Apr 3 14:33:11 2021 +0200
+
+    Merge branch 'WIP_20210402' into main
+
+commit 090cb3e6a0f54f7c6dc11ee211989e5bacddd917
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Apr 3 14:32:58 2021 +0200
+
+    update 2021-04-02
+
+commit 3b9eb9f7e1502e76a188b07fc2a8cf9e53cda57b
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Apr 3 12:08:18 2021 +0200
+
+    update 2021-04-02
+
+commit 58b9d20688ba5318ebf904186b36c0f397905e58
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Apr 3 11:55:51 2021 +0200
+
+    ISS update 20210402
+
+commit c5766dcb7e195992ea0238f46908babe33156e37
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Apr 2 22:40:14 2021 +0000
+
+    ISS open data update 2021-04-02T22:40:14+00:00
+
+commit 6f39cd18c2a2036d67506d00c6fa9536ddb075bc
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Fri Apr 2 21:27:03 2021 +0200
+
+    update 2021-04-02
+
+commit a848a409b1cdc05ba57a07527c495937e5ae21bf
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Fri Apr 2 18:56:35 2021 +0200
+
+    added script for running notebooks and pushing res
+
+commit e128241c271c50cdf21e7246503037a92012b383
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Fri Apr 2 18:38:40 2021 +0200
+
+    updated run configs
+
+commit 2780d8064f26060328cba741e257735b01a7232e
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Fri Apr 2 18:36:34 2021 +0200
+
+    added build for the covid-run-app
+
+commit 03c9d3a64240ae78d1daf0096f236acf33240f6c
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Fri Apr 2 18:35:39 2021 +0200
+
+    dynamic data for automated run
+
+commit 3ad70b0352f4c8f4a348295b78f3334d835546cf
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Fri Apr 2 14:12:43 2021 +0200
+
+    removed results.py and added debug option
+
+commit d748f7972c1f1c2713590f05cd84c99a462f1f8f
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Apr 1 22:48:33 2021 +0000
+
+    ISS open data update 2021-04-01T22:48:32+00:00
+
+commit ba5806092a4b3298937abe6370023e42eb4bfedb
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Thu Apr 1 18:03:40 2021 +0200
+
+    fixed config file
+
+commit c5a822ac831c517ac138d6915892551e912485e4
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Thu Apr 1 17:32:50 2021 +0200
+
+    completed automation app
+    
+    - some refactoring
+    - added readme
+
+commit 7a70de6048d01a4e65e5fe63dbb3e65a97659b3c
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Thu Apr 1 15:24:40 2021 +0200
+
+    added dynamic target result dir
+
+commit 566b062a47b650e897c0087ddd068fa2b7bad92a
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Thu Apr 1 12:06:07 2021 +0200
+
+    reduced build context
+
+commit feb1ca576283c9a410e9132fc5191b21660be217
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Apr 1 11:18:17 2021 +0200
+
+    residuals and season charts
+
+commit 88334bda9f549b3f12039c54bb79a7f54440f846
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Thu Apr 1 09:21:37 2021 +0200
+
+    update 2021-03-31
+
+commit d87fbdf1e60f47eb7849ee477bbe6eac9e6adcad
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Mar 31 22:39:57 2021 +0000
+
+    ISS open data update 2021-03-31T22:39:57+00:00
+
+commit 92d6d326a82820a70f7402aac266b1fe40781d98
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Wed Mar 31 19:13:18 2021 +0200
+
+    RTAutomation WIP
+
+commit 82091055961b9ecf4f9e5e2c2a0ef6acd524238d
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Wed Mar 31 15:00:51 2021 +0200
+
+    refactoring
+    
+    - main function parameter are set using env variables
+    - added docstring for main function
+    - code formatting and import cleaning
+
+commit 8b21579b304ddeb2b31e8ad3b2d0f5474a49b3be
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Wed Mar 31 15:00:03 2021 +0200
+
+    moved data load function for regions
+
+commit 8f6877e7fc69df50df25b852f1c1dac3fd48b2eb
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Wed Mar 31 12:29:02 2021 +0200
+
+    moved and renamed save_MCMC_sampling
+
+commit e4620ccbfc564a03e00b5b82ab02b49a918f8854
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Mar 30 22:39:54 2021 +0000
+
+    ISS open data update 2021-03-30T22:39:54+00:00
+
+commit 5cda3b2a1691a47bd0b7bab71e550b55cabb6171
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Tue Mar 30 14:38:41 2021 +0200
+
+    update 2021-03-29
+
+commit 4387567761c6b9c1bb95148f40aaacf57c056a73
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Mar 30 14:28:34 2021 +0200
+
+    fix regions
+
+commit e37119cfadeec34ce8b2f96030d27b1e7ff1cb31
+Author: Marco Angius <mr.angiusmarco@gmail.com>
+Date:   Tue Mar 30 11:33:51 2021 +0200
+
+    update 2021-03-29
+
+commit c13210ed2fd6b3169d2658c4e7379994396e2c10
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Mar 30 09:20:03 2021 +0200
+
+    push regions
+
+commit 2d9aa1a8a4ac801c9447673a6085cd8f179254cc
+Merge: 2945a23 87c8727
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Mar 30 09:10:08 2021 +0200
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit 2945a233b4076616a3b792fc461ba5768861bf36
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Mar 30 09:09:58 2021 +0200
+
+    region notebook
+
+commit 87c872700251e31163947373326a2953e38d33b7
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Mar 29 22:40:05 2021 +0000
+
+    ISS open data update 2021-03-29T22:40:05+00:00
+
+commit af157824e35b892f147f3bf280e06b595678659a
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Mar 28 22:39:50 2021 +0000
+
+    ISS open data update 2021-03-28T22:39:50+00:00
+
+commit ed530d0c15acf712a545ff2c9f355e6a4e091351
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Mar 27 22:39:45 2021 +0000
+
+    ISS open data update 2021-03-27T22:39:45+00:00
+
+commit 0b8798d9cf0efc647b5b2753171724601fcae1d9
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Mar 27 12:46:25 2021 +0100
+
+    update 2021-03-26
+
+commit 337fe1ce5f581eab7a8274dfb17d596fb3e10d11
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Mar 27 12:43:32 2021 +0100
+
+    ISS update 20210326
+
+commit 9c22e4e1b895352337ba0349fae9dc35ed1aa9dd
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Mar 26 22:39:34 2021 +0000
+
+    ISS open data update 2021-03-26T22:39:33+00:00
+
+commit 40129cc725ae384230fda47f5e1b34dd4027151f
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Mar 26 22:52:18 2021 +0100
+
+    test revision of Toscana data
+
+commit 3a701b7897f3cb5b82948c0b1ca46228c25c37c2
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Mar 25 22:36:46 2021 +0000
+
+    ISS open data update 2021-03-25T22:36:46+00:00
+
+commit aab24e88e3cff564590ef30596baf01e0ccf194e
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Mar 25 09:52:20 2021 +0100
+
+    update 2021-03-24
+
+commit e1c1ec0055201f1d0b315068f10051ccdee7f7d4
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Mar 24 22:35:49 2021 +0000
+
+    ISS open data update 2021-03-24T22:35:49+00:00
+
+commit 6e543c519ed23251d0a734fb628688fd2cf0cc03
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Mar 23 22:46:56 2021 +0000
+
+    ISS open data update 2021-03-23T22:46:56+00:00
+
+commit 0be8035cd99fd6862609c406f7415c065a644b3d
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Mar 23 08:15:36 2021 +0100
+
+    update 2021-03-22
+
+commit 345cab3a24be9b02fc1f44b24103612107f81269
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Mar 22 22:49:05 2021 +0000
+
+    ISS open data update 2021-03-22T22:49:05+00:00
+
+commit 282958fcea9744ced92a26fa051f605dca209f29
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Mar 22 16:21:24 2021 +0100
+
+    parametrize max_chain_len and targetaccept
+
+commit c23f90f178ba5841705e6627d9c5ddd409c274b8
+Merge: 1aa7fd9 8299d85
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Mar 22 16:05:21 2021 +0100
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit 1aa7fd98ce619c6a9ec00f9bb7f01be61eb1aa32
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Mar 22 16:05:12 2021 +0100
+
+    parametrize max_chain_len and targetaccept
+
+commit 8299d852c8e0e5159807077a1db409e9c2570d01
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Mar 21 22:48:11 2021 +0000
+
+    ISS open data update 2021-03-21T22:48:11+00:00
+
+commit baf09bd3b33753aac1c3aceeddf7aa511d1addbc
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Mar 20 22:47:34 2021 +0000
+
+    ISS open data update 2021-03-20T22:47:34+00:00
+
+commit 211cce9820a238c59531d30d9c2d8a894abee69c
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Mar 20 10:20:15 2021 +0100
+
+    update 2021-03-19
+
+commit 1a2f384de72bd5c7a6113079ee65dfa83c7737ec
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Mar 20 10:10:14 2021 +0100
+
+    update 2021-03-19
+
+commit 8c439d60d45b6905c360821d1a20fb338a4e71b4
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Mar 20 10:09:47 2021 +0100
+
+    ISS update 20210319
+
+commit 40b15812ee3262a68bff155dc30f74a2014f9311
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Mar 19 22:47:51 2021 +0000
+
+    ISS open data update 2021-03-19T22:47:51+00:00
+
+commit f17ae3510d546181d8ef6da9c5d5cb9225059eab
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Mar 18 22:48:23 2021 +0000
+
+    ISS open data update 2021-03-18T22:48:23+00:00
+
+commit 2f2d4a2c8f52d8888ad31d881e0bcf54802bfcd6
+Merge: 048e298 9eb1bd4
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Mar 18 11:56:53 2021 +0100
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit 048e2987f79cb994a5042763062c720b7741051f
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Mar 18 11:56:46 2021 +0100
+
+    update 2021-03-17
+
+commit 9eb1bd4b2330a6a0bc5360329bafae4a6295cbbb
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Mar 17 22:48:12 2021 +0000
+
+    ISS open data update 2021-03-17T22:48:11+00:00
+
+commit 077e233f0ee8ccdf48f80af9117a213a33061241
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Mar 16 22:48:10 2021 +0000
+
+    ISS open data update 2021-03-16T22:48:09+00:00
+
+commit 1d81a260e97ec06ea55dd9ab22849f75674b5acb
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Mar 16 14:15:08 2021 +0100
+
+    expose mc tune and draws params to bash
+
+commit 9aacf8e9a200a2409d5ab9818e4340f2bbda0e59
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Mar 16 11:58:32 2021 +0100
+
+    avoid committing ISS data daily
+
+commit 4827829d9c4e1813a3db021aa64ee22f1fae9d33
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Mar 16 11:56:59 2021 +0100
+
+    update 2021-03-15
+
+commit 655577ac18d844df163f5ef6d274aa9d070827c7
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Mar 15 23:04:28 2021 +0000
+
+    ISS open data update 2021-03-15T23:04:28+00:00
+
+commit bc07a4bccba2f51a9a6257cbe27848ae36e9254c
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Mar 15 22:20:12 2021 +0100
+
+    expose futuredraws as bash param
+
+commit 90efe46d44484b9564ab2ab924477f6feeb43db4
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Mar 14 22:47:30 2021 +0000
+
+    ISS open data update 2021-03-14T22:47:29+00:00
+
+commit f2a8c68e17483493d5b5036d595493bff147e24b
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Mar 13 22:47:54 2021 +0000
+
+    ISS open data update 2021-03-13T22:47:54+00:00
+
+commit a3951b21026fd7d833e15f07fbe8fd0f6d2c5f09
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Mar 13 19:02:27 2021 +0100
+
+    push pickles as well
+
+commit 6bff0d3e280867c09979a0647883e93380097a03
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Mar 13 19:01:45 2021 +0100
+
+    update 2021-03-12
+
+commit c3377c7c61d9a2c0184a0a8e0747e7c79ec5f0cf
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Mar 13 18:59:10 2021 +0100
+
+    update 2021-03-12
+
+commit b20a58537ad6b12a74dc61cc96fbb4af60a5ee0e
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Mar 13 18:51:34 2021 +0100
+
+    ISS update 20210312
+
+commit 2c264df935d0dd77669f4c8988dee879f298f7a5
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Mar 12 22:47:51 2021 +0000
+
+    ISS open data update 2021-03-12T22:47:51+00:00
+
+commit 166856d4fd330985bf77464a3c21f19cbde2f5ff
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Mar 12 23:22:57 2021 +0100
+
+    fix arg parse
+
+commit 2e574d3cbba9a6cc60b3db8022453f7c01dafbcd
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Mar 12 23:18:12 2021 +0100
+
+    parametric regions
+
+commit ca249dc3e574d0b42966b554efe30b39b878f5bb
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Mar 11 22:47:39 2021 +0000
+
+    ISS open data update 2021-03-11T22:47:39+00:00
+
+commit ad8aaf3c27d145fea9788990ffed99bc2c4cc03f
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Mar 11 20:03:25 2021 +0100
+
+    dump raw calc
+
+commit a41ef92f4a79c72dc541c35b4965c92c4311d36d
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Mar 10 22:47:00 2021 +0000
+
+    ISS open data update 2021-03-10T22:47:00+00:00
+
+commit ae4f48b5f8916d826531e31def1eb212889546ab
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Mar 9 22:48:03 2021 +0000
+
+    ISS open data update 2021-03-09T22:48:03+00:00
+
+commit d9514d0ebf896f483188dbf776b0b66cbe785ff3
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Mar 9 23:24:07 2021 +0100
+
+    update 20210309
+
+commit 86051403f1131d4c10bb42cf1b89d3acdf1bbf58
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Mar 9 19:22:37 2021 +0100
+
+    fix shape when removing divergencies
+
+commit 7935d2553165bd110f1a96c96b563e34052edcbc
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Mar 8 22:46:59 2021 +0000
+
+    ISS open data update 2021-03-08T22:46:59+00:00
+
+commit 2dfef0f25496a693b0cd8ef81118f9415ad5e407
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Mar 7 22:46:36 2021 +0000
+
+    ISS open data update 2021-03-07T22:46:35+00:00
+
+commit 0d86d322f745cf7b5645671e0cb9af683566122e
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Mar 7 22:22:24 2021 +0100
+
+    dump raw calc data as well
+
+commit 6b58e9bfbde4eba73483ca02441e3a276e1fb89a
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Mar 6 22:46:23 2021 +0000
+
+    ISS open data update 2021-03-06T22:46:23+00:00
+
+commit ccbf48ede1563fbd2f95bca2649ef220f90466df
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Mar 6 11:46:35 2021 +0100
+
+    update 20210305
+
+commit 3bddc002cf9d9c06de682068588f8fd688a97437
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Mar 6 03:55:35 2021 +0100
+
+    Piemonte update 20210305
+
+commit de7fc9bab5ee2dddac6946fc296bb6d89cbe4720
+Merge: 457b235 64bbebe
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Mar 6 01:53:26 2021 +0100
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit 457b2355f8b09d53cc0176045985730aab09b564
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Mar 6 01:51:55 2021 +0100
+
+    remove divergences
+
+commit 64bbebec3797b9cec9d1b7686ebff26f8f957743
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Mar 5 22:51:18 2021 +0000
+
+    ISS open data update 2021-03-05T22:51:18+00:00
+
+commit 079ced5d2ed1102c7b72eccdf48160e362088299
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Mar 5 23:43:52 2021 +0100
+
+    ISS update 20210305
+
+commit 1e9bfd8535b4c4e4a979c36b3c8f3e27a1c12ff0
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Mar 5 23:19:08 2021 +0100
+
+    restore title and references
+
+commit 0dd2f437ce14fbdd7f22beec5b84ecbb349563e7
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Mar 5 23:08:49 2021 +0100
+
+    switch to RSVD
+
+commit f34655b41a3e1a678559de89b9ac704d2ab38139
+Merge: 0fa7f90 cf28516
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Mar 5 23:02:34 2021 +0100
+
+    Merge branch 'main' into pytoolbox
+
+commit cf28516b1b369370a60e5a5f7ae534eb9cc70b2c
+Merge: 9198e30 14ad8ce
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Mar 5 23:01:44 2021 +0100
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit 0fa7f907ab3914a76ac80dfad68f4606ccd05435
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Mar 5 23:01:33 2021 +0100
+
+    housekeeping
+
+commit 1f199bd1f16eb3bf5b2fa14272e32b9cc2c5e445
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Mar 5 22:54:43 2021 +0100
+
+    update 20210305 - first with RSVD
+
+commit db2c05985c2dd75d0a16f66ceb58e9122e000e86
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Mar 5 22:54:09 2021 +0100
+
+    update 20210305 - first with RSVD
+
+commit 7383090a914db8339efe0d5ee1613e91b5c96850
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Mar 5 22:52:49 2021 +0100
+
+    italy RSVD working version
+
+commit 1fbd487005ce5765327f245a9423a2fd12bfc601
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Mar 5 21:27:58 2021 +0100
+
+    model params 500 samples per chain and 0.99 accept
+
+commit 489882ddbda4c8eb53011d7007395c11515cdb20
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Mar 5 20:04:18 2021 +0100
+
+    fix wrong regional dataset
+
+commit b082f71da270a018a21445332412a2694b10285b
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Mar 5 20:01:16 2021 +0100
+
+    fix wrong regional dataset
+
+commit 29ca66a79243e294bd5bd2e86ff92a9f7dfcdbf7
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Mar 5 17:44:41 2021 +0100
+
+    UK update 20210304
+
+commit b30bf6944e7e439c2d506c045c9805af542deff7
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Mar 5 13:24:21 2021 +0100
+
+    italy fut bound 0.8 1.2 draws 5
+
+commit 6a3435321468c4af9185e92e9e70f59a9680a0a2
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Mar 5 11:56:34 2021 +0100
+
+    fix padding left truncated days - add max_tree_depth - use stationary degree 2
+
+commit 2e313989894a1c4baafe993cee10140f5499ff02
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Mar 5 10:24:10 2021 +0100
+
+    target_accept 0.99
+
+commit 7d2a3f7d20e683b0bd476df9b66c06038fb719a8
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Mar 5 09:54:24 2021 +0100
+
+    limit samples in chains to 500
+
+commit ad77204c5d60ff3373596a059df65c846783d717
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Mar 5 09:53:12 2021 +0100
+
+    limit data to 250 days
+
+commit 855c016cd272f1e7d9bb747a2846b9dd43afe7b4
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Mar 5 08:22:21 2021 +0100
+
+    fix import
+
+commit 4fef5d4a3ef3f468ac9e31a212d923ee17496e56
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Mar 5 08:11:59 2021 +0100
+
+    UK application future bound 0.8 1.2 - 5 draws
+
+commit 7210d9c082aa850f23078cec7e018a465682f241
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Mar 5 07:57:37 2021 +0100
+
+    UK data loading and preprocessing
+
+commit 14ad8ce3fd0cd41efb82c46a23bfa1a58a6b2b71
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Mar 4 22:51:20 2021 +0000
+
+    ISS open data update 2021-03-04T22:51:19+00:00
+
+commit 9198e30f8f774258f1ff55476e212d5f3a18ae44
+Merge: a2a5285 8ec8268
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Mar 4 15:02:04 2021 +0100
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit a2a5285cdf5f89a67eb524d2eb9b96c352065d54
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Mar 4 15:01:56 2021 +0100
+
+    update 20210302
+
+commit 8ec826890ba120976595793906046999a4b05cad
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Mar 3 22:51:18 2021 +0000
+
+    ISS open data update 2021-03-03T22:51:17+00:00
+
+commit 33cc1b31b6e2f5b3c87875e7b48bd68a7b117c8d
+Merge: 6d6132a 82d8e3d
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Mar 3 11:29:31 2021 +0100
+
+    Merge branch 'tmp_20210302' into main
+
+commit c0907e61ebab80bf12f4e01b6eddda400666f088
+Merge: 7db4962 82d8e3d
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Mar 3 11:21:11 2021 +0100
+
+    Merge branch 'tmp_20210302' into pytoolbox
+
+commit 82d8e3d6ba4a505782ca6d0ef69cd57b86baba6e
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Mar 3 11:20:55 2021 +0100
+
+    update 20210302
+
+commit ea3f7deeb90314cd882e7bb10aa1ea6de3c5a7c2
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Mar 3 11:20:31 2021 +0100
+
+    Piemonte update 20210302
+
+commit 7db49621ac63e1c9e69d43542a57bf1e477bccc0
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Mar 3 10:57:28 2021 +0100
+
+    plot official chart with plotting library
+
+commit 8f45500e9758621971a3e68332d9d3e0eaf76b64
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Mar 3 10:51:28 2021 +0100
+
+    piemonte application
+
+commit d6d082b7e2b8d3fc171c004d21ec31fee3edfcc0
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Mar 3 03:14:16 2021 +0100
+
+    fix MCMC draws
+
+commit fd29ab559e5a7d538d7ddf1c99b1b2a9367a086d
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Mar 3 02:43:55 2021 +0100
+
+    fix
+
+commit e5256fcbc204cc9e1d44c82090c2ded79b14ca45
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Mar 3 02:38:22 2021 +0100
+
+    param pickle prefix
+
+commit e9df2c0fe86e59ffb96b3c31f381268c6db1de39
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Mar 3 00:47:22 2021 +0100
+
+    fix sort
+
+commit 7e7cbff19c36d3cb3442f5be94d9a5d469e87206
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Mar 3 00:47:00 2021 +0100
+
+    add time boxes
+
+commit 6d6132a356751848446ff92dd6db51d379255292
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Mar 2 22:47:58 2021 +0000
+
+    ISS open data update 2021-03-02T22:47:58+00:00
+
+commit 32da145dba1523d4937997dffbfebb9b72e1e293
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Mar 2 22:58:18 2021 +0100
+
+    update 2021-03-02
+
+commit 0b8ba3a3d3328d3ec00fc964fa3a090ce4b0fd4e
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Mar 2 21:44:45 2021 +0100
+
+    fix images size
+
+commit e5858c985755bb761be60ffc068150ae895017b9
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Mar 2 13:07:24 2021 +0100
+
+    allow running multiple applications
+
+commit 560213f7d89f017ea4c7de17da2e1691526361c3
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Mar 2 13:06:40 2021 +0100
+
+    change MCMC params
+
+commit 590f3a3f3ec30022c8b607eb1ce3d3129faf54c3
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Mar 2 11:17:35 2021 +0100
+
+    load 120 days calculation from pickle
+
+commit 0620194a53e0c8aad4542bedd66d13d91248326c
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Mar 2 11:16:23 2021 +0100
+
+    application for residuals method
+
+commit f877e6bf3db53d4bd731e3c661d1d19b39ebbb92
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Mar 2 11:15:53 2021 +0100
+
+    residuals method
+
+commit 853233ec18548552658e385a0057e3435e48606e
+Merge: f323b7c 21f2d65
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Mar 2 08:32:42 2021 +0100
+
+    Merge branch 'main' into pytoolbox
+
+commit fa31c0ea4f9744e43059b80579a063ff904355dd
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Mar 1 22:48:51 2021 +0000
+
+    ISS open data update 2021-03-01T22:48:51+00:00
+
+commit f323b7c080017eae2db1202f99aca68bc3678f27
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Mar 1 23:29:14 2021 +0100
+
+    upper and lower future uncertainty
+
+commit 21f2d6518649844ecc05e330baa66ab5b9d81b01
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Mar 1 21:39:10 2021 +0100
+
+    update 2021-02-28
+
+commit 26aa645c5ec99eab76bda8f5916a87b05d92a119
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Mar 1 09:22:10 2021 +0100
+
+    access logs after containers stop
+
+commit 8b0607737110b4424cc55abbef78765775b31539
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Feb 28 22:47:55 2021 +0000
+
+    ISS open data update 2021-02-28T22:47:55+00:00
+
+commit 7173330726e391b68392e0291d4ea194fc1b88bf
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Feb 28 22:15:59 2021 +0100
+
+    draw 5 future scenarios
+
+commit 40bd63fdb2a51067ed210eeb75eee4a97d4b3b58
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Feb 28 22:09:42 2021 +0100
+
+    run multi batches in containers
+
+commit 66833d00445f72a1c29028ee0625137cfcc18ec4
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Feb 28 21:46:15 2021 +0100
+
+    run apps in parallel
+
+commit cc5e849c0d9e8f3e38fe11b766685821f8e1c228
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Feb 28 20:52:11 2021 +0100
+
+    padding names to 000
+    start from pastdays_start
+    restore correct MCMC samplling params to 500
+
+commit 25d500e7797975e7353f8874454a596b10a881ad
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Feb 28 20:50:19 2021 +0100
+
+    add applications to docker
+
+commit e1d0d86f8b88c5d85868033cd7f59b479b69b9f7
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Feb 28 19:00:46 2021 +0100
+
+    seasonalnoisedMCMC.py application to be run unattended
+
+commit 8f0b76c9eb50ec736ab516c115f1426fcb24db7c
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Feb 28 18:59:52 2021 +0100
+
+    working version of prototype application seasonalnoisedMCMC.py
+
+commit 81c042a48c6ab3039ebee8dcd49e4ede1152fe21
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Feb 28 11:46:55 2021 +0100
+
+    WIP refactoring code into library
+
+commit 87f995f042d1639edd5df9cb8fdfa0c255df4ee1
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Feb 28 11:36:24 2021 +0100
+
+    Rt calculation via Markov Chain Monte Carlo with noise handling
+
+commit f3c89f6ad7f0d974cf901ee3539ed4ab903a79bb
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Feb 28 11:35:21 2021 +0100
+
+    past data revision handling via seasonal fitting of next point
+
+commit 7d1f29d73649efbd2034d7f12cadd04a2f94cdec
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Feb 28 11:33:28 2021 +0100
+
+    add truncnorm with standard interface
+
+commit 2c4840297e77b5d87b4f969df8ffe117fc6a2d2d
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Feb 27 22:45:43 2021 +0000
+
+    ISS open data update 2021-02-27T22:45:43+00:00
+
+commit 579abd3d49a95e7442d972677287f4e6e85c552f
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Feb 27 22:25:56 2021 +0100
+
+    fix arviz<=0.10 https://discourse.pymc.io/t/attributeerror-module-arviz-has-no-attribute-geweke-in-google-colab/6821
+
+commit 24246cb953667b1b071cdba7cc8b8fa3e6aff72c
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Feb 27 21:24:00 2021 +0100
+
+    WIP working RSVD and MCMC
+
+commit 65637f2e2da5263ad839682c87e2a2ca09441c8a
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Feb 27 21:21:37 2021 +0100
+
+    remove test R volume
+
+commit 7bd44604dfac233937727801507f488507ce3fc9
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Feb 27 11:16:53 2021 +0100
+
+    update 2021-02-26
+
+commit 253acf525767c138457db31030f519424167d282
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Feb 27 11:16:07 2021 +0100
+
+    update 20210226 - Piemonte
+
+commit c33231300a2fff06a7ebe9d3f751dd05ce0600b0
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Feb 27 11:14:58 2021 +0100
+
+    ISS update 20210226
+
+commit c6a41511755b1b75391e09867b5f6f033680a001
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Feb 26 22:45:42 2021 +0000
+
+    ISS open data update 2021-02-26T22:45:42+00:00
+
+commit 6054f2e092e7afa6fba99496758229db7dbd061f
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Feb 25 22:45:25 2021 +0000
+
+    ISS open data update 2021-02-25T22:45:24+00:00
+
+commit 3c992d55f43a99d6844cc2dd8f31554629c10c98
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Feb 25 16:19:46 2021 +0100
+
+    update 2021-02-24
+
+commit a7e2bd73142c6319dc407b32da22a47c5424e96c
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Feb 25 16:18:59 2021 +0100
+
+    update 20210224 - Piemonte
+
+commit 2b7326cc4d09d7c5e6f0e14e23f964bbfacbcdd1
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Feb 24 22:42:44 2021 +0000
+
+    ISS open data update 2021-02-24T22:42:44+00:00
+
+commit e9309befb75529969bdadd89ea75705bfba1c7b1
+Merge: 6e5ee95 f9ed472
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Feb 24 11:11:25 2021 +0100
+
+    Merge branch '20210223' into main
+
+commit f9ed472dc3b957b08e998514743644b6e8e2e920
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Feb 24 10:33:15 2021 +0100
+
+    update 2021-02-23
+
+commit 107223751d59f7ac9b5d73586421ec927914b792
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Feb 24 10:32:40 2021 +0100
+
+    update 20210223 - Piemonte
+
+commit 6e5ee959d440757a69bde64efd49d3c89567b310
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Feb 23 22:45:22 2021 +0000
+
+    ISS open data update 2021-02-23T22:45:21+00:00
+
+commit 7c9207ecb58667f16809ea2aa0645c4e7d074c33
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Feb 23 19:38:43 2021 +0100
+
+    update 2021-02-23
+
+commit 50aec8bce5bca932037854f8057c08e887093d17
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Feb 23 08:29:39 2021 +0100
+
+    update 2021-02-22
+
+commit bb5c5d607c0a8590ce49f460947f81eef7316c59
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Feb 22 22:45:06 2021 +0000
+
+    ISS open data update 2021-02-22T22:45:06+00:00
+
+commit e1c62ae0e521dad2a99f2c693611ff22d1a08358
+Merge: 2286033 fff92b3
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Feb 22 09:19:19 2021 +0100
+
+    Merge branch 'main' into pytoolbox
+
+commit fff92b308946e1a21331e69bd123130c0caf3eca
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Feb 21 22:44:34 2021 +0000
+
+    ISS open data update 2021-02-21T22:44:33+00:00
+
+commit f1338597b80f6e01f4225e035adb6e7a65cad5e1
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Feb 21 21:22:12 2021 +0100
+
+    Rt by new hospitalized
+
+commit 80fba2aef44873b87c57fb8479d2cc46ca28216d
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Feb 21 21:20:50 2021 +0100
+
+    update 2021-02-21
+
+commit a349a2906aba173af53e8e53c765adcc995f56d5
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Feb 21 21:20:01 2021 +0100
+
+    ISS update 20210219
+
+commit da8520683e76b0254543e7725ac52e6f350fe8e5
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Feb 20 22:44:20 2021 +0000
+
+    ISS open data update 2021-02-20T22:44:20+00:00
+
+commit ca9ca586ce1ab739c6b0127311dcc29ad3b0702f
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Feb 19 22:44:54 2021 +0000
+
+    ISS open data update 2021-02-19T22:44:54+00:00
+
+commit 9ac17b4112b173c85e4c4404ac1774655286a720
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Feb 18 22:44:42 2021 +0000
+
+    ISS open data update 2021-02-18T22:44:42+00:00
+
+commit aae4c7dc55ffafd4ef65a7739b40df117b46defe
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Feb 18 09:39:18 2021 +0100
+
+    fir cert error from ISS site and rerun download job
+
+commit 4b40ec06ec0436f5eb92cb63d4a5cb5754980827
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Feb 18 08:36:04 2021 +0000
+
+    ISS open data update 2021-02-18T08:36:04+00:00
+
+commit 3608ac5bc1600e5a6c01cf37798a8823fc301551
+Author: stefanoterna <stefano.terna@tomorrowdata.io>
+Date:   Thu Feb 18 09:35:31 2021 +0100
+
+    ISS certs are weakly signed
+
+commit 38e0853c00e78e70c588fb1b576a8d311079bfe9
+Author: stefanoterna <stefano.terna@tomorrowdata.io>
+Date:   Thu Feb 18 09:33:02 2021 +0100
+
+    ISS certs are weakly signed
+
+commit 74bb2c3347829a187b12ce630615a8046cc67351
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Feb 18 00:28:56 2021 +0100
+
+    update 2021-02-17
+
+commit 0dc48447adf7e15f7b68e931a7b3a36e7ac1ced4
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Feb 16 22:44:27 2021 +0000
+
+    ISS open data update 2021-02-16T22:44:27+00:00
+
+commit 382cfa93d5ec471e3c94ee3c01dfcfcbfd839c71
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Feb 15 22:44:26 2021 +0000
+
+    ISS open data update 2021-02-15T22:44:26+00:00
+
+commit 2422695beb5a49d3484346284bba44e124dc2a08
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Feb 14 22:44:27 2021 +0000
+
+    ISS open data update 2021-02-14T22:44:27+00:00
+
+commit 2286033a012a014f784aae9e167d6d6a702ff139
+Merge: dd5b3fb 40e0bfe
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Feb 14 14:58:29 2021 +0100
+
+    Merge branch 'main' into pytoolbox
+
+commit 40e0bfec95e2e4139cc81cc598faa247180ad93f
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Feb 13 22:43:54 2021 +0000
+
+    ISS open data update 2021-02-13T22:43:54+00:00
+
+commit e3df113f6aa33c32a5f32b0d48b31b8892e0f95d
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Feb 13 20:35:05 2021 +0100
+
+    update 2021-02-13
+
+commit 3787f2a6fa697b6d20ecc87746d0ea3f01812656
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Feb 13 20:34:43 2021 +0100
+
+    update ISS 2021-02-12
+
+commit c4c8ae9fd10e3d42687ca1c225ca0be291e2d44d
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Feb 13 11:25:41 2021 +0100
+
+    fix timestamp
+
+commit 1022d39fbd98f0b44f019d83253756f278592cd7
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Feb 13 10:20:30 2021 +0000
+
+    ISS open data update 2021-02-13T10:20:29+00:00
+
+commit eb07fc9fac17793dd82fdb2d6142279ffeddb335
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Feb 12 10:58:11 2021 +0100
+
+    update 2021-02-11
+
+commit ded5398e9c60b99a020a7ba40510560625dd593a
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Feb 11 22:44:31 2021 +0000
+
+    ISS open data update 2021-02-11T22:44:31+00:00
+
+commit 78afe50fc2bf01c3f2d46d95dff51e6af17c1153
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Feb 10 22:44:27 2021 +0000
+
+    ISS open data update 2021-02-10T22:44:27+00:00
+
+commit 555dc818a29cb4fd141a085f21e752b7d4f7001e
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Feb 10 18:31:43 2021 +0100
+
+    update 2021-02-10
+
+commit b31e3766326739b67c678d7e1efd775eaa159b43
+Merge: b4ba703 0074ff4
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Feb 10 11:48:03 2021 +0100
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit b4ba7037dd3655427606af6e0a4c14bb813c505f
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Feb 10 11:47:56 2021 +0100
+
+    update 2021-02-09
+
+commit 0074ff43b681b907ed9273c28861e7baa1bc286d
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Feb 9 22:44:30 2021 +0000
+
+    ISS open data update 2021-02-09T22:44:30+00:00
+
+commit 8b13ecdbd0183379cb5cade0aced459bc252e1a2
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Feb 8 22:42:16 2021 +0000
+
+    ISS open data update 2021-02-08T22:42:15+00:00
+
+commit 10febe695edf6ef2838146880c85d8604baa8562
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Feb 8 19:09:35 2021 +0100
+
+    update 2021-02-08
+
+commit 419c8523a8be05f63340c6e90396431663bf4a7e
+Merge: d82eca1 f68eafa
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Feb 8 11:20:24 2021 +0100
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit d82eca18ddb6274364b778bd83ee78b0fe821d33
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Feb 8 11:20:18 2021 +0100
+
+    update 2021-02-07
+
+commit f68eafaf59df6a5557cda91d9a5c5aa6e064e8a3
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Feb 7 22:44:07 2021 +0000
+
+    ISS open data update 2021-02-07T22:44:07+00:00
+
+commit f43a7982406c81e00c7d67aca142aa7c9a965b50
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Feb 6 22:44:00 2021 +0000
+
+    ISS open data update 2021-02-06T22:43:59+00:00
+
+commit 007b0e70f811dcab89ca24dc8896f6142441a7fc
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Feb 6 12:13:31 2021 +0100
+
+    update 2021-02-05
+
+commit 1b33b04eca0e497246cf4beb01846e0f69f0e758
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Feb 6 12:12:13 2021 +0100
+
+    ISS update 20210204
+
+commit 87614a2efeaf71381b027d620c018766498eb65d
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Feb 5 22:44:06 2021 +0000
+
+    ISS open data update 2021-02-05T22:44:05+00:00
+
+commit 64dd0e77fa868fdb58c63bd0c65451a8a2e5dfd3
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Feb 4 22:44:41 2021 +0000
+
+    ISS open data update 2021-02-04T22:44:41+00:00
+
+commit b6ed039511ce244ba7796d69e35b95cf36c9fa5e
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Feb 4 22:10:39 2021 +0100
+
+    update 2021-02-04
+
+commit 15754fb5f6eddeed624b853a16bc305a32b43ce8
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Feb 3 22:44:22 2021 +0000
+
+    ISS open data update 2021-02-03T22:44:22+00:00
+
+commit 3d6c48bca771197b619c4969365f86ba8b2b9d1c
+Merge: ca8803b 692d550
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Feb 3 21:39:04 2021 +0100
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit ca8803b9839f96bb4ea4da48d31411b25a9d7dc3
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Feb 3 21:38:56 2021 +0100
+
+    update 2021-02-03
+
+commit 692d550027dda61cac8b23e94d93c60f9142d478
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Feb 2 22:49:07 2021 +0000
+
+    ISS open data update 2021-02-02T22:49:07+00:00
+
+commit f521be840b09e92979bb07b200bda043ad54d24b
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Feb 2 23:11:11 2021 +0100
+
+    update 2021-02-02
+
+commit e0e951fd9d95a8678e0b76966ece587361561460
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Feb 2 08:23:13 2021 +0100
+
+    update 2021-02-01
+
+commit 43a22e3e7bcdf36256265ea16f46d3460c2b2f59
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Feb 1 22:53:01 2021 +0000
+
+    ISS open data update 2021-02-01T22:53:00+00:00
+
+commit dd5b3fb6e07d0a965c3f01e5cd421e7a6f72ec85
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Feb 1 14:48:44 2021 +0100
+
+    added area plottings for confidence intervals
+
+commit 798ac71f62916037535dd317b4c2f1fc751d3024
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Feb 1 12:28:54 2021 +0100
+
+    update 2021-01-31
+
+commit 10aa41a629e70f00c8537427030f3d3f023c2fbe
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Feb 1 10:59:48 2021 +0100
+
+    compute naive deseasoning on DPC data
+
+commit 4421f0b583c4c678abefac401af469ed6ee08ff2
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Feb 1 10:57:37 2021 +0100
+
+    fix missing import
+
+commit 2d53fc8b892c02fd8b38e3f6526641fe2a2ddd56
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Jan 31 22:51:17 2021 +0000
+
+    ISS open data update 2021-01-31T22:51:16+00:00
+
+commit 6b53ae5dfc208cc63aa8555e02899777cb9988f1
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jan 31 19:21:11 2021 +0100
+
+    utils functions
+
+commit dade794358f4288d14ec8b457c7d55e039a13712
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jan 31 19:20:52 2021 +0100
+
+    refactor the function to convert signal array into matrix with periods on columns
+
+commit ef4f86c41f661c559c58ce876788fa17963b510d
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jan 31 19:19:54 2021 +0100
+
+    handle zeros when taking the log of the signal
+
+commit 4bcc423ff147fcec118a334d18b7ff8904ced0fc
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Jan 30 22:51:04 2021 +0000
+
+    ISS open data update 2021-01-30T22:51:03+00:00
+
+commit dc24e76e4bad45fa2599add3c5f51d52ad05d803
+Merge: 4026edb f1a2176
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jan 30 15:57:19 2021 +0100
+
+    Merge branch 'main' into pytoolbox
+
+commit f1a2176adf573598ff3ddbb832b35a1dbb9e476a
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Jan 29 22:51:21 2021 +0000
+
+    ISS open data update 2021-01-29T22:51:21+00:00
+
+commit ef4131815017b1a9633f0c06980d334bfd380878
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Jan 29 23:48:18 2021 +0100
+
+    update 2021-01-29
+
+commit fe30626e801ed6c2d9d4ab2404135eab39525939
+Merge: c7ca90d 41fa25b
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Jan 29 23:48:07 2021 +0100
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit c7ca90dd4cfedd887045b414cd79bedce710c17c
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Jan 29 23:47:59 2021 +0100
+
+    ISS update 20210129
+
+commit 4026edb9ec4c840c5464d91b76a75907927fec11
+Merge: 43fced0 be461ad
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Jan 29 18:17:50 2021 +0100
+
+    Merge branch '20210129_temp' into pytoolbox
+
+commit be461ad2cec64eda3f88dcf7a4649706b1e9c1a9
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Jan 29 18:17:39 2021 +0100
+
+    update 202110129
+
+commit 41fa25bfcbc18aaa0a2b3d2ba15e4a2184edf715
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Jan 28 22:52:16 2021 +0000
+
+    ISS open data update 2021-01-28T22:52:15+00:00
+
+commit 5d634367b3b2cb592f8e1d884a187a085c93bf96
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Jan 28 21:49:16 2021 +0100
+
+    update 2021-01-28
+
+commit 9a66c2e5a1590edf22ed385efc82a2f67c187a74
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Jan 28 21:42:18 2021 +0100
+
+    update 2021-01-28
+
+commit 1201445c90f1420ecab4bb677154d8579c5bc5f9
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Jan 27 22:51:24 2021 +0000
+
+    ISS open data update 2021-01-27T22:51:24+00:00
+
+commit b7aca2a070ea87f42a2adeaa109038f509a8b035
+Merge: 02bf813 c1ba148
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jan 27 19:01:13 2021 +0100
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit 02bf8133b686121c9843f1c791297a05ce52cc3f
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jan 27 19:01:05 2021 +0100
+
+    update 2021-01-27
+
+commit c1ba148233613474df4f8627ec0e238ba166f453
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Jan 26 22:49:57 2021 +0000
+
+    ISS open data update 2021-01-26T22:49:56+00:00
+
+commit 990686861f7adcc9083a8799a6832e802f02fd7b
+Merge: 891a9e1 8ed2048
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Jan 26 23:47:21 2021 +0100
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit 891a9e1f5a4d433a189213b775aa95c99ee339aa
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Jan 26 23:47:12 2021 +0100
+
+    update 2021-01-26
+
+commit 8ed2048283f9db006c8ad6569748cd73eea69e1b
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Jan 25 22:57:09 2021 +0000
+
+    ISS open data update 2021-01-25T22:57:09+00:00
+
+commit 6f2b7ac1013e0c822bebafb25b9d94b6f15ac3f1
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jan 25 23:53:00 2021 +0100
+
+    update 2021-01-25
+
+commit 6501df6fe26d096b17a8a9a4e546b0f5fe2685c2
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jan 25 09:55:14 2021 +0100
+
+    update 2021-01-24
+
+commit 64e5edd804c18b75524e6ae615a4a83136afb3ef
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jan 25 09:49:59 2021 +0100
+
+    update 2021-01-24
+
+commit 31c25f878e9f490db0580af98f9e20040fa7c613
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Jan 24 23:15:23 2021 +0000
+
+    ISS open data update 2021-01-24T23:15:23+00:00
+
+commit cc55cecf0e95674efebfd256d3ee8415a2cb40d7
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jan 24 22:26:27 2021 +0100
+
+    update 2021-01-24
+
+commit 43fced0199f1cc7dc9f18bba1606c668b366b6d3
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jan 24 22:11:49 2021 +0100
+
+    return seasonal matrix other than array as output
+
+commit 3f68f82cdc4f9d5b907cf9671c65eab4be9ef7cf
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Jan 23 23:14:40 2021 +0000
+
+    ISS open data update 2021-01-23T23:14:40+00:00
+
+commit 0276284d0876e0c2adba8848d7651342b0a909fb
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jan 23 18:54:32 2021 +0100
+
+    added possibility to operate on subsequents multiple differences
+    of the base signal.
+    The number of differences is given by difference_degree.
+    Added a method adfuller which perform the adfuller test on the signal
+    based on the difference_degree
+
+commit b897495bdf47a64aafd11c9a186236131863f04a
+Merge: 480a3c0 0069283
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jan 23 16:33:55 2021 +0100
+
+    Merge branch 'main' into pytoolbox
+
+commit 0069283200f9d5a753968cddb389877d2544b63c
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jan 23 13:58:42 2021 +0100
+
+    Rt Lombardia computations on Jan 13th 2021
+
+commit 79dd0e42237735096f1e5b775ea1f5ddfdff8feb
+Merge: f37e16b 8be7d5c
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jan 23 13:19:49 2021 +0100
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit f37e16b925c04bc7d01370597b73bd4d3a42e4c7
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jan 23 13:19:42 2021 +0100
+
+    update 2021-01-22
+
+commit 8dc1a629e3f716c777916a92352505222bd5369b
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jan 23 13:18:48 2021 +0100
+
+    Rt Lombardia computations on Jan 13th 2021
+
+commit 11a3fc386eda23e2ec50884d43c1f92fe0a80392
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jan 23 13:18:09 2021 +0100
+
+    ISS update 2021-01-22
+
+commit 8be7d5c15aef7df668e94fc3f7b6b64b65645ab3
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Jan 22 23:16:49 2021 +0000
+
+    ISS open data update 2021-01-22T23:16:49+00:00
+
+commit 627a33765e0073686648c121f1d4bfed464beb99
+Merge: fa3f850 2440e2d
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Jan 22 00:27:10 2021 +0100
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit fa3f850a335fe612caa319cb89415309ee40529c
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Jan 22 00:27:02 2021 +0100
+
+    update 2021-01-21
+
+commit 2440e2d91edc92f59056d5cc4d3686543de8be31
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Jan 21 23:16:20 2021 +0000
+
+    ISS open data update 2021-01-21T23:16:20+00:00
+
+commit e0d7de049730ec8e4fe69c6694890c3b01cc1fcc
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Jan 20 23:15:47 2021 +0000
+
+    ISS open data update 2021-01-20T23:15:46+00:00
+
+commit 4d37fdd3b3492900c015a75ff19bffbd99ab8733
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jan 20 19:23:33 2021 +0100
+
+    update 2021-01-20
+
+commit 85ba5e23b0ce4de37739916a3be8e949ddb8971c
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jan 20 18:10:20 2021 +0100
+
+    update 2021-01-20
+
+commit 3fb4a5a926434f2e7718c6730e17c21b0c949fbd
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Jan 19 23:19:04 2021 +0000
+
+    ISS open data update 2021-01-19T23:19:03+00:00
+
+commit e92b61706e02aa249cf30fa1247ae6b00f8c95b6
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Jan 19 18:28:06 2021 +0100
+
+    update 2021-01-19
+
+commit 18a46697aceec2aef2f04032d24a8c79932dc0c0
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Jan 18 23:17:32 2021 +0000
+
+    ISS open data update 2021-01-18T23:17:31+00:00
+
+commit 9b63bf6b65b5d21e09693e11ea67528a4cf5a2f6
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jan 18 20:12:30 2021 +0100
+
+    update 2021-01-18
+
+commit 4d15d3e72ba739427e71d1c7aa56e9022c9055a9
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Jan 17 23:14:08 2021 +0000
+
+    ISS open data update 2021-01-17T23:14:07+00:00
+
+commit 97dc1d1234a5197d10f3e68555331a8d1e2aff1e
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jan 17 23:27:44 2021 +0100
+
+    update 2021-01-17
+
+commit 480a3c0404ee946dc58777dce423d55a038a8290
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jan 17 23:16:59 2021 +0100
+
+    add relative residuals and fix verbose
+
+commit 1e169d5552c380bde9c5add2a7d402913f40a3da
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jan 17 14:05:36 2021 +0100
+
+    provide explicit class to perform deseasoing on the log signal
+    log of signal is computed in the overrided constructor
+    exp conversions are computed in the overrided fit method
+
+commit c6f0e18df492a8396deb198343c1f36517cee232
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jan 17 14:05:29 2021 +0100
+
+    fix missing param trend_alpha in test
+
+commit 14017eef35f4131036ef52d40e228afd461ebe8c
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jan 17 14:04:01 2021 +0100
+
+    compute directly as output of model:
+    - deseasoned signal
+    - trend signal via Tikhonov smoothing of deseasoned
+    
+    Pad everything left to restore the original signal shape
+
+commit 24d53a223fde731119174d67879b8dfae2c32b4f
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jan 17 10:09:15 2021 +0100
+
+    update 2021-01-16
+
+commit 1b0db73b0bbd789508b526ad9070f4d0f7294640
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jan 17 10:08:00 2021 +0100
+
+    update 2021-01-16
+
+commit 32ed25379f691cc0f35afa5042d09e90f6c55691
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jan 17 09:54:45 2021 +0100
+
+    update 2021-01-16
+
+commit 7b308d0779f0bb88deb6437384bd6bda15334e1c
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Jan 16 23:13:58 2021 +0000
+
+    ISS open data update 2021-01-16T23:13:57+00:00
+
+commit b3494a3f49e7f832ab03957f6f2c2ed385ea06f7
+Merge: 6aa9331 aeecfb7
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jan 16 15:40:57 2021 +0100
+
+    Merge branch 'main' into pytoolbox
+
+commit aeecfb7e82cbf090289a4a4384b3294ef02234c3
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jan 16 15:37:45 2021 +0100
+
+    update 2021-01-16
+
+commit 7f0c0b5327e861a67accbafb4a9909dc1406593a
+Merge: b40c84a bc38c9a
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jan 16 15:37:33 2021 +0100
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit b40c84a58aeed056add27e9ac736783f976c71b9
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jan 16 15:37:20 2021 +0100
+
+    ISS update 20210115
+
+commit bc38c9a6ec5435eeb8132562b239d047076b247a
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Jan 15 23:18:26 2021 +0000
+
+    ISS open data update 2021-01-15T23:18:26+00:00
+
+commit 6aa9331211f311a2161b7f1ba77a6836e350008b
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Jan 15 18:16:58 2021 +0100
+
+    verbose option
+
+commit fdd681a1dfc3bfb4c9b7b179cbb036a0c0598091
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Jan 14 23:15:05 2021 +0000
+
+    ISS open data update 2021-01-14T23:15:05+00:00
+
+commit a1f2ec51b607c3b081336b3ca733f27fe241db47
+Merge: fb4eaa4 25ee5cc
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Jan 14 18:32:33 2021 +0100
+
+    Merge branch 'main' into pytoolbox
+
+commit 25ee5cca807a0651cf9a9b0f13fe4d9065176997
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Jan 14 18:31:48 2021 +0100
+
+    update 2021-01-14
+
+commit fb4eaa4e9c0a4c38dcc5ae5625de196d6c2204e5
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Jan 14 17:55:13 2021 +0100
+
+    add optional legend and jpg quality
+
+commit d26380bbcbb473accbf5d21fb14768361369768a
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Jan 13 23:17:25 2021 +0000
+
+    ISS open data update 2021-01-13T23:17:24+00:00
+
+commit 1fcf5d020f493d0f59fede2cf390253fc1ef55b7
+Merge: 97b411f 122d9cd
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jan 13 19:38:44 2021 +0100
+
+    Merge branch 'main' into pytoolbox
+
+commit 122d9cd354cd5b138cd21180fe579b4328b6481a
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jan 13 19:37:52 2021 +0100
+
+    update 2021-01-13
+
+commit 97b411f213f66700c61b61125b6f69bfa09acdc7
+Merge: aac9041 a7cfb92
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jan 13 08:21:29 2021 +0100
+
+    Merge branch 'main' into pytoolbox
+
+commit d77e4a9502b192eac727d550110b05467d47b904
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Jan 12 23:12:32 2021 +0000
+
+    ISS open data update 2021-01-12T23:12:32+00:00
+
+commit a7cfb92b852e9db336decbd28c79c763d5e9940e
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Jan 12 18:45:24 2021 +0100
+
+    update 2021-01-12
+
+commit aac90416ee9a433ffa7b1dd568a1a9a838636c90
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Jan 12 18:32:48 2021 +0100
+
+    fix shape of further u_hat
+
+commit e068e7982257a44e24d145074cbd907b6e9f425d
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Jan 11 23:08:45 2021 +0000
+
+    ISS open data update 2021-01-11T23:08:45+00:00
+
+commit 8d3a60e3a4e999026d9dbe8294bdc7c8ac1fd790
+Merge: e8c3d51 9f0959d
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jan 11 21:04:11 2021 +0100
+
+    Merge branch 'main' into pytoolbox
+
+commit 9f0959d972bd58e70ded6f5edf43c1dc6a6a2eb2
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jan 11 18:43:32 2021 +0100
+
+    update 2021-01-11
+
+commit 389a96175b6eab559845f419fc159d8186bc9a4a
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jan 11 09:28:18 2021 +0100
+
+    update 2021-01-10
+
+commit e8c3d5174d7211694661cf4545377c89889fe992
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jan 11 09:15:58 2021 +0100
+
+    rsvd return left padding from fit
+
+commit bc20fc6707b4e4614b250c03e30f05e0df7b9800
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Jan 10 23:05:40 2021 +0000
+
+    ISS open data update 2021-01-10T23:05:39+00:00
+
+commit baeb756c55944ce82ff6ff9e220adf6c908ce655
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jan 10 20:28:52 2021 +0100
+
+    added testing, documentation, and package dir refactoring
+
+commit a1b846d7cba214458048f6224756e73332c3594e
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jan 10 19:37:15 2021 +0100
+
+    finished RSVD porting from R lang
+
+commit 2aa4e803794b6b3d9ccc7fdf0cb505fa7f6b5675
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jan 10 19:02:13 2021 +0100
+
+    WIP fixed bounding on minimize scalar; implementation of search of seasonal paterns
+
+commit 765018b72db22cd4bf61af3dbb57d2ad014a7532
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jan 10 17:17:54 2021 +0100
+
+    WIP fixed eval method in RSVD, checked wrt eval func of R func
+
+commit bb366fa20e33ed251fd4413a0e407bb213930bb3
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jan 10 15:07:20 2021 +0100
+
+    WIP fixed rsvd up to beta_tilde
+
+commit fb93eade7c9bcfe595f2fb4cb48bec89bcdd74cf
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jan 10 13:01:01 2021 +0100
+
+    WIP fixed fit func and checked with gt R lang
+
+commit aea18bd81a84cfa35af1c58d5470a79240bbd760
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jan 10 11:00:11 2021 +0100
+
+    allow testing RSVD in R lang
+
+commit aaed6bd5ac7a31ffe51aeb8719648da86c264ab7
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Jan 9 23:06:19 2021 +0000
+
+    ISS open data update 2021-01-09T23:06:19+00:00
+
+commit 56f24c31986323fc37c1b48af8cb58cb36af0b3e
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jan 9 21:17:50 2021 +0100
+
+    update 2021-01-09
+
+commit 2370e1e65e172b9d5788a5df44957713e073f0e9
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jan 9 21:00:01 2021 +0100
+
+    WIP RSVD fix Omega and add Q
+
+commit 63366ac6565c958711053a77bcaf212c2b137c2e
+Merge: 1b390cc 24f75c3
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jan 9 19:23:10 2021 +0100
+
+    Merge branch 'main' into pytoolbox
+
+commit 24f75c3ab883f38daba659e3f9cacfa270aeef11
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Jan 8 23:05:43 2021 +0000
+
+    ISS open data update 2021-01-08T23:05:43+00:00
+
+commit c382919c11d9263ff530d538e2e08e7043fa2a90
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Jan 8 23:48:29 2021 +0100
+
+    update 2021-01-08
+
+commit 4bc740bec89ef53bef5154e951b604731a95b094
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Jan 8 23:39:12 2021 +0100
+
+    update 2021-01-08
+
+commit d951c908161f75b15fa4d72280aa68a9bf79cce8
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Jan 8 23:38:59 2021 +0100
+
+    ISS update
+
+commit 28e2eb7789563c2cf3c83e8f7d19fc273e3f6b4f
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Jan 7 23:05:06 2021 +0000
+
+    ISS open data update 2021-01-07T23:05:06+00:00
+
+commit 5f33433df19332423da6ba6c9755db4a89d14ec1
+Merge: e74914e f8bbc04
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Jan 7 21:36:19 2021 +0100
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit e74914ee40418698330a7769b4b2f16d629f2505
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Jan 7 21:36:12 2021 +0100
+
+    update 2021-01-07
+
+commit 1b390ccb54154eb069e9e015e00bcaf664967795
+Merge: d2d1573 009f01c
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Jan 7 21:18:08 2021 +0100
+
+    Merge branch 'main' into pytoolbox
+
+commit f8bbc04a102612ea3dc9ccb81189017be91c11c5
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Jan 6 23:05:02 2021 +0000
+
+    ISS open data update 2021-01-06T23:05:02+00:00
+
+commit d2d157302464dc35980e2e4d1303d324dfa6b62c
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jan 6 23:26:38 2021 +0100
+
+    WIP porting regularized SVD from R-lang
+
+commit 009f01c79b3d4037bbbea796164c9b0d2fe7f5a2
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jan 6 21:55:42 2021 +0100
+
+    update 2021-01-06
+
+commit ea069282e7c1940955fcc529467f4711539c73e1
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jan 6 21:08:39 2021 +0100
+
+    update 2021-01-06
+
+commit d26c024ff6b7926658488e573ee7c4c0c16a70f5
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Jan 6 20:56:39 2021 +0100
+
+    WIP porting regularized SVD from R-lang
+
+commit 2dd24b3f2a11ec034f3050ab3129e4e1c9cec418
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Jan 5 23:04:03 2021 +0000
+
+    ISS open data update 2021-01-05T23:04:03+00:00
+
+commit 70d2bd8208592431e1f5dad591ca3c115f763b56
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Jan 5 17:32:13 2021 +0100
+
+    fix datetime in names
+
+commit 22641bd437fb0b0e498c653f1eba5c94e88bc924
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Jan 5 17:19:23 2021 +0100
+
+    no trigger on push, fix running time
+
+commit 39c75c8c43d29f3b4b506a85e4fe20dc3ca52ca5
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Jan 5 00:10:09 2021 +0000
+
+    ISS open data update 2021-01-05T00:10:09+00:00
+
+commit 83ff2e24a7643ab00f6bf54c676e1fad6c5d2e01
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Jan 4 17:14:58 2021 +0000
+
+    ISS open data update 2021-01-04T17:14:58+00:00
+
+commit 847065e74b2701df72d11f45e695aa63e90731c1
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Jan 4 18:14:33 2021 +0100
+
+    update 2021-01-04
+
+commit aaeb7835ec60966a568fabac46c3e6fad5e84e78
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Mon Jan 4 00:09:40 2021 +0000
+
+    ISS open data update 2021-01-04T00:09:40+00:00
+
+commit 9e7bb73a8b261d27ebc6b66f75fcbd6deaa275e7
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jan 3 22:41:26 2021 +0100
+
+    refactoring package paths
+
+commit bc6a96ab5f7712e675d8b73719cd2c0be45c06df
+Merge: 829280e 26d3e7a
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jan 3 21:41:53 2021 +0100
+
+    Merge branch 'main' into pytoolbox
+
+commit 4f34d8d9d6ba4e94ef698fc2a086792bd23d793e
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Jan 3 20:39:33 2021 +0000
+
+    ISS open data update 2021-01-03T20:39:33+00:00
+
+commit 26d3e7a079a8a2371f9bbb0887935a6b2fda1ab1
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jan 3 21:38:49 2021 +0100
+
+    update 2021-01-03
+
+commit 829280e0eac7b3d55a63689e831fdc6f92923ca2
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Jan 3 21:24:21 2021 +0100
+
+    add smoothing and Rt to perturbations
+
+commit 4b5bbac16e09d8b1d663295b00fb75a2e259192f
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sun Jan 3 00:08:29 2021 +0000
+
+    ISS open data update 2021-01-03T00:08:29+00:00
+
+commit cd4f44bc281ddfc4d200e821dafa432f87c71026
+Merge: 8b431b1 d65c48c
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jan 2 19:53:34 2021 +0100
+
+    Merge branch 'main' into pytoolbox
+
+commit fb0988732e1e5a1d4f52777937e6d61c6fa9c4aa
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Jan 2 18:25:00 2021 +0000
+
+    ISS open data update 2021-01-02T18:25:00+00:00
+
+commit d65c48ced350b0cccb0ec8c339f71093e56d611c
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jan 2 19:24:17 2021 +0100
+
+    update 2021-01-02
+
+commit 8b431b1c369500b037e47079469a3174352a72d0
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jan 2 16:37:01 2021 +0100
+
+    modeling perturbations
+
+commit fd9284926ed73b98f221602f4cd30a2d1515d7ee
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Jan 2 15:12:43 2021 +0100
+
+    plot lines mixed with errorbars
+
+commit de609c0cb9f39ef0f4959747645579f854bfafc5
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Sat Jan 2 00:08:14 2021 +0000
+
+    ISS open data update 2021-01-02T00:08:13+00:00
+
+commit 1f28cea5b7a1bd03bea86f261acdcd8fe6a0acd2
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Jan 1 21:41:37 2021 +0100
+
+    italy Rt bulk computation
+
+commit 4393d58776da62b3f2b339f93a785e9f2307f5f8
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Jan 1 21:41:03 2021 +0100
+
+    Rt naive computation
+
+commit 175f5ced03781232b575699edd30cbb21de0b4e9
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Jan 1 21:40:26 2021 +0100
+
+    missing init
+
+commit c15c01cf304ed9038f37f4368ba2c508f50db539
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Jan 1 20:03:47 2021 +0100
+
+    bulk apply tikhonov to DPC
+
+commit 46e0e5a6f37c00c305fc7ade9c45ff0fb5c66112
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Jan 1 20:03:21 2021 +0100
+
+    fix lower confidence
+
+commit bb418010dbb678fb55080c9f73542e3379f5b952
+Merge: 9717893 bceaf38
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Jan 1 19:34:30 2021 +0100
+
+    Merge branch 'main' into pytoolbox
+
+commit 97178934e238e4339ac6d582b8961fae8ef23a19
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Jan 1 19:33:58 2021 +0100
+
+    first differences on DPC data
+
+commit bceaf385b6d685a980f62558e1e74ac5de133b8b
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Fri Jan 1 00:08:33 2021 +0000
+
+    ISS open data update 2021-01-01T00:08:33+00:00
+
+commit 6b9408b052025e819cd90978659bd8917e330dcd
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Dec 31 18:29:08 2020 +0000
+
+    ISS open data update 2020-12-31T18:29:08+00:00
+
+commit a00351bd95c33e0cceef050379d6404a13499d02
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Dec 31 19:28:29 2020 +0100
+
+    update 2020-12-31
+
+commit f4165dfbad26d1cc9aa0453c1c786fb3348c4b27
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Dec 31 19:28:10 2020 +0100
+
+    update ISS 2020-31-12
+
+commit 361fc660362e4249af936cdf12a164c2c3c8275d
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Thu Dec 31 00:10:00 2020 +0000
+
+    ISS open data update 2020-12-31T00:10:00+00:00
+
+commit 2cfc88784814c0065e8942472d8f8b9bc0721e12
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Dec 30 19:57:30 2020 +0000
+
+    ISS open data update 2020-12-30T19:57:30+00:00
+
+commit dfd7099a3dc3a67a12d89e238d5577c5c51d561e
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Dec 30 20:57:06 2020 +0100
+
+    update 2020-12-30
+
+commit 8d3f05ff0a432e038715a18de26ebb8c98f20f13
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Wed Dec 30 00:08:23 2020 +0000
+
+    ISS open data update 2020-12-30T00:08:23+00:00
+
+commit 1bea6ed8c9a6057c1b275751c865b542bfb664d2
+Merge: 98e0cc3 9b41c97
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 29 22:33:55 2020 +0100
+
+    Merge branch 'main' into pytoolbox
+
+commit 010254d03654aac1febad10e52ed361ae673c1bf
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Dec 29 21:21:30 2020 +0000
+
+    ISS open data update 2020-12-29T21:21:30+00:00
+
+commit 9b41c97d0e5e9c887196bb1d927e0f0bf3f0d8e8
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 29 22:21:03 2020 +0100
+
+    persisting previous data manually downloaded
+
+commit 39166c455458f388dce6d0908a37cb9081dffd20
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Dec 29 21:06:30 2020 +0000
+
+    ISS open data update 2020-12-29T21:06:30+00:00
+
+commit 007e118a8a02d900ab6b7669f95610fcf6a234cf
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 29 22:06:05 2020 +0100
+
+    fix date
+
+commit 000b3c530af149c6da45303435263dbe2a0c874e
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Dec 29 20:55:44 2020 +0000
+
+    ISS open data update 2020-12-29
+
+commit 302a0b3d7f0cc5d0c4f13cf6060397acb6da9e58
+Merge: 6203bd0 f65d130
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 29 21:54:54 2020 +0100
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit 6203bd0d77f7bdb46a1e9b14ca7b00583e82a632
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 29 21:52:31 2020 +0100
+
+    test actions
+
+commit f65d130792121b508a757c693b6d294e350fba44
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Dec 29 20:52:08 2020 +0000
+
+    ISS open data update 2020-12-29
+
+commit 1cdbea8dce7fca28077f92d79de0ac34c9bbb681
+Merge: f7803f3 2121567
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 29 21:51:17 2020 +0100
+
+    Merge branch 'main' of github.com-td:tomorrowdata/ya-covid-19-analysis into main
+
+commit f7803f3a2565a2216f48054c8713bb2b7ecf5e10
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 29 21:50:57 2020 +0100
+
+    fix git -C
+
+commit 21215672100937dc948f14de82b3bd40bf48c320
+Author: TDBot <actions@users.noreply.github.com>
+Date:   Tue Dec 29 20:31:33 2020 +0000
+
+    ISS open data update 2020-12-29
+
+commit 9d512154644aa0d3584473264ca2691bad2bb394
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 29 21:31:09 2020 +0100
+
+    fix git -C
+
+commit 6e7db8c4cbc64cb1fb03d645ec178f00856702a0
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 29 21:25:34 2020 +0100
+
+    fix workflow typo
+
+commit 4ff5dc910287353df192218d40f8094f92e0f64e
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 29 21:22:50 2020 +0100
+
+    fix workflow typo
+
+commit d481d3a32b087213e7dd4e4f809cd86353b0d061
+Author: stefanoterna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 29 21:16:07 2020 +0100
+
+    Update getISSupdates.yml
+
+commit fefad341c8cdd5aa151045d970e721060bc4c4de
+Author: stefanoterna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 29 21:15:22 2020 +0100
+
+    Create getISSupdates.yml
+
+commit 7719c0ad5034fc096e53a425c0aca78b93627247
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 29 18:44:50 2020 +0100
+
+    update 2020-12-29
+
+commit 4b8994eb7aa3af35c6c8585cb2801e7b51689ef1
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Dec 28 18:55:59 2020 +0100
+
+    update 2020-12-28
+
+commit 98e0cc38c6c70b3122d647769777f58d0f9c4788
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Dec 27 22:37:23 2020 +0100
+
+    Tikhonov reg class
+
+commit d7ad5d7bcc6a4e7820df7539d1ee277110807468
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Dec 27 22:36:50 2020 +0100
+
+    more first differences in preprocessing
+
+commit 906f72f904b6d1a8d21cac286db44eccf8e72469
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Dec 27 22:35:35 2020 +0100
+
+    change func names
+
+commit 042e576376de10248452a46800083a8bf78e20b1
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Dec 27 19:43:25 2020 +0100
+
+    update 2020-12-27
+
+commit ae5ae9469c2e2f5d4c5bffe25640517758e33efa
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Dec 27 17:43:00 2020 +0100
+
+    protezione civile load from github and preprocess
+
+commit 8dca1a632def80fe14f1c59196cf744a7c9de119
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Dec 27 16:24:13 2020 +0100
+
+    WIP refactoring data load and plotting out of notebooks
+
+commit 1676884843b5db154fac6e2b9c5094f39b05521e
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Dec 26 17:59:08 2020 +0100
+
+    update 2020-12-26
+
+commit db0866697a62dfabd57af5915aa413e980990006
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Dec 24 20:46:09 2020 +0100
+
+    update 2020-12-24
+
+commit afa3173f407d568a8130670370663a64ec104690
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Dec 23 18:40:25 2020 +0100
+
+    update 2020-12-23
+
+commit 1661366e82f5fc4fe9282f69561f92e6da9a0b39
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Dec 23 18:39:36 2020 +0100
+
+    update 2020-12-23
+
+commit 7caebf7083a497efb545f74f58a0cbe4a72cdd92
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 22 22:40:44 2020 +0100
+
+    update 2020-12-22
+
+commit 7dd783d86162ab5765cdc9cc86ad8411e82c8244
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Dec 21 21:34:13 2020 +0100
+
+    update 2020-12-21
+
+commit 647f39fe3d528e99465bb10bbd934c57b98e3316
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Dec 21 21:32:02 2020 +0100
+
+    update 2020-12-21
+
+commit 745b7ca5667693df9f7a1758bdd56a6d605951b4
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Dec 20 21:03:50 2020 +0100
+
+    update 2020-12-20
+
+commit 768633ef0eefbe7f0ba1900d54663d6f40eef8e6
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Dec 19 21:13:03 2020 +0100
+
+    update 2020-12-19
+
+commit 84690b404da74a50a3b558108884e983e2556e1a
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Dec 19 20:13:20 2020 +0100
+
+    WIP: worldwide analysis
+
+commit 88991b5b11c84f5f7ea8472876d04ae4acb09b23
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Dec 19 20:11:25 2020 +0100
+
+    WIP: worldwide analysis
+
+commit 0ac5627d6622e205ac7cdcdfb7f7fc1d203fe1a9
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Dec 19 14:47:56 2020 +0100
+
+    push daily updates
+
+commit e62eb3c02cc1a0bdc6169ea764f2a0303f7016db
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Dec 19 14:45:44 2020 +0100
+
+    R wrapper to ISS script
+
+commit 2d967d196b8b24e3149ee42cc923f1578cefa818
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Dec 19 14:42:28 2020 +0100
+
+    folders refactory
+
+commit 4a549518cd9c9795f03a81e0038a3c15c10c4371
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Dec 18 23:26:36 2020 +0100
+
+    update 2020-12-18
+
+commit 8d4d55624d7000aee805868abbe933f2331ed8ad
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Dec 18 23:26:06 2020 +0100
+
+    ISS update Dec 18
+
+commit 0299297a6aa6b7dc5cbc496321bf2d502303cc63
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Dec 17 20:01:05 2020 +0100
+
+    update 2020-12-17
+
+commit bc18e426331fbdd5c87efeef8fa8c4ab3ec445a2
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Dec 17 19:45:36 2020 +0100
+
+    update 2020-12-17
+
+commit 97262a9d07b35a9694970cd3b85e1f2aef2e2fe9
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Dec 16 19:47:23 2020 +0100
+
+    update 2020-12-16
+
+commit 2c0eb92a730c9fe6158099fed2503bc4312cee2d
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Dec 16 19:46:18 2020 +0100
+
+    update 2020-12-16
+
+commit 9b14c494c00b02231be9bf50d7707df2677bd0ba
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Dec 16 02:57:41 2020 +0100
+
+    update 2020-11-15
+
+commit 4ce31757d61c448ce3501decd5fd50cf2171d62b
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Dec 14 23:12:40 2020 +0100
+
+    update 2020-12-14
+
+commit d7232c99ca7b29b8227bf77f27eed2a519862db9
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Dec 13 22:51:23 2020 +0100
+
+    update 2020-12-13
+
+commit 8e58b1b3d82cc15c98b0cee11dd8286a5f16a0b5
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Dec 13 22:49:31 2020 +0100
+
+    update 2020-12-13
+
+commit 32c85938cc024c071a4d7accc47d0ef77c1e1679
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Dec 13 22:48:29 2020 +0100
+
+    add R service with epiestim package to replicate Rt calculation by ISS
+
+commit 06c97775a9b0f317ff0344c3452fbcf3c158ddaa
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Dec 12 20:25:09 2020 +0100
+
+    update 2020-12-12
+
+commit db0f91fb71b0a84c66d62cefeefa052957d4517e
+Merge: 047bff3 dec29a7
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Dec 12 20:24:09 2020 +0100
+
+    update 2020-12-12
+
+commit 047bff3d9a8d119cde600c7fe62da5044fe7cd97
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Dec 12 00:53:32 2020 +0100
+
+    update 2020-12-11
+
+commit 77ad421dc6f2c308bff102a4bd1f7a7dd991f6ad
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Dec 12 00:52:29 2020 +0100
+
+    update 2020-12-11
+
+commit c51d0a6fd5d97d9608b79750e87327c3cb55cdb0
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Dec 12 00:48:44 2020 +0100
+
+    update 2020-12-11
+
+commit dec29a7a8dca7d3418faef880f8a89319b6a0796
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Dec 12 00:48:44 2020 +0100
+
+    update 2020-12-12
+
+commit 4f55ec41ca1f158ec35b5a7fa9055bc52e67f45a
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Dec 12 00:48:09 2020 +0100
+
+    ISS update Dec 12 2020
+
+commit 3958536344800ec4c55c6d0f9a9b15a5134bb096
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Dec 12 00:47:45 2020 +0100
+
+    ISS update Dec 12 2020
+
+commit 273ea71e447c8a0941c3d553a36c70aff74079c8
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Dec 10 19:17:33 2020 +0100
+
+    update 2020-12-10
+
+commit feb0a892d1ab40643462c9bb89d998f0d12f36a5
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Dec 9 19:43:44 2020 +0100
+
+    update 2020-12-09
+
+commit 88d52b2d86a5c90aa2d776beec3e85ec602846f8
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 8 19:43:13 2020 +0100
+
+    update 2020-12-08
+
+commit fae619482ff28fb6d70d60ccfd9c4008050d1c62
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 8 01:11:23 2020 +0100
+
+    update 2020-12-07
+
+commit aa29a46b86f69c0b8d17890de7ab49bf3653812b
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 8 01:01:35 2020 +0100
+
+    update 2020-11-07
+
+commit 2c3f8fd2a5a062d675104bbf2aa46f0d0769ca97
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Dec 7 02:49:22 2020 +0100
+
+    compute uncertainty from future
+
+commit dc66fc07db36bc7287ee4fdbce68cdba9a53f0da
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Dec 7 02:48:01 2020 +0100
+
+    update 2020-11-06
+
+commit 946f25af32e2b0e00c370ca032a8a0a84701c40b
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Dec 7 02:47:02 2020 +0100
+
+    update ISS Dec 4th
+
+commit 8aa59c30386e6ab7840b5dd50e29e0b63ab217ce
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Dec 7 02:46:07 2020 +0100
+
+    update ISS Dec 4th
+
+commit bf78d36df0d100d4dde1e413b06059b2f8406ee9
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Dec 5 18:05:32 2020 +0100
+
+    WIP accounting for future uncertainty
+
+commit bbba7aa6ee10d974e449db651f712a5442626983
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Dec 5 18:00:21 2020 +0100
+
+    WIP accounting for future uncertainty
+
+commit 6d077c94a72113f352884c4d258b0e3c1b31eaac
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Dec 5 17:55:41 2020 +0100
+
+    WIP accounting for future uncertainty
+
+commit 9cdf2506572435f2b30426b6a01b16935e58c547
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Dec 3 19:08:26 2020 +0100
+
+    update 2020-12-03
+
+commit bd5a4d64017629fcd1f7db5eeba6bf8c62c12d8a
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Dec 3 19:08:15 2020 +0100
+
+    fix pillow dep
+
+commit 99b2331f981ed049655b116796802e220ba59c52
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Dec 2 18:14:26 2020 +0100
+
+    update 2020-12-02
+
+commit 3a6328c40865fe683d339e3d248c9a8439771ed3
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Dec 1 18:38:15 2020 +0100
+
+    update 2020-12-01
+
+commit 2abe6c0e5e3e11ff7253a4f85a59ef887c78d2b0
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Mon Nov 30 18:39:59 2020 +0100
+
+    update 2020-11-30
+
+commit 99a85086db32ab5d1f142ed2ea088717f97f519a
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Nov 29 20:06:14 2020 +0100
+
+    update 2020-11-29
+
+commit 3f87b83ffa1a5f6c6a82645fcf642bc59b4f1e9f
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Nov 29 17:21:13 2020 +0100
+
+    document exported data
+
+commit 7296cc040152fbb12caf06f1d13b4ae8a733b708
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Nov 29 17:19:01 2020 +0100
+
+    add Rt index
+
+commit 31714ec574aea910213598a232fcbf6a77152027
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Nov 29 17:13:22 2020 +0100
+
+    add ISS reference data
+
+commit 132ba37ce35830e07ad59ef47323028f389bf497
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Nov 29 16:33:03 2020 +0100
+
+    round 2 decimals in export files. switch update files on/of
+
+commit 46d4b5e1c48d9857c9b930706e94352adc7a9ca6
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Nov 29 16:30:21 2020 +0100
+
+    round 2 decimals
+
+commit c4a1b9e1e99197420dcb6967a8e222e1b1ca4b1c
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Nov 29 16:26:18 2020 +0100
+
+    improve naming
+
+commit 4a128126f983fdda98c48180d03673235684ed81
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Nov 29 16:23:35 2020 +0100
+
+    improve naming
+
+commit ba52c0207b23f0edbc02c948d4a6e0f5939544af
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Nov 29 16:08:37 2020 +0100
+
+    remove date from image file name. same file updated daily
+
+commit 714f4fd22c432dc45685f02ab37e32c68774ba4e
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Nov 28 20:40:26 2020 +0100
+
+    sort data descending
+
+commit 3341b2c8c4ae7fb446195d38ebf7e87d82f49d44
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Nov 28 20:37:20 2020 +0100
+
+    fix data path
+
+commit 0c7beb34ec795c5850e845e2720aee19ba9e8550
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Nov 28 20:16:08 2020 +0100
+
+    describe paths
+
+commit b8700dbfaf1505887d8d1fa41faf36fe34e4f013
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Nov 28 20:06:16 2020 +0100
+
+    move data and images dirs to the root of the repo
+
+commit 471b868e0192000787f080fb4f169289fef3bbf9
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Nov 28 19:22:44 2020 +0100
+
+    proper requirements file, avoid messing up Dockerfile
+
+commit 73ed9733fd9b7402054141320f41bdc0747bed85
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Nov 28 18:52:48 2020 +0100
+
+    data update 20201128
+
+commit 34217fd44b101aa4de9b481b3dfa2a5aa5d71f4b
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Nov 28 18:52:18 2020 +0100
+
+    update ISS data
+
+commit 6d5a2dd76c453e6febf0cc9e8e939cf7456db1d0
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Fri Nov 27 18:35:07 2020 +0100
+
+    data update 20201127
+
+commit 4fe0a457f4e1524bdc1b563b996df0f85282ef84
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Nov 26 02:27:25 2020 +0100
+
+    sample Rt with Markov chain Monte Carlo
+
+commit 32fd453bdeb4d416b8c2531dab6347ce4e7b1848
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Nov 26 02:21:03 2020 +0100
+
+    add mybinder
+
+commit 8f7a03c9316654247fa2c036d66792c2fa661f1a
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Nov 26 02:19:34 2020 +0100
+
+    sample Rt with Markov chain Monte Carlo
+
+commit 2ad849ccb488fddf0f09dc6cbe53ed7383c0ddc8
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Thu Nov 26 02:11:49 2020 +0100
+
+    sample Rt with Markov chain Monte Carlo
+
+commit c80da925be64d6bc8c3978913a4c7d11d49d7128
+Author: stefanoterna <stefano.terna@tomorrowdata.io>
+Date:   Wed Nov 25 22:08:59 2020 +0100
+
+    Update README.md
+
+commit 48ffee61fb1fda2a6a0ee614658659810882c91d
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Nov 21 15:12:18 2020 +0100
+
+    updated ISS data
+
+commit dd0778892e8203d813e2b7e32279a6e1398b2e43
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Nov 18 00:43:45 2020 +0100
+
+    first try with multiple pandemics
+
+commit c46833e0ef65ea57791348eb3c9451bf0afc56b6
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Nov 17 15:54:19 2020 +0100
+
+    assessing ISS confidence intervals
+
+commit a5785a5b3992fd8e45963aa541b995d51e84d648
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sun Nov 15 23:38:30 2020 +0100
+
+    adding ISS data and comparison
+
+commit f09b6a765e33a9c57fb36c109cfeb0b02bd6f100
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Nov 14 23:21:59 2020 +0100
+
+    add perturbations
+
+commit d99cc50204548358f23298e4dbadcb60d37db622
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Nov 14 19:50:11 2020 +0100
+
+    add comparison among various first differences
+
+commit 2335c829df7493954c0bfecb5bc03839a46b55d4
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Nov 14 18:32:52 2020 +0100
+
+    fix formulas
+
+commit f6bd0f9af21647ef833e6353d8d51962793c8dba
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Nov 14 17:43:05 2020 +0100
+
+    fix formulas
+
+commit 0988871408df162a3d08407477b84092ac6b7648
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Sat Nov 14 17:38:08 2020 +0100
+
+    Rt computed on national data
+
+commit 192075ff595f35166693f6e5bf035f3470f7c59f
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Nov 4 08:34:46 2020 +0100
+
+    doubling time of intensive care cases
+
+commit d4dde501323d6b7211bd2e8a66981f677e1f55ef
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Wed Nov 4 08:33:56 2020 +0100
+
+    simplity auth in local notebook
+
+commit 423429ebe4e615ff8bfd4e9c1366d7c160347173
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Nov 3 23:49:59 2020 +0100
+
+    doubling time of total deaths
+
+commit d20a8c8d2d82733fa123e255d04eccd23012e5d2
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Nov 3 22:47:09 2020 +0100
+
+    more on doubling time
+
+commit 4ec8cf38afd324673aa387890d31ef3116ed8f85
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Nov 3 12:36:32 2020 +0100
+
+    build and run notebooks with docker-compose
+
+commit 21523f40a06ff6cd28436f8231ba8b0f01e53e96
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Nov 3 10:53:38 2020 +0100
+
+    fix wrong col names
+
+commit 3740872eb3e87f39216095bb0230ce78e470f52d
+Author: Stefano Terna <stefano.terna@tomorrowdata.io>
+Date:   Tue Nov 3 10:48:45 2020 +0100
+
+    first commit
+
+commit 3d10fe592c304a5126e57372d89c56d5144bd2c6
+Author: stefanoterna <stefano.terna@tomorrowdata.io>
+Date:   Tue Nov 3 10:42:49 2020 +0100
+
+    Update README.md
+
+commit 9584afae0196f912fca632878d809cdc2609e53d
+Author: stefanoterna <stefano.terna@tomorrowdata.io>
+Date:   Tue Nov 3 10:40:34 2020 +0100
+
+    Initial commit
