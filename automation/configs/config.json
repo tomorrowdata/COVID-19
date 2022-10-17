@@ -22,7 +22,8 @@
                 "MC_DRAWS": 1000,
                 "MC_CORES": 4,
                 "NEW_CASES_LOCAL_COL_NAME": "nuovi_positivi_corrected",
-                "REGION": null
+                "REGION": null,
+                "UPTO_DATE": "{DATE}"
             }
         },
         {
@@ -46,7 +47,8 @@
                 "MC_TUNE": 500,
                 "MC_DRAWS": 500,
                 "MC_CORES": 8,
-                "REGION": "Abruzzo"
+                "REGION": "Abruzzo",
+                "UPTO_DATE": "{DATE}"
             }
         },
         {
@@ -70,7 +72,8 @@
                 "MC_TUNE": 2000,
                 "MC_DRAWS": 1000,
                 "MC_CORES": 8,
-                "REGION": "Basilicata"
+                "REGION": "Basilicata",
+                "UPTO_DATE": "{DATE}"
             }
         },
         {
@@ -94,7 +97,8 @@
                 "MC_TUNE": 500,
                 "MC_DRAWS": 500,
                 "MC_CORES": 8,
-                "REGION": "Calabria"
+                "REGION": "Calabria",
+                "UPTO_DATE": "{DATE}"
             }
         },
         {
@@ -118,7 +122,8 @@
                 "MC_TUNE": 500,
                 "MC_DRAWS": 500,
                 "MC_CORES": 8,
-                "REGION": "Campania"
+                "REGION": "Campania",
+                "UPTO_DATE": "{DATE}"
             }
         },
         {
@@ -142,7 +147,8 @@
                 "MC_TUNE": 500,
                 "MC_DRAWS": 500,
                 "MC_CORES": 8,
-                "REGION": "Emilia-Romagna"
+                "REGION": "Emilia-Romagna",
+                "UPTO_DATE": "{DATE}"
             }
         },
         {
@@ -166,7 +172,8 @@
                 "MC_TUNE": 500,
                 "MC_DRAWS": 500,
                 "MC_CORES": 8,
-                "REGION": "Friuli Venezia Giulia"
+                "REGION": "Friuli Venezia Giulia",
+                "UPTO_DATE": "{DATE}"
             }
         },
         {
@@ -190,7 +197,8 @@
                 "MC_TUNE": 500,
                 "MC_DRAWS": 500,
                 "MC_CORES": 8,
-                "REGION": "Lazio"
+                "REGION": "Lazio",
+                "UPTO_DATE": "{DATE}"
             }
         },
         {
@@ -214,7 +222,8 @@
                 "MC_TUNE": 500,
                 "MC_DRAWS": 500,
                 "MC_CORES": 8,
-                "REGION": "Liguria"
+                "REGION": "Liguria",
+                "UPTO_DATE": "{DATE}"
             }
         },
         {
@@ -238,7 +247,8 @@
                 "MC_TUNE": 500,
                 "MC_DRAWS": 500,
                 "MC_CORES": 8,
-                "REGION": "Lombardia"
+                "REGION": "Lombardia",
+                "UPTO_DATE": "{DATE}"
             }
         },
         {
@@ -262,7 +272,8 @@
                 "MC_TUNE": 500,
                 "MC_DRAWS": 500,
                 "MC_CORES": 8,
-                "REGION": "Marche"
+                "REGION": "Marche",
+                "UPTO_DATE": "{DATE}"
             }
         },
         {
@@ -286,7 +297,8 @@
                 "MC_TUNE": 2000,
                 "MC_DRAWS": 1000,
                 "MC_CORES": 8,
-                "REGION": "Molise"
+                "REGION": "Molise",
+                "UPTO_DATE": "{DATE}"
             }
         },
         {
@@ -310,7 +322,8 @@
                 "MC_TUNE": 500,
                 "MC_DRAWS": 500,
                 "MC_CORES": 8,
-                "REGION": "P.A. Bolzano"
+                "REGION": "P.A. Bolzano",
+                "UPTO_DATE": "{DATE}"
             }
         },
         {
@@ -334,7 +347,8 @@
                 "MC_TUNE": 500,
                 "MC_DRAWS": 500,
                 "MC_CORES": 8,
-                "REGION": "P.A. Trento"
+                "REGION": "P.A. Trento",
+                "UPTO_DATE": "{DATE}"
             }
         },
         {
@@ -358,7 +372,8 @@
                 "MC_TUNE": 500,
                 "MC_DRAWS": 500,
                 "MC_CORES": 8,
-                "REGION": "Piemonte"
+                "REGION": "Piemonte",
+                "UPTO_DATE": "{DATE}"
             }
         },
         {
@@ -382,7 +397,8 @@
                 "MC_TUNE": 500,
                 "MC_DRAWS": 500,
                 "MC_CORES": 8,
-                "REGION": "Puglia"
+                "REGION": "Puglia",
+                "UPTO_DATE": "{DATE}"
             }
         },
         {
@@ -406,7 +422,8 @@
                 "MC_TUNE": 500,
                 "MC_DRAWS": 500,
                 "MC_CORES": 8,
-                "REGION": "Sardegna"
+                "REGION": "Sardegna",
+                "UPTO_DATE": "{DATE}"
             }
         },
         {
@@ -430,7 +447,8 @@
                 "MC_TUNE": 500,
                 "MC_DRAWS": 500,
                 "MC_CORES": 8,
-                "REGION": "Sicilia"
+                "REGION": "Sicilia",
+                "UPTO_DATE": "{DATE}"
             }
         },
         {
@@ -454,7 +472,8 @@
                 "MC_TUNE": 500,
                 "MC_DRAWS": 500,
                 "MC_CORES": 8,
-                "REGION": "Toscana"
+                "REGION": "Toscana",
+                "UPTO_DATE": "{DATE}"
             }
         },
         {
@@ -478,7 +497,8 @@
                 "MC_TUNE": 500,
                 "MC_DRAWS": 500,
                 "MC_CORES": 8,
-                "REGION": "Umbria"
+                "REGION": "Umbria",
+                "UPTO_DATE": "{DATE}"
             }
         },
         {
@@ -503,7 +523,8 @@
                 "MC_DRAWS": 1000,
                 "MC_CORES": 8,
                 "REGION": "Valle d'Aosta",
-                "USE_RELATIVE_RESIDUALS": false
+                "USE_RELATIVE_RESIDUALS": false,
+                "UPTO_DATE": "{DATE}"
             }
         },
         {
@@ -527,7 +548,8 @@
                 "MC_TUNE": 500,
                 "MC_DRAWS": 500,
                 "MC_CORES": 8,
-                "REGION": "Veneto"
+                "REGION": "Veneto",
+                "UPTO_DATE": "{DATE}"
             }
         }
     ],

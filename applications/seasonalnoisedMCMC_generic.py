@@ -2,6 +2,7 @@ import sys
 
 sys.path.append("../")
 
+from datetime import datetime
 import json
 import logging
 import os
@@ -216,6 +217,7 @@ def main(
     use_relative_residuals=True,
     new_cases_local_col=None,
     debug_mode=False,
+    upto_date=None,
 ):
     """
     Start processing seasonalnoisedMCMC
@@ -245,11 +247,11 @@ def main(
     logger.info(f"pastdays_start: {pastdays_start} - pastdays_end: {pastdays_end}")
 
     if region:
-        raw_data = DPC.load_daily_cases_from_github_region(region)
+        raw_data = DPC.load_daily_cases_from_github_region(region, upto=upto_date)
         region_cleaned = SANITIZE_PATTERN.sub("_", region).replace(" ", "_")
         pickleprefix = f"{pickleprefix}_{region_cleaned}"
     else:
-        raw_data = DPC.load_daily_cases_from_github()
+        raw_data = DPC.load_daily_cases_from_github(upto=upto_date)
         if new_cases_local_col:
             local_imported = ISS.read_weekly_cases_from_local(raw_data.data.max())
             ISS.preprocess_cases(local_imported)
@@ -303,6 +305,9 @@ if __name__ == "__main__":
     new_cases_local_col_name = cast_or_none(os.environ.get("NEW_CASES_LOCAL_COL_NAME", None), str)
     debug_mode = cast_or_none(os.environ.get("DEBUG_MODE", False), bool)
 
+    upto_date = cast_or_none(os.environ.get("UPTO_DATE", False), datetime)
+    print("upto_date: {}".format(upto_date))
+
     assert pickleprefix is not None, "pickleprefix should be defined"
     assert data_col_name is not None, "data_col_name should be defined"
 
@@ -323,7 +328,8 @@ if __name__ == "__main__":
         "USE_RELATIVE_RESIDUALS": use_rel_res,
         "NEW_CASES_LOCAL_COL": new_cases_local_col_name,
         "DEBUG_MODE": debug_mode,
+        "UPTO_DATE": upto_date
     }
 
-    logger.info(f"Run configuration:\n{json.dumps(params, indent=2)}")
+    logger.info(f"Run configuration:\n{json.dumps(params, indent=2, default=str)}")
     main(**{k.lower(): v for k, v in params.items()})

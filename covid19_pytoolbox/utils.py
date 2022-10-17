@@ -1,3 +1,4 @@
+from datetime import datetime
 import numpy as np
 import pandas as pd
 from scipy import stats
@@ -25,7 +26,7 @@ def truncnorm(mu, sigma, lower, upper, size):
 
 
 def cast_or_none(value, type_):
-    if value is not None and type_ is not bool:
+    if value is not None and type_ not in [bool, datetime]:
         return type_(value)
 
     if isinstance(value, str) and type_ is bool:
@@ -33,6 +34,9 @@ def cast_or_none(value, type_):
             return True
         elif value.lower() == "false":
             return False
+
+    if isinstance(value, str) and type_ is datetime:
+        return datetime.strptime(value, "%Y-%m-%d")            
 
     return value
 

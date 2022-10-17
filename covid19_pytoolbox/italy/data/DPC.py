@@ -27,12 +27,14 @@ def load_daily_cases_from_github(upto=None):
         parse_dates=['data'],
         date_parser=parse_date
     )
+    print("italy data: {}".format(df.shape))
     if upto:
         df = df[df.data<=upto].copy()
+        print("italy data: {}".format(df.shape))
 
     return df
 
-def load_daily_cases_from_github_region(region):
+def load_daily_cases_from_github_region(region, upto=None):
     def parse_date(date):
         return datetime.strptime(date[:10] + " 23:59:00", "%Y-%m-%d %H:%M:%S")
 
@@ -42,6 +44,10 @@ def load_daily_cases_from_github_region(region):
         date_parser=parse_date
     )
     regional_raw_data = regions_raw_data.loc[regions_raw_data.denominazione_regione==region].reset_index().copy()
+    print("regional_raw_data: {}".format(regional_raw_data.shape))
+    if upto:
+        regional_raw_data = regional_raw_data[regional_raw_data.data<=upto + timedelta(days=1)].copy()
+        print("regional_raw_data: {}".format(regional_raw_data.shape))
     return regional_raw_data
 
 def preprocess(df):
